@@ -1,0 +1,26 @@
+HTTP/2 402 
+date: Sun, 08 Nov 2026 00:27:57 GMT
+content-type: application/problem+json
+content-length: 413
+x-locus-environment: production
+x-locus-commit: 075642c0baee263df4d0f71074f64b1f6cebfbcd
+x-locus-service-role: api
+content-security-policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin
+origin-agent-cluster: ?1
+referrer-policy: no-referrer
+strict-transport-security: max-age=31536000; includeSubDomains
+x-content-type-options: nosniff
+x-dns-prefetch-control: off
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+vary: Origin
+access-control-allow-credentials: true
+access-control-expose-headers: X-Locus-Credits-Reserved,Content-Disposition,ETag,Idempotent-Replay,RateLimit-Policy,RateLimit-Limit,RateLimit-Remaining,RateLimit-Reset,Retry-After,X-Locus-Credits-Charged,X-Locus-Credits-Balance,X-Locus-Api-Call-Id,X-Locus-Slug,X-Locus-Renamed-From,X-Locus-Stream-Billing,X-Locus-Stream-Status-Url,X-Locus-Cost-Usd,X-Locus-Model,X-Locus-Finish-Reason,X-Locus-Input-Tokens,X-Locus-Visible-Output-Tokens,X-Locus-Reasoning-Tokens,X-Locus-Billed-Tokens,X-Locus-Model-Schema-Version,X-Locus-Router-Capability,X-Locus-Router-Run-Id,X-Locus-Router-Dispatches,X-Locus-Router-Providers,X-Locus-Router-Elapsed-Ms,X-API-Bench-CSV-Digest,X-API-Bench-Manifest-Digest,X-API-Bench-Release-Digest,X-API-Bench-Release-Id,X-API-Bench-Release-Status
+cache-control: no-store
+www-authenticate: Payment id="CUJEMXOVJfjXffBZPEe-G6RLDSF9N85uhv2YN5UdUVE", realm="alphavantage.mpp.paywithlocus.com", method="tempo", intent="charge", request="eyJhbW91bnQiOiI4MDAwIiwiY3VycmVuY3kiOiIweDIwYzAwMDAwMDAwMDAwMDAwMDAwMDAwMGI5NTM3ZDExYzYwZThiNTAiLCJtZXRob2REZXRhaWxzIjp7ImNoYWluSWQiOjQyMTd9LCJyZWNpcGllbnQiOiIweDA2MGIwZkIwQmU5ZDkwNTU3NTc3QjNBRUU0ODA3MTEwNjcxNDlGZjAifQ", description="Locus MPP: alphavantage/time-series-daily", expires="2026-11-08T00:32:57.745Z", opaque="eyJfbXBweF9ub25jZSI6IjB4ZjM3ZDA0OGQ0NzYyMTk1YTM5OGUwMmVjOWMxY2U1NTMzNmU4ODFlYmViYTcxOGE4NjI4YTNkNjJjMTkxNDhkNyIsIl9tcHB4X3Njb3BlIjoiUE9TVCAvYXBpL21wcC86cHJvdmlkZXIvOmVuZHBvaW50In0"
+etag: W/"19d-8Pq6OYvicxcRppMN/a4GjtUDFVg"
+

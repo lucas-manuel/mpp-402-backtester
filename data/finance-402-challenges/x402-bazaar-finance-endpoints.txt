@@ -1,0 +1,1698 @@
+total 34130
+
+## api.x402node.dev 97
+   ('https://api.x402node.dev/forex/rate/usd/chf/usd-chf', 'eip155:8453', '4000', 'Live USD to CHF exchange rate (US Dollar / Swiss Franc). Zero-param: GET returns')
+   ('https://api.x402node.dev/forex/rate/usd/cad/usd-cad', 'eip155:8453', '4000', 'Live USD to CAD exchange rate (US Dollar / Canadian Dollar). Zero-param: GET ret')
+   ('https://api.x402node.dev/stock/quote/aapl', 'eip155:8453', '5000', 'Live AAPL Apple Inc stock quote (NASDAQ). Zero-param: GET returns current price.')
+   ('https://api.x402node.dev/forex/rate/gbp/jpy/gbp-jpy', 'eip155:8453', '4000', 'Live GBP to JPY exchange rate (British Pound / Japanese Yen). Zero-param: GET re')
+
+## southpow.media 90
+   ('https://southpow.media/v1/forex-rates/eur-zar', 'eip155:8453', '2000', 'EUR/ZAR exchange rate and inverse, latest ECB reference fix. $0.002 USDC on Base')
+   ('https://southpow.media/v1/forex-rates/eur-try', 'eip155:8453', '10000', 'EUR/TRY exchange rate and inverse, latest ECB reference fix. $0.01 USDC on Base ')
+   ('https://southpow.media/v1/forex-rates/eur-thb', 'eip155:8453', '5000', 'EUR/THB exchange rate and inverse, latest ECB reference fix. $0.005 USDC on Base')
+   ('https://southpow.media/v1/forex-rates/eur-sgd', 'eip155:8453', '2000', 'EUR/SGD exchange rate and inverse, latest ECB reference fix. $0.002 USDC on Base')
+
+## agents.x402stock.xyz 67
+   ('https://agents.x402stock.xyz/zcj/sugwme7gkh4s/api/v1/dossier/TSLA', 'eip155:8453', '50000', "A company's recent SEC disclosure picture in one call: the filings index, inside")
+   ('https://agents.x402stock.xyz/api/v1/dossier/:ticker', 'eip155:8453', '50000', "A company's recent SEC disclosure picture in one call: the filings index, inside")
+   ('https://agents.x402stock.xyz/api/v1/national-debt', 'eip155:8453', '10000', 'The total US public debt outstanding to the penny — the headline national-debt f')
+   ('https://agents.x402stock.xyz/api/v1/labor-market', 'eip155:8453', '20000', 'US labor-market headline indicators from the Bureau of Labor Statistics: the une')
+
+## x402stock.xyz 60
+   ('https://x402stock.xyz/api/v1/inflation', 'eip155:8453', '20000', 'US consumer price inflation from the Bureau of Labor Statistics: the latest head')
+   ('https://x402stock.xyz/api/v1/clinical-trials', 'eip155:8453', '20000', 'Clinical trials run by a company, from ClinicalTrials.gov, newest first. Pass `?')
+   ('https://x402stock.xyz/api/v1/avg-interest-rates', 'eip155:8453', '10000', 'The average interest rate the US Treasury currently pays on its outstanding debt')
+   ('https://x402stock.xyz/api/v1/tickers', 'eip155:8453', '10000', 'Find tickers by free-text `?search=` (name or symbol) across asset classes via `')
+
+## saylorinnovations.com 53
+   ('https://saylorinnovations.com/api/stocks/filings/TSLA', 'eip155:8453', '10000', 'Recent SEC filings for a company (10-K, 10-Q, 8-K, Form 4) with links')
+   ('https://saylorinnovations.com/api/medical/drug/metformin', 'eip155:8453', '10000', 'Drug facts by generic or brand name - RxNorm id, ingredients, drug classes and F')
+   ('https://saylorinnovations.com/api/sports/splits', 'eip155:8453', '10000', 'Running split calculator for even-pace race planning - pace, split time and spli')
+   ('https://saylorinnovations.com/api/camp/food-planner', 'eip155:8453', '10000', 'Calories, food weight and meal split for a backpacking trip')
+
+## agent402.tools 41
+   ('https://agent402.tools/api/stock-quote', 'eip155:8453', '1000', 'End-of-day US equity quote from a licensed feed: last close, day range, consolid')
+   ('https://agent402.tools/api/company-financials', 'eip155:8453', '20000', 'Key financial metrics (Revenue, Net Income, Operating Income, Total Assets, Liab')
+   ('https://agent402.tools/api/skill/company-dossier', 'eip155:8453', '37000', 'Comprehensive company research report in one call: latest close, financials, SEC')
+   ('https://agent402.tools/api/fx-timeseries', 'eip155:8453', '5000', 'Daily FX rates between two currencies across a date window using European Centra')
+
+## api.myceliasignal.com 30
+   ('https://api.myceliasignal.com/oracle/price/eur/cad', 'eip155:8453', '10000', 'EUR/CAD forex exchange rate — euro to Canadian dollar — Ed25519 signed attestati')
+   ('https://api.myceliasignal.com/oracle/price/gbp/usd', 'eip155:8453', '10000', 'GBP/USD forex exchange rate — British pound to US dollar cable rate — Ed25519 si')
+   ('https://api.myceliasignal.com/oracle/stress/market', 'eip155:8453', '50000', 'MSSI market stress index — composite systemic risk signal across crypto, equity,')
+   ('https://api.myceliasignal.com/oracle/price/usd/chf', 'eip155:8453', '10000', 'USD/CHF forex exchange rate — US dollar to Swiss franc safe-haven rate — Ed25519')
+
+## detect.halowerk.com 28
+   ('https://detect.halowerk.com/v1/F-A-NIGHT-PROTOCOL-RIP/ripv2-route-update-expiry-poison-reverse', 'eip155:8453', '3000', 'An offline distance-vector fixture author needs whether RIP updates refresh, wor')
+   ('https://detect.halowerk.com/v1/F-A-NIGHT-OS-EXCEPTION-SPLIT/python-exception-group-recursive-split', 'eip155:8453', '3000', 'An offline ExceptionGroup fixture author needs the exact stable matching and com')
+   ('https://detect.halowerk.com/u/offline-paired-viewport-native-text-fragment-incidence', 'eip155:8453', '3000', 'A responsive text exporter needs the many-to-many correspondence of native text ')
+   ('https://detect.halowerk.com/u/css-declared-block-inline-anonymous-flow-repair', 'eip155:8453', '3000', 'Before moving a declared inline component into a block-flow container, determine')
+
+## api.chainmarket-api.workers.dev 27
+   ('https://api.chainmarket-api.workers.dev/api/crypto/zerion-dna-feed', 'eip155:8453', '2000', 'On-chain wallet portfolio and performance from Zerion across 40+ EVM chains and ')
+   ('https://api.chainmarket-api.workers.dev/api/crypto/crypto-liquidations-feed', 'eip155:8453', '2000', 'OKX perpetual-swap liquidations for one underlying (e.g. BTC-USD): the most rece')
+   ('https://api.chainmarket-api.workers.dev/api/finance/sec-nport-mutual-fund-holdings', 'eip155:8453', '2000', 'Recent SEC NPORT-P filings (monthly mutual fund and ETF portfolio reports) for o')
+   ('https://api.chainmarket-api.workers.dev/api/crypto/debank-wallet-portfolio', 'eip155:8453', '2000', 'Multi-chain wallet net worth with DeFi positions and debt (40+ EVM chains and So')
+
+## api.marketintelligenceapi.com 26
+   ('https://api.marketintelligenceapi.com/api/v1/markets/funding-rates', 'eip155:8453', '1000', 'Crypto perpetual funding rates and open interest ($0.001): latest annualised fun')
+   ('https://api.marketintelligenceapi.com/api/v1/eu/fx', 'eip155:8453', '1000', 'Euro exchange rates and forex reference rates ($0.001): official ECB euro rates ')
+   ('https://api.marketintelligenceapi.com/mcp', 'eip155:8453', '1000', 'Use when the agent speaks MCP. JSON-RPC endpoint exposing 90 tools (opportunity ')
+   ('https://api.marketintelligenceapi.com/api/v1/sec/insider-trades/:symbol', 'eip155:8453', '10000', 'Insider trades of a US stock from SEC Form 4 ($0.01): insider buying and selling')
+
+## agent.massive.com 23
+   ('https://agent.massive.com/stocks/filings/10-K/vX/sections', 'eip155:8453', '10000', 'SEC document text sections providing raw text content from specific sections of ')
+   ('https://agent.massive.com/v2/snapshot/locale/us/markets/stocks/:direction', 'eip155:8453', '10000', 'The current top 20 gainers or losers of the day, ranked by percentage price chan')
+   ('https://agent.massive.com/stocks/filings/8-K/vX/text', 'eip155:8453', '10000', 'SEC 8-K filings text providing parsed content from current report filings. 8-K f')
+   ('https://agent.massive.com/stocks/filings/vX/13-F', 'eip155:8453', '10000', 'SEC Form 13F filings data showing institutional investment manager holdings. For')
+   ('https://agent.massive.com/v2/snapshot/locale/us/markets/stocks/tickers/:stocksTicker', 'eip155:8453', '10000', 'Get the most up-to-date market data for a single traded stock ticker. Note: Snap')
+   ('https://agent.massive.com/stocks/filings/vX/form-3', 'eip155:8453', '10000', 'SEC Form 3 filings reporting initial statements of beneficial ownership of secur')
+   ('https://agent.massive.com/stocks/filings/vX/form-4', 'eip155:8453', '10000', 'SEC Form 4 filings reporting changes in beneficial ownership of securities. File')
+   ('https://agent.massive.com/v2/snapshot/locale/us/markets/stocks/tickers?', 'eip155:8453', '10000', 'Get the most up-to-date market data for all traded stock symbols. Note: Snapshot')
+   ('https://agent.massive.com/v2/snapshot/locale/us/markets/stocks/tickers', 'eip155:8453', '10000', 'Get the most up-to-date market data for all traded stock symbols. Note: Snapshot')
+   ('https://agent.massive.com/v2/reference/news', 'eip155:8453', '10000', 'Get the most recent news articles relating to a stock ticker symbol, including a')
+   ('https://agent.massive.com/v3/reference/tickers', 'eip155:8453', '10000', 'Query the stock and OTC ticker symbols supported by Massive. Each result carries')
+   ('https://agent.massive.com/v2/aggs/ticker/:stocksTicker/range/:multiplier/:timespan/:from/:to', 'eip155:8453', '10000', 'Get aggregate bars for a stock over a given date range in custom time window siz')
+   ('https://agent.massive.com/stocks/filings/8-K/vX/disclosures', 'eip155:8453', '10000', 'SEC 8-K filing disclosure categorization. A single 8-K filing can produce multip')
+   ('https://agent.massive.com/v2/aggs/grouped/locale/us/market/stocks/:date', 'eip155:8453', '10000', 'Get the daily open, high, low, and close (OHLC) for the entire stocks/equities m')
+   ('https://agent.massive.com/stocks/filings/vX/index', 'eip155:8453', '10000', 'SEC EDGAR master index providing metadata for all SEC filings including form typ')
+   ('https://agent.massive.com/stocks/taxonomies/vX/risk-factors', 'eip155:8453', '10000', 'The complete list of risk factor classifications used in the risk factors endpoi')
+   ('https://agent.massive.com/stocks/taxonomies/vX/disclosures', 'eip155:8453', '10000', 'The complete list of 8-K disclosure classifications used in the 8-K disclosures ')
+   ('https://agent.massive.com/stocks/filings/vX/risk-factors', 'eip155:8453', '10000', "The risk factors identified in companies' 10K filings. Can't find what you're lo")
+   ('https://agent.massive.com/v1/indicators/rsi/:stockTicker', 'eip155:8453', '10000', 'Get the relative strength index (RSI) for a ticker symbol over a given time rang')
+   ('https://agent.massive.com/v1/open-close/:stocksTicker/:date', 'eip155:8453', '10000', 'Get the open, close and afterhours prices of a stock symbol on a certain date. C')
+   ('https://agent.massive.com/v1/indicators/macd/:stockTicker', 'eip155:8453', '10000', 'Get moving average convergence/divergence (MACD) data for a ticker symbol over a')
+   ('https://agent.massive.com/v1/indicators/ema/:stockTicker', 'eip155:8453', '10000', 'Get the exponential moving average (EMA) for a ticker symbol over a given time r')
+   ('https://agent.massive.com/v1/indicators/sma/:stockTicker', 'eip155:8453', '10000', 'Get the simple moving average (SMA) for a ticker symbol over a given time range.')
+
+## api.cryptoetfsentinel.com 22
+   ('https://api.cryptoetfsentinel.com/v1/xbrl/series', 'eip155:8453', '100000', 'Crypto ETF Sentinel — Historical quarterly time series for one XBRL concept (AUM')
+   ('https://api.cryptoetfsentinel.com/v1/xbrl/leaderboard', 'eip155:8453', '100000', 'Crypto ETF Sentinel — Crypto ETF AUM leaderboard: top-N US spot crypto ETF issue')
+   ('https://api.cryptoetfsentinel.com/v1/xbrl/issuer', 'eip155:8453', '50000', 'Crypto ETF Sentinel — Single-issuer XBRL snapshot for one US spot crypto ETF: la')
+   ('https://api.cryptoetfsentinel.com/v1/xbrl/fee-war/history', 'eip155:8453', '100000', 'Crypto ETF Sentinel — Quarterly fee-war progression: average and median expense ')
+
+## api.shopsocial-api.workers.dev 22
+   ('https://api.shopsocial-api.workers.dev/api/ecommerce/backmarket', 'eip155:8453', '20000', 'Back Market refurbished-product search on a country site (en-us, en-gb, fr-fr, d')
+   ('https://api.shopsocial-api.workers.dev/api/ecommerce/openbeautyfacts-products', 'eip155:8453', '2000', 'Beauty and personal-care products by brand from Open Beauty Facts (community ope')
+   ('https://api.shopsocial-api.workers.dev/api/ecommerce/ace-hardware', 'eip155:8453', '20000', 'Ace Hardware (US) product search: total hits and up to 30 products per page with')
+   ('https://api.shopsocial-api.workers.dev/api/ecommerce/faire', 'eip155:8453', '20000', 'Faire wholesale marketplace category listing (logged-out view): product token, n')
+
+## coil.trade 20
+   ('https://coil.trade/api/board/checktrade', 'eip155:8453', '10000', "Before the order: your own trade against the desk's discipline. GET /api/board/c")
+   ('https://coil.trade/api/crypto/gate', 'eip155:8453', '1000', 'START HERE — the cheapest answer we sell ($0.001) and the first call most agents')
+   ('https://coil.trade/api/board/sectors', 'eip155:8453', '10000', 'Sector rotation scores — which sectors are strong right now? One read returns ev')
+   ('https://coil.trade/api/tradfi-risk', 'eip155:8453', '3000', 'TradFi risk-on/risk-off in one $0.003 call for crypto agents. Returns the S&P 50')
+
+## api.stocktrends.com 19
+   ('https://api.stocktrends.com/v1/selections/latest', 'eip155:8453', '50000', 'Latest base ST-IM selection universe ranked by prob13wk descending, without the ')
+   ('https://api.stocktrends.com/v1/prices/latest', 'eip155:8453', '2500', 'Latest weekly price row for a Stock Trends symbol, including adjusted close, wee')
+   ('https://api.stocktrends.com/v1/prices/history', 'eip155:8453', '7500', 'Historical weekly price series for a Stock Trends symbol.')
+   ('https://api.stocktrends.com/v1/stim/latest', 'eip155:8453', '2500', 'Latest Stock Trends Inference Model (ST-IM) outputs for a symbol: forward return')
+
+## agent-data-tools.revmesh2074.workers.dev 19
+   ('https://agent-data-tools.revmesh2074.workers.dev/ai/translate', 'eip155:8453', '10000', 'Translate text, translation API. Translate text into another language with OpenA')
+   ('https://agent-data-tools.revmesh2074.workers.dev/hyperliquid/candles', 'eip155:8453', '2000', 'Crypto candles, OHLCV. Historical price candles (OHLCV) of a Hyperliquid perpetu')
+   ('https://agent-data-tools.revmesh2074.workers.dev/random/teams', 'eip155:8453', '10000', 'Split people into teams. Split a list of names into a given number of random, ev')
+   ('https://agent-data-tools.revmesh2074.workers.dev/calc/tip', 'eip155:8453', '10000', 'Tip calculator. Tip and total for a bill at a tip percentage, split between any ')
+
+## marketdata.use.x402atlas.com 17
+   ('https://marketdata.use.x402atlas.com/short-volume', 'eip155:8453', '15000', 'FINRA daily short-sale volume for a US stock — short volume, total volume and sh')
+   ('https://marketdata.use.x402atlas.com/ticker', 'eip155:8453', '15000', 'Reference overview for a ticker — name, exchange, market cap, shares outstanding')
+   ('https://marketdata.use.x402atlas.com/prev-close', 'eip155:8453', '15000', "Previous trading day OHLC bar for stocks, crypto, forex and options — yesterday'")
+   ('https://marketdata.use.x402atlas.com/inflation-expectations', 'eip155:8453', '15000', 'US inflation expectations — market breakevens and Cleveland Fed model estimates ')
+
+## bess-x402.onrender.com 17
+   ('https://bess-x402.onrender.com/v1/web/links', 'eip155:8453', '3000', 'Every link on a web page with its anchor text, split into internal and external,')
+   ('https://bess-x402.onrender.com/v1/util/holidays', 'eip155:8453', '3000', 'Public holidays of 150+ countries and their states/regions, or stock-market holi')
+   ('https://bess-x402.onrender.com/v1/us-stocks/search', 'eip155:8453', '3000', "Find US-listed companies by name or ticker (e.g. 'nvidia', 'bank of america', 'T")
+   ('https://bess-x402.onrender.com/v1/crypto/candles', 'eip155:8453', '3000', 'OHLCV candles for a crypto pair from Coinbase Exchange at 1m, 5m, 15m, 1h, 6h or')
+
+## x402.ottoai.services 17
+   ('https://x402.ottoai.services/tradfi-data', 'eip155:8453', '3000', 'TradFi macro intelligence: indices, VIX, DXY, treasury yields, commodities, and ')
+   ('https://x402.ottoai.services/fx-rates', 'eip155:8453', '1000', 'Live + reference foreign-exchange (forex) rates, base USD. LIVE near-real-time m')
+   ('https://x402.ottoai.services/stock-movers-report', 'eip155:8453', '10000', "Today's hottest tokenized stock movers in one report: the top 20 US stocks and E")
+   ('https://x402.ottoai.services/stock-token-quote', 'eip155:8453', '3000', 'Indicative quotes for a Robinhood Chain stock token (e.g. TSLA, NVDA): buy and s')
+
+## scraplingdata.xyz 16
+   ('https://scraplingdata.xyz/v1/lookup/yields', 'eip155:8453', '2000', 'Best USDC (or any token) yield on Base or any chain: top 10 pools ranked by risk')
+   ('https://scraplingdata.xyz/v1/pass/day', 'eip155:8453', '2000000', '24-hour catalog pass: one x402 payment of $2 returns a bearer token (send as X-P')
+   ('https://scraplingdata.xyz/v1/lookup/tokenized-stocks', 'eip155:8453', '5000', 'Tokenized stock tracker: every live Ondo Global Markets stock/ETF token (Ethereu')
+   ('https://scraplingdata.xyz/v1/meme/trending', 'eip155:8453', '5000', 'Trending meme coins on Base, BNB Chain (bsc) or Solana (pump.fun): tokens ranked')
+
+## 1gateway.dev 14
+   ('https://1gateway.dev/v1/kr/company/report', 'eip155:8453', '500000', 'Use when an agent needs an English due-diligence brief on a South Korean company')
+   ('https://1gateway.dev/v1/macro/us', 'eip155:8453', '2000', "Use when you need a US macro time series (pairs with Korea's Bank of Korea serie")
+   ('https://1gateway.dev/v1/crypto/hyperliquid/markets', 'eip155:8453', '2000', 'Use when an agent discovers what trades on Hyperliquid, including HIP-3 builder-')
+   ('https://1gateway.dev/v1/crypto/etf', 'eip155:8453', '4500', 'Use when an agent needs US spot bitcoin or ether ETF holdings from official fili')
+
+## api.tickersfeed.net 14
+   ('https://api.tickersfeed.net/stock/:symbol/news', 'eip155:8453', '5000', 'Latest financial news headlines for a US stock from the past 7 days — up to 10 a')
+   ('https://api.tickersfeed.net/analyze/market', 'eip155:8453', '50000', 'AI daily market briefing — one structured JSON summary of stocks, crypto, DeFi, ')
+   ('https://api.tickersfeed.net/fx/:base/:quote', 'eip155:8453', '1000', 'Foreign exchange rate between two fiat currencies from official ECB reference da')
+   ('https://api.tickersfeed.net/sec/:symbol/financials', 'eip155:8453', '8000', 'Company financial statements parsed from SEC XBRL data — revenue, net income, EP')
+
+## api.vextorium.com 14
+   ('https://api.vextorium.com/v1/sec-fails-to-deliver', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '4000', 'SEC fails-to-deliver data, latest half-month file: shares that failed to deliver')
+   ('https://api.vextorium.com/v1/eu-consumer-confidence', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '3000', 'Consumer confidence indicator (balance, seasonally adjusted) for any European co')
+   ('https://api.vextorium.com/v1/eu-gdp', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '4000', 'Real quarterly GDP growth (seasonally adjusted) of any European country, the EU ')
+   ('https://api.vextorium.com/v1/real-interest-rates', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '4000', 'Real interest rate of about 150 economies from the World Bank (bank lending rate')
+
+## x402.ochinimus.app 13
+   ('https://x402.ochinimus.app/api/venue-liq-share', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '20000', 'Liquidations by exchange: per-venue liquidation share across Bybit, OKX and Bina')
+   ('https://x402.ochinimus.app/api/morning-brief', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '30000', 'Morning brief: the items ranked by how abnormal each is: price move against the ')
+   ('https://x402.ochinimus.app/api/peg-deviation', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '20000', 'Tokenized stock peg deviation on Solana: the on-chain DEX price of a tokenized U')
+   ('https://x402.ochinimus.app/api/funding-radar', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '20000', 'Funding radar over every Hyperliquid perp: 337 on 13 Oct 2026, 178 on the main d')
+
+## 2s.io 13
+   ('https://2s.io/api/finance/sec-filings', 'eip155:8453', '9000', 'Recent SEC EDGAR filings for a US publicly-traded company by stock ticker. Resol')
+   ('https://2s.io/api/stocks/quote', 'eip155:8453', '4500', 'Latest daily stock quote for a US-listed ticker. Returns the most recent complet')
+   ('https://2s.io/api/email/validate', 'eip155:8453', '2500', 'Validate an email address and return structured signals: RFC syntax validity (is')
+   ('https://2s.io/api/stocks/financials-reported', 'eip155:8453', '2500', 'As-reported financial statements for a US-listed company, exactly as filed with ')
+
+## api.newsgurus.ai 12
+   ('https://api.newsgurus.ai/x402/launch-ta/:solana_address', 'eip155:8453', '50000', 'News Gurus Intel API — VWAP/Bollinger/RSI/MACD confluence read on a fresh memeco')
+   ('https://api.newsgurus.ai/x402/apex/signals', 'eip155:8453', '50000', 'News Gurus Intel API — APEX v10.2 confluence signals: symbol, long/short, score ')
+   ('https://api.newsgurus.ai/x402/institutions/NVDA', 'eip155:8453', '100000', "News Gurus Intel API — one ticker's institutional picture: congressional trades ")
+   ('https://api.newsgurus.ai/x402/prediction/market-stats/:hash', 'eip155:8453', '50000', 'News Gurus Intel API — aggregate wallet intelligence for one Polymarket market (')
+
+## perp-gap-api.perpgap.workers.dev 12
+   ('https://perp-gap-api.perpgap.workers.dev/history', 'eip155:8453', '20000', "Use when an agent needs to backtest or chart how a stock perp's premium/discount")
+   ('https://perp-gap-api.perpgap.workers.dev/research', 'eip155:8453', '30000', 'Use when an agent needs everything about one US stock in one call before trading')
+   ('https://perp-gap-api.perpgap.workers.dev/verdict', 'eip155:8453', '30000', 'Use when an agent needs a quick directional sanity check on one stock perp befor')
+   ('https://perp-gap-api.perpgap.workers.dev/gaps', 'eip155:8453', '10000', 'Use when an agent needs current premium/discount or funding signals across many ')
+
+## api.sitecheck-api.workers.dev 12
+   ('https://api.sitecheck-api.workers.dev/api/sec/financials', 'eip155:8453', '3000', "Key figures per fiscal year or quarter from a company's SEC XBRL filings, the nu")
+   ('https://api.sitecheck-api.workers.dev/api/pm/history', 'eip155:8453', '3000', 'Fetches historical price points for a Polymarket outcome token across standard i')
+   ('https://api.sitecheck-api.workers.dev/api/pm/activity', 'eip155:8453', '3000', 'Fetches recent trading and on-chain lifecycle activity (trades, splits, merges, ')
+   ('https://api.sitecheck-api.workers.dev/api/sec/insiders', 'eip155:8453', '3000', 'The latest Form 4 insider transactions of a US company (ticker, CIK or name): in')
+
+## signalpulse.theaslangroupllc.com 12
+   ('https://signalpulse.theaslangroupllc.com/api/signal/tokenized-eligibility', 'eip155:8453', '500000', 'Tokenized-stock / pre-IPO-perp jurisdiction-eligibility check for AI financial &')
+   ('https://signalpulse.theaslangroupllc.com/api/scan/futures', 'eip155:8453', '500000', 'SignalPulse futures market scan (analysis tier) — institutional multi-layer read')
+   ('https://signalpulse.theaslangroupllc.com/api/signal/tokenized', 'eip155:8453', '500000', 'Multi-platform tokenized-equity premium/discount intelligence for AI trading age')
+   ('https://signalpulse.theaslangroupllc.com/api/signal/tokenization-radar', 'eip155:8453', '250000', 'Equity tokenization radar for AI financial & advisor agents — what is going on-c')
+
+## blockrun.ai 10
+   ('https://blockrun.ai/api/v1/pm/binance/candles/BTCUSDT', 'eip155:8453', '8500', 'Get OHLCV candlestick data for a Binance trading pair')
+   ('https://blockrun.ai/api/v1/pm/polymarket/market-price/217426331434639062905690501558262415330672727368976149504881568479', 'eip155:8453', '8500', 'Get current or historical price for a specific token')
+   ('https://blockrun.ai/api/v1/pm/polymarket/market-price/214340185838589489419039917275485906376019210754240553456720695478', 'eip155:8453', '8500', 'Get current or historical price for a specific token')
+   ('https://blockrun.ai/api/v1/pm/polymarket/activity', 'eip155:8453', '8500', 'Fetch trading activity (merges, splits, redeems) for a user')
+
+## www.x402pulse.dev 10
+   ('https://www.x402pulse.dev/v1/politics/trump-trades', 'eip155:8453', '1000000', "Every stock trade reported in President Trump's public financial disclosures for")
+   ('https://www.x402pulse.dev/v1/politics/legislation', 'eip155:8453', '8400', 'Bills in Congress linked to money: the companies that lobbied on each bill (with')
+   ('https://www.x402pulse.dev/v1/politics/congress-holdings', 'eip155:8453', '5600', 'Stocks members of Congress report owning in their annual financial disclosures: ')
+   ('https://www.x402pulse.dev/v1/wallstreet/fund-moves', 'eip155:8453', '8400', 'What hedge funds and other institutions did in the latest quarter, from 13F fili')
+
+## api.sirenic.eu 10
+   ('https://api.sirenic.eu/v1/eu/entreprise/GB/:company_number/annonces', 'eip155:8453', '20000', 'UK company insolvency notices from The Gazette, the official journal (London, Ed')
+   ('https://api.sirenic.eu/v1/eu/entreprise/RO/:cui/comptes', 'eip155:8453', '20000', 'Romanian company annual accounts from the Ministry of Finance open data (data.go')
+   ('https://api.sirenic.eu/v1/entreprise/:siren/changements', 'eip155:8453', '10000', 'Company changes monitoring for a French company: the new official BODACC gazette')
+   ('https://api.sirenic.eu/v1/eu/entreprise/:pays/:id/comptes/:reference', 'eip155:8453', '150000', "One Finnish fiscal year decoded from the company's PRH XBRL annual-accounts fili")
+
+## api.losbeto.xyz 10
+   ('https://api.losbeto.xyz/forex-rate', 'eip155:8453', '12000', 'Live FX rate for major pairs (?pair=EUR/USD): EUR, GBP, JPY, CHF, AUD, CAD cross')
+   ('https://api.losbeto.xyz/br-equity', 'eip155:8453', '20000', 'B3 equity or Ibovespa quote (?symbol=PETR4|VALE3|ITUB4|IBOV): price in BRL with ')
+   ('https://api.losbeto.xyz/world-quote', 'eip155:8453', '20000', 'Global equity quote across 16 exchanges — NYSE/Nasdaq, B3, Tokyo (JPX), Shanghai')
+   ('https://api.losbeto.xyz/stock-quote', 'eip155:8453', '15000', 'What is AAPL trading at this second? Live quote with daily change and open/high/')
+
+## blueagent.dev 10
+   ('https://blueagent.dev/api/x402/base-stock-liquidity', 'eip155:8453', '20000', 'Where one Coinbase Tokenized Stock on Base 8453 can be traded: its deepest pools')
+   ('https://blueagent.dev/api/x402/base-stock-ohlc', 'eip155:8453', '30000', 'OHLCV candles (15m, 1h, 4h, 1d) for one Coinbase Tokenized Stock on Base 8453 fr')
+   ('https://blueagent.dev/api/x402/base-stock-quote', 'eip155:8453', '20000', 'Live quote for one Coinbase Tokenized Stock on Base 8453: deepest DEX pool price')
+   ('https://blueagent.dev/api/x402/base-stock-search', 'eip155:8453', '10000', 'Find Coinbase Tokenized Stocks on Base 8453 by ticker or company name, from ever')
+
+## medien.halowerk.com 9
+   ('https://medien.halowerk.com/v1/transcript-package', 'eip155:8453', '30000', 'Uses the existing Deepgram and local media pipeline with one diarized transcript')
+   ('https://medien.halowerk.com/v1/chapter-split', 'eip155:8453', '3000', 'Takes an audio or video file of up to 60 minutes and a list of chapters with sta')
+   ('https://medien.halowerk.com/v1/silence-split', 'eip155:8453', '3000', 'Takes an audio or video file of up to 60 minutes, detects silences longer than m')
+   ('https://medien.halowerk.com/v1/subtitles-multi', 'eip155:8453', '44000', 'Takes an audio or video file and up to five target languages and returns subtitl')
+
+## 402.com.tr 9
+   ('https://402.com.tr/api/x402/stock-fair-value', 'eip155:8453', '20000', 'Tokenized stocks trade 24/7 on Base; their reference price (Chainlink, used by A')
+   ('https://402.com.tr/api/x402/stock-collateral-risk', 'eip155:8453', '40000', 'Aave V4 and Morpho on Base lend USDC against tokenized stocks (AAPLc, NVDAc, TSL')
+   ('https://402.com.tr/api/x402/tokenized-stock-price', 'eip155:8453', '30000', 'b20-safety says a tokenized stock is a real issuance; this says what it trades a')
+   ('https://402.com.tr/api/x402/rwa-dividend-feed', 'eip155:8453', '30000', 'Every dividend or split applied to a Coinbase tokenized stock on Base, with mult')
+
+## mcp-x402.onrender.com 9
+   ('https://mcp-x402.onrender.com/gate/squeezeos/api/quick/quote/AAPL', 'eip155:8453', '1000', 'Stock quote API for AI agents — get a live/latest US equity price and volume rea')
+   ('https://mcp-x402.onrender.com/gate/squeezeos/api/quick/headline/AAPL', 'eip155:8453', '1000', 'Stock news headline API. Get the latest available market headline for a ticker s')
+   ('https://mcp-x402.onrender.com/gate/squeezeos/api/quick/search', 'eip155:8453', '1000', 'Stock ticker and company search API. Find US equity symbols by company name or t')
+   ('https://mcp-x402.onrender.com/gate/squeezeos/citegate/robots-policy', 'eip155:8453', '10000', 'CiteGate robots policy — training-vs-answer AI crawler split table for any domai')
+
+## stationfx.com 8
+   ('https://stationfx.com/economic-data/cross-signal/real-10-year-treasury-yield', 'eip155:8453', '8000', '10-year Treasury yield minus 10-year breakeven inflation rate. Represents the re')
+   ('https://stationfx.com/economic-data/credit-spreads/ice-bofa-us-high-yield-index-option-adjusted-spread', 'eip155:8453', '5000', 'Yield spread between high-yield (junk) bonds and equivalent Treasuries. The prem')
+   ('https://stationfx.com/economic-data/interest-rates/market-yield-on-u-s-treasury-securities-at-10-year-constant-maturity-', 'eip155:8453', '5000', 'Benchmark long-term U.S. government borrowing rate. Anchors mortgage rates, corp')
+   ('https://stationfx.com/economic-data/credit-spreads/ice-bofa-us-corporate-index-option-adjusted-spread', 'eip155:8453', '5000', 'Yield spread between investment-grade corporate bonds and equivalent Treasuries.')
+
+## mintintel.35-171-220-195.sslip.io 8
+   ('https://mintintel.35-171-220-195.sslip.io/v1/eth/erc20-transfers/:token', 'eip155:8453', '2000', 'ERC-20 Transfer events on Ethereum via eth_getLogs - the newest transfers of a t')
+   ('https://mintintel.35-171-220-195.sslip.io/v1/eth/allowance/:token/:owner/:spender', 'eip155:8453', '1000', 'ERC-20 allowance on Ethereum via allowance(owner, spender) (eth_call) - how much')
+   ('https://mintintel.35-171-220-195.sslip.io/v1/eth/token/:token', 'eip155:8453', '1000', 'ERC-20 token metadata and total supply on Ethereum via eth_call: name, symbol, d')
+   ('https://mintintel.35-171-220-195.sslip.io/v1/eth/erc20-balance/:address/:token', 'eip155:8453', '1000', 'ERC-20 token balance for any Ethereum wallet - USDC, WETH, USDT or any token - v')
+
+## markt.halowerk.com 8
+   ('https://markt.halowerk.com/liquidations', 'eip155:8453', '4000', 'Reads the liquidation orders OKX publishes for its perpetual swaps, converts eve')
+   ('https://markt.halowerk.com/signals/setups', 'eip155:8453', '5000', 'Calculates rank hypothetical setups by indicator agreement from public exchange ')
+   ('https://markt.halowerk.com/signals/scan', 'eip155:8453', '5000', 'Calculates explicit-universe crypto market screen from public exchange candles. ')
+   ('https://markt.halowerk.com/signals/pair-setup', 'eip155:8453', '5000', 'Calculates three-horizon hypothetical crypto setups from public exchange candles')
+
+## squeezeos-api.onrender.com 7
+   ('https://squeezeos-api.onrender.com/api/market/snapshot', 'eip155:8453', '3000', 'Stock market snapshot API. Get a live/latest US equity quote plus recent daily O')
+   ('https://squeezeos-api.onrender.com/citegate/robots-policy', 'eip155:8453', '10000', 'CiteGate robots policy API — report the training-vs-answer AI crawler split for ')
+   ('https://squeezeos-api.onrender.com/api/alpha-sentinel/deep-analysis', 'eip155:8453', '10000', 'Find and explain a stock that is primed for a breakout using observed tape, volu')
+   ('https://squeezeos-api.onrender.com/api/dossier/AAPL', 'eip155:8453', '50000', 'SML Ticker Dossier — one-call equity intelligence profile: live quote, dealer ga')
+
+## api.healthtravel-api.workers.dev 7
+   ('https://api.healthtravel-api.workers.dev/api/travel/greatschools', 'eip155:8453', '2000', 'US schools in a city from GreatSchools: name, GreatSchools rating (1-10) and lab')
+   ('https://api.healthtravel-api.workers.dev/api/health/usp-monographs-standards', 'eip155:8453', '2000', 'USP Reference Standards catalog search (official USP Store): total matches and p')
+   ('https://api.healthtravel-api.workers.dev/api/travel/carvana', 'eip155:8453', '2000', 'Carvana used cars for a make (and optional model): year, make, model, trim (from')
+   ('https://api.healthtravel-api.workers.dev/api/travel/carmax', 'eip155:8453', '2000', 'CarMax used cars for a make (and optional model): stock number, VIN, year, make,')
+
+## api.xynaptic.io 7
+   ('https://api.xynaptic.io/v1/security-price', 'eip155:8453', '10000', 'Xynaptic Security Price — spot market data for US stocks: price, previous close,')
+   ('https://api.xynaptic.io/v1/security-dividends', 'eip155:8453', '20000', 'Xynaptic Security Dividends — dividend history from SEC XBRL filings (official D')
+   ('https://api.xynaptic.io/v1/crypto-historical', 'eip155:8453', '20000', 'Xynaptic Crypto Historical — OHLCV history for backtests: 30, 90 or 365 days, da')
+   ('https://api.xynaptic.io/v1/security-fundamentals', 'eip155:8453', '30000', 'Xynaptic Security Fundamentals — multi-year financial statements from SEC EDGAR ')
+
+## api.ysaere.com 7
+   ('https://api.ysaere.com/v1/intel/congress-latest', 'eip155:8453', '20000', 'Ysaere Agent Latest Congress Trades — $0.02 USDC, no account needed. Input: {"ti')
+   ('https://api.ysaere.com/v1/intel/sec-stock-repurchases', 'eip155:8453', '20000', 'Ysaere Agent Stock Repurchases — $0.02 USDC, no account needed. Input: {"target"')
+   ('https://api.ysaere.com/v1/intel/sec-preferred-stock', 'eip155:8453', '20000', 'Ysaere Agent Preferred Stock — $0.02 USDC, no account needed. Input: {"target":"')
+   ('https://api.ysaere.com/v1/intel/sec-treasury-stock', 'eip155:8453', '20000', 'Ysaere Agent Treasury Stock — $0.02 USDC, no account needed. Input: {"target":"K')
+
+## x402-stock-indicators.vercel.app 7
+   ('https://x402-stock-indicators.vercel.app/eth-price', 'eip155:8453', '5000', "Current ETH price in USD and BTC, from Etherscan's V2 API. A quick single-value ")
+   ('https://x402-stock-indicators.vercel.app/defi-yields', 'eip155:8453', '10000', 'Top DeFi yield-farming pools by APY across ~15,800 tracked pools, live from DeFi')
+   ('https://x402-stock-indicators.vercel.app/movers', 'eip155:8453', '10000', "Day's biggest gainers and losers screened from the entire market, live from Yaho")
+   ('https://x402-stock-indicators.vercel.app/market-risk-sentiment', 'eip155:8453', '10000', 'Market risk sentiment in one call, live from FRED: volatility index (VIX), high-')
+
+## quantx402.app 7
+   ('https://quantx402.app/api/v1/forecast/4h', 'eip155:8453', '20000', 'Kronos Forecast: the Kronos candlestick model signal for one symbol and interval')
+   ('https://quantx402.app/api/v1/forecast/on-demand', 'eip155:8453', '50000', 'On-demand Kronos Forecast: any crypto pair (e.g. PEPE-USD) or US stock ticker ou')
+   ('https://quantx402.app/api/v1/forecast/1d', 'eip155:8453', '20000', 'Kronos Forecast: the Kronos candlestick model signal for one symbol and interval')
+   ('https://quantx402.app/api/v1/forecast/15m', 'eip155:8453', '20000', 'Kronos Forecast: the Kronos candlestick model signal for one symbol and interval')
+
+## api.boscolabs.dev 7
+   ('https://api.boscolabs.dev/v1/us-house-trades', 'eip155:8453', '18000', "Congress stock trades: US House members' STOCK Act transaction reports from the ")
+   ('https://api.boscolabs.dev/v1/us-federal-awards', 'eip155:8453', '40000', 'US federal contracts, grants and loans from USAspending.gov, every agency: winne')
+   ('https://api.boscolabs.dev/v1/sec-ownership', 'eip155:8453', '18000', "13F holdings and fund holdings from SEC EDGAR: a manager's 13F portfolio with qu")
+   ('https://api.boscolabs.dev/v1/sec-company-screen', 'eip155:8453', '20000', 'Stock screener on SEC fundamentals: filter all US filers by revenue, net income,')
+
+## filingspulse.theaslangroupllc.com 7
+   ('https://filingspulse.theaslangroupllc.com/api/filings/earnings', 'eip155:8453', '250000', 'Earnings brief for any US-listed company: the last 8 quarters of revenue, net in')
+   ('https://filingspulse.theaslangroupllc.com/api/filings/fund-holdings', 'eip155:8453', '250000', 'Fund holdings intelligence for any US mutual fund or ETF — top positions, positi')
+   ('https://filingspulse.theaslangroupllc.com/api/filings/compare', 'eip155:8453', '150000', 'SEC filing comparison — side-by-side of two companies, contrasting financials (E')
+   ('https://filingspulse.theaslangroupllc.com/api/filings/ownership', 'eip155:8453', '100000', 'Institutional holdings / 13F ownership analysis for any US-listed company — fund')
+
+## api.interzoid.com 6
+   ('https://api.interzoid.com/addressparse', 'eip155:8453', '10000', 'Address parsing: splits a full address string into its components: street number')
+   ('https://api.interzoid.com/getfullnamematch', 'eip155:8453', '10000', 'Person name matching and deduplication: generates an AI-powered similarity key f')
+   ('https://api.interzoid.com/getstockinfo', 'eip155:8453', '250000', 'Stock analysis by ticker symbol: returns the exchange, company name, website, an')
+   ('https://api.interzoid.com/getfullnamematchscore', 'eip155:8453', '10000', 'Person name match score: compares two individual names and returns a 0-100 simil')
+
+## api.prereason.com 6
+   ('https://api.prereason.com/api/commodities/energy-basket', 'eip155:8453', '50000', 'US oil and gas stocks. EIA weekly commercial crude stocks and Lower 48 gas stora')
+   ('https://api.prereason.com/api/btc/etf', 'eip155:8453', '30000', 'Spot Bitcoin ETF flows. Daily net flows, cumulative flow, AUM with per-fund brea')
+   ('https://api.prereason.com/api/companies/:company', 'eip155:8453', '350000', "Stocks: one listed company's financial statements and fundamentals in one call, ")
+   ('https://api.prereason.com/api/commodities/oil-producers', 'eip155:8453', '50000', 'Crude oil and its producers filing with the SEC, side by side. US oil and gas st')
+
+## api.crawlwitness.com 6
+   ('https://api.crawlwitness.com/mcp#check_ai_consent', 'eip155:8453', '5000', 'Use when an agent is about to crawl, train on or ingest a website into RAG: chec')
+   ('https://api.crawlwitness.com/mcp#consultar_senales', 'eip155:8453', '5000', 'AI consent and licensing check for a web domain before crawling, training or RAG')
+   ('https://api.crawlwitness.com/mcp#can_ai_use', 'eip155:8453', '1000', 'Use when an agent is about to crawl, train on or ingest a website into RAG: chec')
+   ('https://api.crawlwitness.com/v1/can-use', 'eip155:8453', '1000', 'Use when a crawler, scraper or RAG pipeline must decide whether it may use a web')
+
+## api.financialdatasets.ai 6
+   ('https://api.financialdatasets.ai/kpi/non-gaap', 'eip155:8453', '160000', "Non-GAAP metrics from a US-listed company's earnings releases: adjusted revenue,")
+   ('https://api.financialdatasets.ai/macro/inflation', 'eip155:8453', '20000', 'Monthly US inflation history for one series by id (CPI all items, core, food, en')
+   ('https://api.financialdatasets.ai/index-funds', 'eip155:8453', '20000', 'ETF and index fund holdings in two directions: the constituents and weights of o')
+   ('https://api.financialdatasets.ai/institutional-holdings', 'eip155:8453', '20000', "13F institutional holdings by filer CIK or by held ticker: each position's share")
+   ('https://api.financialdatasets.ai/prices', 'eip155:8453', '20000', 'Historical end-of-day stock prices for a US-listed ticker: open, high, low, clos')
+   ('https://api.financialdatasets.ai/financials/balance-sheets', 'eip155:8453', '20000', 'Balance sheets for a company by ticker or CIK, standardized from SEC filings: as')
+
+## x402-markettwits-news.onrender.com 6
+   ('https://x402-markettwits-news.onrender.com/alerts/price', 'eip155:8453', '2500', 'Live price of one product (same chain as /product/monitor) vs target_price in RU')
+   ('https://x402-markettwits-news.onrender.com/product/monitor', 'eip155:8453', '5000', 'Fetches one Wildberries/Ozon product (live, as /product/info) and checks it agai')
+   ('https://x402-markettwits-news.onrender.com/product/compare', 'eip155:8453', '6000', 'Fetches 2-5 product URLs (urls=comma-separated, or repeated url=) with the same ')
+   ('https://x402-markettwits-news.onrender.com/moex/index', 'eip155:8453', '3000', 'Index level, change/change_pct vs previous close, open/high/low, month/year chan')
+
+## solana-wallet-intel-phi.vercel.app 6
+   ('https://solana-wallet-intel-phi.vercel.app/xstock/sessions', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '9000', 'Use this when your agent needs the overnight (close to next open) versus regular')
+   ('https://solana-wallet-intel-phi.vercel.app/xstock/feed', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '8000', 'Use this to poll for changes in which issuers object to third-party tokenized tr')
+   ('https://solana-wallet-intel-phi.vercel.app/xstock/status', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '4500', 'Call this before your agent trades or prices a Solana tokenized stock (xStocks, ')
+   ('https://solana-wallet-intel-phi.vercel.app/xstock/full', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '8000', 'Everything in xstock_status plus every listed issuer mint for the same underlyin')
+
+## api.agentstools.dev 6
+   ('https://api.agentstools.dev/etf/flows', 'eip155:8453', '10000', 'Daily net creation/redemption flow for spot Bitcoin or Ethereum ETFs, computed f')
+   ('https://api.agentstools.dev/treasury/debt', 'eip155:8453', '10000', 'US federal debt from the Treasury Debt to the Penny series, split into debt held')
+   ('https://api.agentstools.dev/etf/brief', 'eip155:8453', '20000', 'Fusion flow brief for spot Bitcoin or Ethereum ETFs in ONE call: latest total ne')
+   ('https://api.agentstools.dev/market/report', 'eip155:8453', '50000', 'Rich cross-source market report for 50+ assets (crypto, stablecoins, forex, meta')
+
+## www.x402financialdata.com 5
+   ('https://www.x402financialdata.com/history/:ticker', 'eip155:8453', '10000', 'Historical OHLCV/candlestick bars for any US stock ticker over any date range — ')
+   ('https://www.x402financialdata.com/company-profile/:ticker', 'eip155:8453', '5000', 'Basic company/fund profile for a US ticker: name, sector/industry (or fund categ')
+   ('https://www.x402financialdata.com/crypto-prices', 'eip155:8453', '5000', 'Real crypto market data in one batched call: price, market cap, market-cap rank,')
+   ('https://www.x402financialdata.com/quote/:ticker', 'eip155:8453', '5000', 'Real-time quote in one call: current price, intraday open/high/low, previous clo')
+   ('https://www.x402financialdata.com/news/:ticker', 'eip155:8453', '5000', 'Latest news headlines and summaries for a stock ticker from real Yahoo Finance d')
+
+## defillama.use.x402atlas.com 5
+   ('https://defillama.use.x402atlas.com/prices-chart', 'eip155:8453', '5000', 'Token price chart by DefiLlama — an evenly-spaced historical price series for on')
+   ('https://defillama.use.x402atlas.com/stablecoin-charts-all', 'eip155:8453', '5000', 'Historical stablecoin market cap from DefiLlama — aggregate circulating-supply t')
+   ('https://defillama.use.x402atlas.com/chain-tvl', 'eip155:8453', '5000', 'Historical DeFi TVL for one chain from DefiLlama — total-value-locked time serie')
+   ('https://defillama.use.x402atlas.com/stablecoin-charts-chain', 'eip155:8453', '5000', 'Historical stablecoin market cap on one chain from DefiLlama — circulating-suppl')
+
+## api.kakerapetit.dev 5
+   ('https://api.kakerapetit.dev/v1/jp-company/governance', 'eip155:8453', '10000', 'Corporate governance data for a Japanese listed company from its latest annual s')
+   ('https://api.kakerapetit.dev/v1/jp-company/snapshot', 'eip155:8453', '5000', 'Fundamentals of a Japanese listed company from its latest annual securities repo')
+   ('https://api.kakerapetit.dev/v2/screener', 'eip155:8453', '20000', 'Screen Japanese listed companies by fundamentals from EDINET annual reports. Fil')
+   ('https://api.kakerapetit.dev/v2/calendar', 'eip155:8453', '2000', 'EDINET filing calendar: annual securities reports (yukashoken hokokusho) filed b')
+
+## agentsvc.io 5
+   ('https://agentsvc.io/api/v1/proxy/exchange-rates', 'eip155:8453', '4500', 'Currency exchange rates (forex): official ECB reference rates for about 30 curre')
+   ('https://agentsvc.io/api/v1/proxy/page-extract', 'eip155:8453', '7000', 'Extract structured JSON from a web page or text with fields you define: send url')
+   ('https://agentsvc.io/api/v1/proxy/defi-yields', 'eip155:8453', '5500', 'Find DeFi yield pools across 400+ protocols and 100+ chains (DefiLlama data): AP')
+   ('https://agentsvc.io/api/v1/proxy/sec-filings', 'eip155:8453', '2500', 'US public company data from SEC EDGAR: company profile, recent filings (10-K, 10')
+
+## flat-rate-llm.kikoribera03.workers.dev 5
+   ('https://flat-rate-llm.kikoribera03.workers.dev/v1/random/coinflip', 'eip155:8453', '5000', 'Use when an agent must break a tie or split a test and cannot be seen to have ch')
+   ('https://flat-rate-llm.kikoribera03.workers.dev/v1/util/iban', 'eip155:8453', '5000', 'Use when an agent must decide whether a bank account it was given can be paid be')
+   ('https://flat-rate-llm.kikoribera03.workers.dev/v1/content/horror-story', 'eip155:8453', '5000', 'Use when an agent has to perform something short and timed, not just print text:')
+   ('https://flat-rate-llm.kikoribera03.workers.dev/v1/ai/translate', 'eip155:8453', '5000', 'Translates text between about 100 languages with Meta M2M100 1.2B: pass the text')
+
+## twin.unykorn.org 5
+   ('https://twin.unykorn.org/defi/chain/rootstock', 'eip155:8453', '10000', 'Rootstock DeFi overview: TVL trend, top protocols, stablecoins, DEX volume, fees')
+   ('https://twin.unykorn.org/base58check-verify', 'eip155:8453', '3000', 'Verify a base58check string and split out its version byte — Genesis402 / UnyKor')
+   ('https://twin.unykorn.org/solana-inflation', 'eip155:8453', '3000', 'Current Solana inflation rate split — Genesis402 / UnyKorn Operator Network')
+   ('https://twin.unykorn.org/calldata-split', 'eip155:8453', '3000', 'Split calldata into its selector and 32-byte words — Genesis402 / UnyKorn Operat')
+
+## flows.xrpl-utilities.io 5
+   ('https://flows.xrpl-utilities.io/scan', 'xrpl:0', '0.10', 'XR-Flows per-ETF deep dive')
+   ('https://flows.xrpl-utilities.io/stats/correlation', 'xrpl:0', '0.01', 'XR-Flows rolling correlation of XRP ETF AUM against on-ledger exchange flows')
+   ('https://flows.xrpl-utilities.io/stats/etf-candidates', 'xrpl:0', '0.01', 'XR-Flows XRP fund filings and candidates not yet tracked')
+   ('https://flows.xrpl-utilities.io/stats/launch-impact', 'xrpl:0', '0.01', 'XR-Flows on-ledger whale flow around each XRP ETF launch date')
+
+## api.aiskills402.com 5
+   ('https://api.aiskills402.com/v1/run/jsonl-repair', 'eip155:8453', '3000', 'JSONL Repair API: turns broken JSON Lines (NDJSON) into one valid record per lin')
+   ('https://api.aiskills402.com/v1/skills/ab-test-readout-check/file', 'eip155:8453', '10000', 'A/B Test Readout Check — Checks the written readout of ONE A/B test (a paragraph')
+   ('https://api.aiskills402.com/v1/skills/jsonl-repair/file', 'eip155:8453', '50000', 'JSON Lines Repair: One Record Per Line — Repairs broken JSON Lines (NDJSON) so t')
+   ('https://api.aiskills402.com/v1/skills/log-lines-to-jsonl/file', 'eip155:8453', '10000', 'Log Lines to JSON Lines, Odd Lines Kept Raw — Parses plain-text log lines into J')
+
+## api.youraitools.co 5
+   ('https://api.youraitools.co/fx/v1/history', 'eip155:8453', '2000', 'Historical exchange rate API for AI agents. Daily ECB reference rates for one cu')
+   ('https://api.youraitools.co/fx/v1/convert', 'eip155:8453', '1000', 'Currency converter API for AI agents. Convert an amount from one currency to ano')
+   ('https://api.youraitools.co/tasignal/v1/risk', 'eip155:8453', '20000', 'Crypto risk metrics API (VaR, volatility and position sizing). Risk analytics an')
+   ('https://api.youraitools.co/tasignal/v1/backtest', 'eip155:8453', '50000', 'Crypto strategy backtesting API. Backtest a rule-based strategy (sma_cross, ema_')
+
+## x402.pokt-agent.com 5
+   ('https://x402.pokt-agent.com/kr-adjust/adjust', 'eip155:8453', '10000', 'Apply Korean corporate-action adjustment factors to prices you send: backward (l')
+   ('https://x402.pokt-agent.com/kr-adjust/delisted', 'eip155:8453', '5000', 'Delisted KOSPI and KOSDAQ stocks by delisting or last trading date, for survivor')
+   ('https://x402.pokt-agent.com/kr-adjust/factors', 'eip155:8453', '5000', 'Korean stock corporate-action adjustment factors, survivorship-free (KOSPI and K')
+   ('https://x402.pokt-agent.com/kr-entity/resolve', 'eip155:8453', '10000', 'Korean company ID crosswalk and entity resolution: match up to 100 company names')
+
+## macropulse.theaslangroupllc.com 5
+   ('https://macropulse.theaslangroupllc.com/api/market/is-open', 'eip155:8453', '5000', 'Is the stock market open right now? Deterministic market-status and trading-hour')
+   ('https://macropulse.theaslangroupllc.com/api/cot', 'eip155:8453', '20000', 'CFTC Commitments of Traders positioning, parsed from the official dataset. No LL')
+   ('https://macropulse.theaslangroupllc.com/api/sentiment', 'eip155:8453', '50000', 'Real-time directional sentiment for any forex pair or gold — retail crowd positi')
+   ('https://macropulse.theaslangroupllc.com/api/intermarket', 'eip155:8453', '150000', 'Cross-asset intermarket synthesis for macro agents — bond yields, equities, comm')
+
+## handel.halowerk.com 5
+   ('https://handel.halowerk.com/v1/return-disposition', 'eip155:8453', '4000', 'Takes a list of returns with the figures your own systems already hold and retur')
+   ('https://handel.halowerk.com/v1/rechner/equity-summary', 'eip155:8453', '5000', 'Kapitalkurve und Netto-Kennzahlenblock. Netto-Cash-Ergebnisse; negative Kapitalw')
+   ('https://handel.halowerk.com/v1/price/articles/percentage-drop', 'eip155:8453', '7000', 'Notify when a listed-price reduction reaches a chosen percentage; previous price')
+   ('https://handel.halowerk.com/v1/price/articles/corridor-reentry', 'eip155:8453', '7000', 'Notify when a previously out-of-range price returns inside a defined corridor. U')
+
+## bot-bazaar.fly.dev 5
+   ('https://bot-bazaar.fly.dev/v1/x402/max-drawdown-recovery', 'eip155:8453', '10000', 'Calculate peak-to-trough Maximum Drawdown % and the asymmetric percentage gain r')
+   ('https://bot-bazaar.fly.dev/v1/x402/dupont-roe-decomposition', 'eip155:8453', '10000', 'Decompose Return on Equity into net profit margin, asset turnover, and financial')
+   ('https://bot-bazaar.fly.dev/v1/x402/live/x402-active-buyers-radar', 'eip155:8453', '20000', 'Anonymized x402 ecosystem telemetry feed reporting active buyer archetypes, auto')
+   ('https://bot-bazaar.fly.dev/v1/x402/wacc-cost-of-capital', 'eip155:8453', '10000', 'Calculate corporate WACC % from cost of equity, pre-tax cost of debt, corporate ')
+
+## api.companyrecords-api.workers.dev 5
+   ('https://api.companyrecords-api.workers.dev/api/b2b/similarweb', 'eip155:8453', '50000', 'Similarweb traffic overview for a domain (public page data, last full month): gl')
+   ('https://api.companyrecords-api.workers.dev/api/gov/dupont-registry', 'eip155:8453', '2000', 'Luxury and exotic cars for sale on duPont REGISTRY (US/Canada dealer inventory):')
+   ('https://api.companyrecords-api.workers.dev/api/b2b/payscale-company-benefits', 'eip155:8453', '2000', 'US employer pay and benefits from PayScale: most reported benefits with counts, ')
+   ('https://api.companyrecords-api.workers.dev/api/b2b/nyse-listings-directory', 'eip155:8453', '2000', 'NYSE-listed symbols from the public Nasdaq Trader symbol directory (otherlisted ')
+
+## x402stock.vercel.app 5
+   ('https://x402stock.vercel.app/api/v1/filing-search', 'eip155:8453', '20000', 'Full-text search across every SEC EDGAR filing since 2001. Find filings mentioni')
+   ('https://x402stock.vercel.app/api/v1/treasury-yields', 'eip155:8453', '10000', 'The daily US Treasury par yield curve (Constant Maturity Treasury rates) for eve')
+   ('https://x402stock.vercel.app/api/v1/national-debt', 'eip155:8453', '10000', 'The total US public debt outstanding to the penny — the headline national-debt f')
+   ('https://x402stock.vercel.app/api/v1/conditions', 'eip155:8453', '10000', 'Reference catalog of trade/quote condition codes (the numeric `conditions` seen ')
+
+## www.blockchainiq.co 5
+   ('https://www.blockchainiq.co/api/x402/v1/dashboards/:slug/:panel', 'eip155:8453', '30000', "One chart from a Blockchain IQ crypto analytics dashboard, with the analyst's re")
+   ('https://www.blockchainiq.co/api/x402/v1/dispatch/ondo-blackrock-intelligent-portfolios', 'eip155:8453', '20000', 'Blockchain IQ Dispatch, parameter-free: BlackRock puts three model portfolios on')
+   ('https://www.blockchainiq.co/api/x402/v1/reports/the-ripple-review', 'eip155:8453', '100000', "The Ripple Review, parameter-free: Blockchain IQ's daily XRP and XRP Ledger repo")
+   ('https://www.blockchainiq.co/api/x402/v1/stablecoins', 'eip155:8453', '20000', 'Parameter-free Circle USDC and EURC snapshot on Ethereum, Base and Arbitrum from')
+
+## mcp.xrpl-utilities.io 5
+   ('https://mcp.xrpl-utilities.io/mcp#xrpl_flows_scan', 'eip155:8453', '100000', 'XR-Flows per-ETF deep dive')
+   ('https://mcp.xrpl-utilities.io/mcp#xrpl_flows_etf_candidates', 'eip155:8453', '10000', 'XR-Flows XRP fund filings and candidates not yet tracked')
+   ('https://mcp.xrpl-utilities.io/mcp#xrpl_flows_launch_impact', 'eip155:8453', '10000', 'XR-Flows on-ledger whale flow around each XRP ETF launch date')
+   ('https://mcp.xrpl-utilities.io/mcp#xrpl_flows_etf_flow_summary', 'eip155:8453', '10000', 'XR-Flows daily XRP ETF flow summary: per-fund AUM change, momentum, share of sup')
+
+## www.tereno.xyz 4
+   ('https://www.tereno.xyz/api/v1/capabilities/token.metadata/invoke', 'eip155:8453', '10000', 'Read ERC20 token metadata onchain: name, symbol, decimals and total supply for a')
+   ('https://www.tereno.xyz/api/v1/capabilities/chain.snapshot/invoke', 'eip155:8453', '2000', 'Base chain gas price snapshot: inspect latest block number, timestamp, base fee,')
+   ('https://www.tereno.xyz/api/v1/capabilities/prediction.evidence/invoke', 'eip155:8453', '10000', 'Verify prediction market propositions before trading on Polymarket or Base. Audi')
+   ('https://www.tereno.xyz/api/v1/capabilities/contract.guard/invoke', 'eip155:8453', '20000', 'Check if a contract is safe before interacting or signing a transaction on Base.')
+
+## horizonpulse.dev 4
+   ('https://horizonpulse.dev/api/signals', 'eip155:8453', '5000', 'Crypto market data: precomputed RSI-14, MACD and Bollinger Bands plus latest OKX')
+   ('https://horizonpulse.dev/api/sec/company-facts', 'eip155:8453', '20000', 'Key financial facts for one SEC-reporting company from SEC EDGAR XBRL filings: r')
+   ('https://horizonpulse.dev/api/discourse/split', 'eip155:8453', '30000', 'Hacker News and Bluesky opinion split, NOT a poll: how public posts divide on a ')
+   ('https://horizonpulse.dev/api/tokenized-stock', 'eip155:8453', '2000', 'Tokenized stock status API for Coinbase tokenized stocks on Base (AAPLc, NVDAc, ')
+
+## orchard-data.letom1176.workers.dev 4
+   ('https://orchard-data.letom1176.workers.dev/api/etf-quotes', 'eip155:8453', '10000', 'Live quotes for the four US index ETFs: SPY, QQQ, DIA and IWM, with last price, ')
+   ('https://orchard-data.letom1176.workers.dev/api/stocktwits-trending', 'eip155:8453', '10000', 'StockTwits trending symbols right now, ranked, with watchlist counts. For spotti')
+   ('https://orchard-data.letom1176.workers.dev/api/quote', 'eip155:8453', '10000', 'Live quote for any US stock or ETF: last price, previous close, % change, day hi')
+   ('https://orchard-data.letom1176.workers.dev/api/trending', 'eip155:8453', '10000', 'Trending tickers right now: StockTwits trending symbols + r/wallstreetbets hot p')
+
+## poketpoker.com 4
+   ('https://poketpoker.com/api/advice', 'eip155:8453', '10000', "Whether to open a specific Texas Hold'em starting hand from a named position aga")
+   ('https://poketpoker.com/api/hands/QdQs', 'eip155:8453', '10000', "The full record for one of the 1,326 specific Texas Hold'em starting hands: equi")
+   ('https://poketpoker.com/api/hands/AhKh', 'eip155:8453', '10000', "The full record for one of the 1,326 specific Texas Hold'em starting hands: equi")
+   ('https://poketpoker.com/api/hands/Ac5s', 'eip155:8453', '10000', "The full record for one of the 1,326 specific Texas Hold'em starting hands: equi")
+
+## api.kadec0.xyz 4
+   ('https://api.kadec0.xyz/v1/congress-trades', 'eip155:8453', '50000', 'US congressional stock trades. Stock transactions disclosed by members of the Ho')
+   ('https://api.kadec0.xyz/v1/dns-propagation', 'eip155:8453', '30000', 'DNS propagation checker. Compares a DNS record across public resolvers (Google, ')
+   ('https://api.kadec0.xyz/v1/paper-fulltext', 'eip155:8453', '40000', 'Full text and open-access PDF retrieval for a paper. Given an arXiv id, DOI, Ope')
+   ('https://api.kadec0.xyz/v1/yield-pools', 'eip155:8453', '30000', 'DeFi yield and APY across pools. Returns the top yield-farming pools via DefiLla')
+
+## vedetta.dethboy.com 4
+   ('https://vedetta.dethboy.com/v1/history', 'eip155:8453', '10000', 'Fetch historical sentiment time-series for one asset (?asset=BTC&limit=50): time')
+   ('https://vedetta.dethboy.com/v1/ask', 'eip155:8453', '90000', 'Ask a live crypto, stock, or macro analyst desk any market question — social sen')
+   ('https://vedetta.dethboy.com/v1/equity', 'eip155:8453', '90000', 'Sentiment-vs-price divergence read on a US STOCK or equity ticker (?asset=NVDA, ')
+   ('https://vedetta.dethboy.com/v1/macro', 'eip155:8453', '90000', 'Live analyst read on a MACRO instrument — equity indices, treasury yields, volat')
+
+## netintel.dev 4
+   ('https://netintel.dev/text/chunk', 'eip155:8453', '1000', 'Split text into overlapping chunks for RAG ingestion — by characters or words, w')
+   ('https://netintel.dev/crypto/ohlc', 'eip155:8453', '20000', 'Historical OHLC candles for any major crypto asset — hourly or daily, up to 300 ')
+   ('https://netintel.dev/subnet/calc', 'eip155:8453', '5000', 'Calculates IPv4/IPv6 subnet details from CIDR notation — network/broadcast, netm')
+   ('https://netintel.dev/currency-exchange/convert', 'eip155:8453', '10000', 'Convert any amount between 32 fiat currencies (live European Central Bank rates)')
+
+## finance-api.kdlcfa.workers.dev 4
+   ('https://finance-api.kdlcfa.workers.dev/dividends', 'eip155:8453', '10000', 'Historical declared dividends per share for a US-listed company, extracted from ')
+   ('https://finance-api.kdlcfa.workers.dev/market-movers', 'eip155:8453', '30000', 'Top gaining and losing US stocks among the 10 whitelisted tickers (AAPL, MSFT, G')
+   ('https://finance-api.kdlcfa.workers.dev/forex-snapshot', 'eip155:8453', '50000', 'Multi-pair forex snapshot (EURUSD, GBPUSD, USDJPY, USDCNY, AUDUSD, USDCAD, USDCH')
+   ('https://finance-api.kdlcfa.workers.dev/us-market-news', 'eip155:8453', '30000', 'Latest U.S. stock market top stories via MarketWatch RSS (general market/persona')
+
+## api.mangrovedeveloper.ai 4
+   ('https://api.mangrovedeveloper.ai/mcp/#get_onchain_series', 'eip155:8453', '50000', 'Returns a per-bar on-chain time series for one token, with any combination of Sm')
+   ('https://api.mangrovedeveloper.ai/mcp/#classify_market_segment', 'eip155:8453', '20000', 'Classifies one market window, given as a date range or a stored catalog window. ')
+   ('https://api.mangrovedeveloper.ai/mcp/#get_smart_money_netflows', 'eip155:8453', '20000', 'Returns aggregated smart-money netflows across all tokens: which tokens funds an')
+   ('https://api.mangrovedeveloper.ai/mcp/#get_etf_flows', 'eip155:8453', '10000', 'Returns net inflows and outflows for spot BTC and ETH exchange-traded funds.')
+
+## pegproof.com 4
+   ('https://pegproof.com/api/v1/snapshot/:param', 'eip155:8453', '10000', 'Most recent confirmed balance snapshot at or before a given block, for one Robin')
+   ('https://pegproof.com/api/v1/incidents', 'eip155:8453', '5000', 'Feed of integrity incidents recorded across the tracked Robinhood tokenized-stoc')
+   ('https://pegproof.com/api/v1/token/:param/events', 'eip155:8453', '5000', 'Paginated on-chain event history (mint, issue, burn, redeem, transfer) for one R')
+   ('https://pegproof.com/api/v1/token/:param', 'eip155:8453', '2000', 'Current summary row for one Robinhood tokenized-stock token: total supply, treas')
+
+## time-series-calc.x402tookit.com 4
+   ('https://time-series-calc.x402tookit.com/outliers', 'eip155:8453', '20000', 'Flag outliers in a list of numbers by z-score, Tukey IQR fences and the MAD modi')
+   ('https://time-series-calc.x402tookit.com/moving-average', 'eip155:8453', '20000', 'Simple, exponential or weighted moving average of a list of numbers, trailing or')
+   ('https://time-series-calc.x402tookit.com/growth-rates', 'eip155:8453', '20000', 'Period-over-period percent change, log returns, CAGR and rolling growth for a li')
+   ('https://time-series-calc.x402tookit.com/change-points', 'eip155:8453', '30000', 'Find level shifts in a series with two-sided CUSUM alarms and a mean-shift binar')
+
+## api.jobsproperty-api.workers.dev 4
+   ('https://api.jobsproperty-api.workers.dev/api/realestate/zillow', 'eip155:8453', '2000', "Typical US home value from the Zillow Home Value Index (ZHVI, Zillow Research's ")
+   ('https://api.jobsproperty-api.workers.dev/api/realestate/hemnet', 'eip155:8453', '2000', 'Hemnet (Sweden) homes for sale in an area: address, housing form, asking price a')
+   ('https://api.jobsproperty-api.workers.dev/api/jobs/wellfound-jobs', 'eip155:8453', '2000', 'Startup job listings from Wellfound (formerly AngelList Talent) for a role, eith')
+   ('https://api.jobsproperty-api.workers.dev/api/jobs/levels-fyi', 'eip155:8453', '2000', "Tech compensation for one company and job family from Levels.fyi's public salary")
+
+## fachada.chelsea-hermes.workers.dev 4
+   ('https://fachada.chelsea-hermes.workers.dev/feed/dormidos', 'eip155:8453', '500000', 'Crypto market data API for AI agents: Bitcoin BTC/USD and Ethereum ETH/USD price')
+   ('https://fachada.chelsea-hermes.workers.dev/feed/derivados', 'eip155:8453', '500000', 'Crypto market data API for AI agents: Bitcoin BTC/USD and Ethereum ETH/USD price')
+   ('https://fachada.chelsea-hermes.workers.dev/feed/resumen', 'eip155:8453', '500000', 'Crypto market data API for AI agents: Bitcoin BTC/USD and Ethereum ETH/USD price')
+   ('https://fachada.chelsea-hermes.workers.dev/feed/ohlcv', 'eip155:8453', '500000', 'Crypto market data API for AI agents: Bitcoin BTC/USD and Ethereum ETH/USD price')
+
+## x402.spendthebits.com 4
+   ('https://x402.spendthebits.com/@superappstb/yield-safety/', 'eip155:8453', '5000', '0-100 safety score with components (protocol trust, TVL depth, audits, track rec')
+   ('https://x402.spendthebits.com/@stbclaudeprod/yield-safety/', 'eip155:8453', '5000', '0-100 safety score with components (protocol trust, TVL depth, audits, track rec')
+   ('https://x402.spendthebits.com/@stbclaudeprod/reputation/', 'eip155:8453', '50000', 'Eight lines on one contract before money moves: exit amount, yield split, audit ')
+   ('https://x402.spendthebits.com/@superappstb/reputation/', 'eip155:8453', '50000', 'Eight lines on one contract before money moves: exit amount, yield split, audit ')
+
+## ozmium.org 4
+   ('https://ozmium.org/v1/crowd', 'eip155:8453', '1000', 'Live gTrade crowd positioning — where the money on the venue actually sits, righ')
+   ('https://ozmium.org/v1/risk/pairs', 'eip155:8453', '1000', 'The tradeable Gains Network (gTrade) crypto pair universe on Base: on-chain pair')
+   ('https://ozmium.org/v1/candles', 'eip155:8453', '1000', 'OHLC history with window extremes (highest high / lowest low over the window). C')
+   ('https://ozmium.org/v1/stocks', 'eip155:8453', '1000', "Coinbase's tokenized U.S. stocks on Base (B20): each token's contract, underlyin")
+
+## tanod.dev 4
+   ('https://tanod.dev/mcp#pdf_split#pdf_split', 'eip155:8453', '5000', 'Split a PDF by page ranges or every N pages. Use when a long PDF must be cut int')
+   ('https://tanod.dev/mcp#parse_url#parse_url', 'eip155:8453', '1000', 'Parse URL parts, IDNA forms and public-suffix boundaries using PSL snapshot 2025')
+   ('https://tanod.dev/v1/url', 'eip155:8453', '1000', 'Parse URL parts, IDNA forms and public-suffix boundaries using PSL snapshot 2025')
+   ('https://tanod.dev/v1/chain/candles', 'eip155:8453', '3000', 'Get ETH or BTC OHLCV candles from Base DEX swaps at 5-minute to 1-day intervals.')
+
+## seo.openverbs.com 4
+   ('https://seo.openverbs.com/v1/historical-rank', 'eip155:8453', '180000', "Historical rank overview API - a monthly time series of a domain's Google organi")
+   ('https://seo.openverbs.com/v1/keyword-volume-history', 'eip155:8453', '150000', 'Keyword volume history API: get Google monthly search volume history for a list ')
+   ('https://seo.openverbs.com/v1/backlink-anchors', 'eip155:8453', '50000', 'Backlink anchor text API - list the anchor texts pointing at a domain, each with')
+   ('https://seo.openverbs.com/v1/backlinks-history', 'eip155:8453', '50000', "Get a domain's backlink profile over time: a monthly timeseries of domain rank, ")
+
+## eltociear-tokenguard.hf.space 4
+   ('https://eltociear-tokenguard.hf.space/stocks', 'eip155:8453', '5000', 'How is TradFi trading right now, next to crypto? Any list of US equity symbols p')
+   ('https://eltociear-tokenguard.hf.space/world/indicators', 'eip155:8453', '20000', "What are this country's headline economics? World Bank time series for GDP, GDP ")
+   ('https://eltociear-tokenguard.hf.space/yields', 'eip155:8453', '50000', 'Best DeFi yields (stablecoin/any), filterable by chain/asset/min-TVL. APY, base/')
+   ('https://eltociear-tokenguard.hf.space/safe_yields', 'eip155:8453', '50000', 'Risk-ADJUSTED DeFi yields: pools ranked by yield PER UNIT OF RISK, each top pool')
+
+## onchainpulse.theaslangroupllc.com 4
+   ('https://onchainpulse.theaslangroupllc.com/api/clarity-watch', 'eip155:8453', '100000', 'US crypto market-structure legislation tracker — live CLARITY Act (H.R.3633) sta')
+   ('https://onchainpulse.theaslangroupllc.com/api/asatoken', 'eip155:8453', '15000', 'Rug & token-safety scanner for Algorand ASAs — the first automated pre-trade che')
+   ('https://onchainpulse.theaslangroupllc.com/api/yield-check', 'eip155:8453', '50000', 'Reality check on dividend and reflection token yield claims, deterministic. For ')
+   ('https://onchainpulse.theaslangroupllc.com/api/etf-flows', 'eip155:8453', '150000', 'Crypto ETF flow intelligence — daily/weekly net flows for US spot BTC, ETH, and ')
+
+## x402.glassnode.com 4
+   ('https://x402.glassnode.com/v1/metrics/institutions/us_spot_etf_flows_net', 'eip155:8453', '50000', 'US Spot ETF Net Flows — The total net fund flow of the leading U.S.-listed spot ')
+   ('https://x402.glassnode.com/v1/metrics/institutions/us_spot_etf_balances_all', 'eip155:8453', '50000', 'US Spot ETF Balances — The most recent holdings of the leading U.S.-listed spot ')
+   ('https://x402.glassnode.com/v1/metrics/indicators/utxo_realized_price_distribution_ath', 'eip155:8453', '50000', 'UTXO Realized Price Distribution (URPD): ATH-Partitioned — A histogram of Bitcoi')
+   ('https://x402.glassnode.com/v1/metrics/indicators/sopr_adjusted', 'eip155:8453', '50000', 'Adjusted SOPR (aSOPR) — Adjusted SOPR (aSOPR) is SOPR computed with all outputs ')
+
+## defi.genexxis.com 4
+   ('https://defi.genexxis.com/pool', 'eip155:8453', '5000', 'One DeFi pool by DefiLlama id: current APY split, TVL, risk flags and its daily ')
+   ('https://defi.genexxis.com/defi-tvl', 'eip155:8453', '5000', 'DeFi TVL from DefiLlama: top protocols filtered by category and chain (TVL, 1d/7')
+   ('https://defi.genexxis.com/defi-tvl?', 'eip155:8453', '5000', 'DeFi TVL from DefiLlama: top protocols filtered by category and chain (TVL, 1d/7')
+   ('https://defi.genexxis.com/yields', 'eip155:8453', '3000', 'Best DeFi yields (APY). Ranked DeFi yields filtered by asset, chain, min TVL, st')
+
+## nojunk-stocks.mick8511.workers.dev 4
+   ('https://nojunk-stocks.mick8511.workers.dev/history', 'eip155:8453', '2000', 'Stock Quotes history: One symbol -> OHLCV candles for a range (1d to max) and in')
+   ('https://nojunk-stocks.mick8511.workers.dev/quotes', 'eip155:8453', '3000', 'Stock Quotes quotes: Up to 20 symbols in one call -> the same quote fields per s')
+   ('https://nojunk-stocks.mick8511.workers.dev/stats', 'eip155:8453', '2000', 'Stock Quotes stats: One symbol -> statistics computed from one year of daily bar')
+   ('https://nojunk-stocks.mick8511.workers.dev/quote', 'eip155:8453', '1000', 'Stock Quotes quote: One symbol -> latest price, change, previous close, day high')
+
+## conversion.halowerk.com 4
+   ('https://conversion.halowerk.com/v1/visible-stock-repair', 'eip155:8453', '1000', 'Visible stock state repair plan fetches current public evidence from the supplie')
+   ('https://conversion.halowerk.com/v1/visible-stock-experiment', 'eip155:8453', '1000', 'Visible stock state experiment plan fetches current public evidence from the sup')
+   ('https://conversion.halowerk.com/v1/visible-stock-decision', 'eip155:8453', '1000', 'Visible stock state decision fetches current public evidence from the supplied t')
+   ('https://conversion.halowerk.com/v1/visible-stock-audit', 'eip155:8453', '1000', 'Visible stock state audit fetches current public evidence from the supplied targ')
+
+## api.ironflow.sh 4
+   ('https://api.ironflow.sh/x402/v1/markets/snapshot', 'eip155:8453', '1000', 'Every Hyperliquid market in one call: mark price, 24h change, open interest in b')
+   ('https://api.ironflow.sh/x402/v1/analytics/user-state', 'eip155:8453', '5000', 'Open positions and margin of any Hyperliquid wallet right now: per market size, ')
+   ('https://api.ironflow.sh/x402/v1/candles', 'eip155:8453', '2000', "Hyperliquid OHLCV candles for any market from Ironflow's own nodes: open, high, ")
+   ('https://api.ironflow.sh/x402/v1/liquidations', 'eip155:8453', '5000', "Hyperliquid liquidations, one row per liquidated fill, from Ironflow's own nodes")
+
+## x402-gateway.blackwoodstate8.workers.dev 4
+   ('https://x402-gateway.blackwoodstate8.workers.dev/v1/fx-rates', 'eip155:8453', '5000', 'Use when you need currency exchange rates, fx rates or forex conversion of an am')
+   ('https://x402-gateway.blackwoodstate8.workers.dev/v1/fx-history', 'eip155:8453', '5000', 'Use when you need historical exchange rates, a historical FX rate series, forex ')
+   ('https://x402-gateway.blackwoodstate8.workers.dev/v1/token-price', 'eip155:8453', '2000', 'Use when you need a crypto token price or market data for a Base token, quoted f')
+   ('https://x402-gateway.blackwoodstate8.workers.dev/v1/sec-facts', 'eip155:8453', '20000', 'Use when you need company financials from SEC filings, earnings or fundamentals ')
+
+## ai.tradeos.xyz 4
+   ('https://ai.tradeos.xyz/api/x402/get_market_technical_analysis', 'eip155:8453', '500000', "Generate written technical analysis of an instrument's chart, trend, support, re")
+   ('https://ai.tradeos.xyz/api/x402/get_market_snapshot', 'eip155:8453', '10000', 'Retrieve the latest available market snapshot for one stock, ETF, gold, forex pa')
+   ('https://ai.tradeos.xyz/api/x402/get_market_candles', 'eip155:8453', '20000', 'Retrieve historical OHLCV candles for an instrument or two-ticker spread. Return')
+   ('https://ai.tradeos.xyz/api/x402/search_tickers', 'eip155:8453', '5000', 'Search market instruments by name or ticker. Returns matching tickers, names, ex')
+
+## x402.datakoot.com 4
+   ('https://x402.datakoot.com/api/us_series', 'eip155:8453', '10000', 'Datakoot Economy Intel: Get a key US economic time series. $0.01 USDC per call, ')
+   ('https://x402.datakoot.com/api/fx_timeseries', 'eip155:8453', '10000', 'Datakoot Market Intel: Get a time series of exchange rates for a base currency o')
+   ('https://x402.datakoot.com/api/financials', 'eip155:8453', '10000', 'Datakoot Filings Intel: Get reported financial facts for a company from XBRL dat')
+   ('https://x402.datakoot.com/api/company_lookup', 'eip155:8453', '10000', 'Datakoot Filings Intel: Resolve a stock ticker or company name to its SEC identi')
+
+## api.tradeenergy-api.workers.dev 4
+   ('https://api.tradeenergy-api.workers.dev/api/logistics/demurrage-detention', 'eip155:8453', '2000', 'Container demurrage or detention calculator: from the start date (discharge or g')
+   ('https://api.tradeenergy-api.workers.dev/api/energy/usda-wasde-crop-reports', 'eip155:8453', '2000', 'USDA WASDE (World Agricultural Supply and Demand Estimates) figures for one comm')
+   ('https://api.tradeenergy-api.workers.dev/api/energy/nickel-class1-cash-settle', 'eip155:8453', '2000', 'Monthly nickel reference price in USD per metric ton (World Bank series PNICKUSD')
+   ('https://api.tradeenergy-api.workers.dev/api/energy/eia-weekly-petroleum', 'eip155:8453', '2000', 'US EIA Weekly Petroleum Status Report data from the official EIA Open Data API: ')
+
+## apexfaucet.xyz 4
+   ('https://apexfaucet.xyz/api/x402/arc-gold', 'eip155:8453', '3000', 'Is your XAUm real tokenized gold, and where can you sell it on Arc? Real vs copy')
+   ('https://apexfaucet.xyz/api/x402/tokenized-stocks', 'eip155:8453', '5000', 'Tokenized stocks on Solana (xStocks: SPY, NVDA, TSLA, QQQ, AAPL and more): which')
+   ('https://apexfaucet.xyz/api/x402/candles/:mint', 'eip155:8453', '4000', 'OHLC candles for a token, built from indexed trades. Pass ?tf=1m, 5m, 15m, 1h, 4')
+   ('https://apexfaucet.xyz/api/x402/world-brief', 'eip155:8453', '10000', 'What the world is pricing now in one call: prediction-market odds on elections, ')
+
+## agent.pocket.network 3
+   ('https://agent.pocket.network/v1/address-standardization', 'eip155:8453', '5000', 'Rule-based postal address normalization: uppercase a free-text US address, expan')
+   ('https://agent.pocket.network/v1/us-macro', 'eip155:8453', '5000', 'US macroeconomic time series as stable JSON: CPI, unemployment, payrolls, GDP, a')
+   ('https://agent.pocket.network/v1/fund-etf-holdings', 'eip155:8453', '5000', 'Fund and ETF portfolio composition from N-PORT and N-MFP filings. POST /v1/fund ')
+
+## api.vaults.fyi 3
+   ('https://api.vaults.fyi/v2/historical/:network/:vaultId/apy', 'eip155:8453', '102000', 'Retrieves time-series historical APY data for a specific vault, including base y')
+   ('https://api.vaults.fyi/v2/historical/:network/:vaultId/tvl', 'eip155:8453', '102000', 'Retrieves time-series historical TVL data for a specific vault, including base y')
+   ('https://api.vaults.fyi/v2/historical/:network/:vaultId/sharePrice', 'eip155:8453', '102000', 'Retrieves time-series historical TVL data for a specific vault, including base y')
+
+## vibesprings.net 3
+   ('https://vibesprings.net/api/exchange/history', 'eip155:8453', '5000', 'Historical foreign exchange (Forex) time-series database. Retrieve daily histori')
+   ('https://vibesprings.net/api/market-data', 'eip155:8453', '2000', 'Live multi-asset price feed and market intelligence endpoint. Query real-time US')
+   ('https://vibesprings.net/api/exchange', 'eip155:8453', '2000', 'Foreign exchange (Forex) rate database sourced from the European Central Bank (E')
+
+## api.x-402.online 3
+   ('https://api.x-402.online/v1/perps/stock-gaps', 'eip155:8453', '5000', 'Return, per stock ticker, the Hyperliquid HIP-3 perp mark and oracle, the refere')
+   ('https://api.x-402.online/v1/token/price-history', 'eip155:8453', '5000', 'Token price history in USD by CoinGecko id or chain:address: a 1-365 day time se')
+   ('https://api.x-402.online/v1/crypto/news', 'eip155:8453', '5000', 'Crypto and blockchain news from four newsrooms in one call (Cointelegraph, Decry')
+
+## agent-toolbox.zafermemon87.workers.dev 3
+   ('https://agent-toolbox.zafermemon87.workers.dev/mcp#company_us#company_us', 'eip155:8453', '10000', 'US public company profile from SEC EDGAR by ticker or CIK: industry, exchange, s')
+   ('https://agent-toolbox.zafermemon87.workers.dev/v1/watch', 'eip155:8453', '100000', 'Watch one field on a web page for 30 days, e.g. a price, stock status or version')
+   ('https://agent-toolbox.zafermemon87.workers.dev/v1/company/us', 'eip155:8453', '10000', 'US public company profile from SEC EDGAR by ticker or CIK: industry, exchange, s')
+
+## api.ishob.com 3
+   ('https://api.ishob.com/v1/crypto/swap-route', 'eip155:8453', '1000', 'Best DEX swap route and quote on Ethereum, Base, Arbitrum, Optimism, Polygon or ')
+   ('https://api.ishob.com/v1/finance', 'eip155:8453', '1000', 'Fundamentals and ratios for a US-listed company from its latest annual SEC filin')
+   ('https://api.ishob.com/v1/crypto/token-flows', 'eip155:8453', '10000', 'Who is buying and selling a token right now: every on-chain transfer in the last')
+
+## asin402.com 3
+   ('https://asin402.com/api/data/finder', 'eip155:8453', '5000', 'Amazon Product Finder: filter the whole catalog by 300+ criteria. Find ASINs mat')
+   ('https://asin402.com/api/data/product', 'eip155:8453', '5000', 'Amazon price history API: full product data for 1-100 ASINs. Complete Amazon pri')
+   ('https://asin402.com/api/watch', 'eip155:8453', '168000', 'Watch Amazon ASINs: scheduled price, buy box and stock checks with change alerts')
+
+## intel.degenscan.io 3
+   ('https://intel.degenscan.io/v1/events', 'eip155:8453', '5000', 'Everything that happened since <since> that touches a universe of ~150 assets (s')
+   ('https://intel.degenscan.io/v1/deribit/perps', 'eip155:8453', '2000', 'Deribit perpetuals — the venue where Coinbase Advanced / Coinbase for Agents exe')
+   ('https://intel.degenscan.io/v1/hl/candles/:coin', 'eip155:8453', '1000', 'Hyperliquid OHLCV candles for any perp (main dex and HIP-3: xyz:NBIS…): interval')
+
+## wafermap.xyz 3
+   ('https://wafermap.xyz/v1/stock-signal', 'eip155:8453', '13800', 'Stock Token Signal — One stock token: Chainlink reference price, on-chain DEX pr')
+   ('https://wafermap.xyz/v1/stock-brief', 'eip155:8453', '20000', 'Stock Token Brief — One stock token in one call: Chainlink reference vs on-chain')
+   ('https://wafermap.xyz/v1/stock-tokens', 'eip155:8453', '2000', 'Stock Tokens — Every active stock token on Robinhood Chain: ticker, name, contra')
+
+## borro.markets 3
+   ('https://borro.markets/paid/weekend', 'eip155:8453', '10000', 'The market clock, where each Robinhood Chain stock token trades while the exchan')
+   ('https://borro.markets/paid/prices', 'eip155:8453', '10000', "Each Robinhood Chain stock token's on-chain price against the stock's own price,")
+   ('https://borro.markets/paid/rates', 'eip155:8453', '10000', "Borro's markets on Robinhood Chain, live: each stock token's price, what is lent")
+
+## bykaranteli.com 3
+   ('https://bykaranteli.com/api/x402/hl-positions-history', 'eip155:8453', '100000', 'Every open position of the 1000 largest Hyperliquid accounts by equity once an h')
+   ('https://bykaranteli.com/api/x402/tradfi-funding-history', 'eip155:8453', '100000', 'Settled funding rate history of every Binance TradFi perpetual on our board (sto')
+   ('https://bykaranteli.com/api/x402/hl-whale-events', 'eip155:8453', '100000', 'Every recorded position change of the 1000 largest Hyperliquid accounts by equit')
+
+## freetier-agent-api.pages.dev 3
+   ('https://freetier-agent-api.pages.dev/api/token-price-history', 'eip155:8453', '5000', 'Token price history: OHLCV candles (daily up to 180, hourly up to 168) for one t')
+   ('https://freetier-agent-api.pages.dev/api/token-prices', 'eip155:8453', '4000', 'Token prices (multi): USD prices for up to 30 tokens on one network in one call,')
+   ('https://freetier-agent-api.pages.dev/api/token-price', 'eip155:8453', '2500', 'Token price: current USD price of one token by contract address from DEX data, p')
+
+## x402.deepsense.stream 3
+   ('https://x402.deepsense.stream/api/v1/market/ohlcv', 'eip155:8453', '2000', 'OHLCV candles for any DEX pool, from 1 second to 1 day buckets, newest N returne')
+   ('https://x402.deepsense.stream/api/v1/market/search', 'eip155:8453', '2000', 'Resolve a token symbol, name or address to DEX pools on Solana, Base or Ethereum')
+   ('https://x402.deepsense.stream/api/v1/market/trades', 'eip155:8453', '3000', 'Exact DEX prints for a pool: side, price, USD/token/quote amounts, maker, tx has')
+
+## x402-agent-hub.x402-agent-hub.workers.dev 3
+   ('https://x402-agent-hub.x402-agent-hub.workers.dev/v1/entity/company', 'eip155:8453', '3000', 'Enrich any company worldwide (private, startup or listed; not just US) by name, ')
+   ('https://x402-agent-hub.x402-agent-hub.workers.dev/v1/company/financials', 'eip155:8453', '5000', 'Reported fundamentals for US-GAAP filers from SEC XBRL data: revenue, operating ')
+   ('https://x402-agent-hub.x402-agent-hub.workers.dev/v1/trading/microstructure', 'eip155:8453', '10000', 'Institutional ECN CFD & Forex microstructure oracle: tick-calibrated median spre')
+
+## aeroallocator.app 3
+   ('https://aeroallocator.app/api/v1/position', 'eip155:8453', '50000', 'Where an Aero sAERO position stands on Base: its voting power and lock, how much')
+   ('https://aeroallocator.app/api/v1/cross-chain-plan', 'eip155:8453', '250000', 'Ordered, ready-to-sign Aero allocate() transactions that spread an sAERO positio')
+   ('https://aeroallocator.app/api/v1/allocate-plan', 'eip155:8453', '100000', 'Ready-to-sign, already-simulated Aero allocate() transaction for an sAERO positi')
+
+## handelskalender-api.pages.dev 3
+   ('https://handelskalender-api.pages.dev/v1/market-status', 'eip155:8453', '2000', 'Use when an agent needs to know right now which stock exchanges are open: open, ')
+   ('https://handelskalender-api.pages.dev/v1/trading-day', 'eip155:8453', '2000', 'Use when an agent needs to know if a stock exchange trades on a given day (defau')
+   ('https://handelskalender-api.pages.dev/v1/trading-calendar', 'eip155:8453', '2000', 'Use when an agent plans ahead and needs every closure of a stock exchange for a ')
+
+## onchaincheck.dev 3
+   ('https://onchaincheck.dev/x402/market', 'eip155:8453', '5000', 'The x402 economy in one call: measured daily spend across the top Bazaar sellers')
+   ('https://onchaincheck.dev/sec/company', 'eip155:8453', '5000', 'US public company data from SEC EDGAR by ticker, CIK or name: industry, exchange')
+   ('https://onchaincheck.dev/solana/token', 'eip155:8453', '10000', 'Rug check and due-diligence snapshot of a Solana SPL or Token-2022 token: a 0-10')
+
+## crypto.apitoll.cloud 3
+   ('https://crypto.apitoll.cloud/v1/crypto/price', 'eip155:8453', '1000', 'Latest crypto token prices by ticker symbol, CoinGecko id, or chain:address (BTC')
+   ('https://crypto.apitoll.cloud/v1/crypto/chart', 'eip155:8453', '1000', 'Historical token price time series by ticker symbol, CoinGecko id, or chain:addr')
+   ('https://crypto.apitoll.cloud/v1/crypto/yields', 'eip155:8453', '1000', 'Highest-yield DeFi pools across every chain and protocol, filterable by chain, p')
+
+## edgar.apitoll.cloud 3
+   ('https://edgar.apitoll.cloud/v1/edgar/filings', 'eip155:8453', '3000', 'Latest SEC EDGAR filings for any US-listed company by stock ticker or CIK: 10-K ')
+   ('https://edgar.apitoll.cloud/v1/edgar/smart-money', 'eip155:8453', '6000', 'Smart-money bundle in one call for any US-listed company by stock ticker or CIK:')
+   ('https://edgar.apitoll.cloud/v1/edgar/insider', 'eip155:8453', '3000', 'Latest insider trades (SEC Form 4) for any US-listed company by stock ticker or ')
+
+## data.tollkit.dev 3
+   ('https://data.tollkit.dev/sec/company', 'eip155:8453', '2000', "SEC filings lookup: give a US stock ticker or CIK, get the company's recent SEC ")
+   ('https://data.tollkit.dev/sec/financials', 'eip155:8453', '4000', 'Company financials from SEC filings: give a US stock ticker, get revenue, operat')
+   ('https://data.tollkit.dev/data/company', 'eip155:8453', '6000', 'Company snapshot from SEC filings: give a US stock ticker, get the company profi')
+
+## api.nansen.ai 3
+   ('https://api.nansen.ai/api/v1/tgm/token-ohlcv', 'eip155:8453', '10000', 'Retrieve token OHLCV candle data')
+   ('https://api.nansen.ai/api/v1/smart-money/netflow', 'eip155:8453', '50000', 'Get Smart Money Netflow Data')
+   ('https://api.nansen.ai/api/v1/prediction-market/ohlcv', 'eip155:8453', '10000', 'Get Prediction Market OHLCV Candles')
+
+## stockbloc.ai.studio 3
+   ('https://stockbloc.ai.studio/api/data/market', 'eip155:8453', '10000', 'Current stock price, 24h change and volume for a ticker (US, Hong Kong, India). ')
+   ('https://stockbloc.ai.studio/api/v1/sec/job', 'eip155:8453', '250000', "What changed in a company's latest 10-K or 10-Q risk factors vs the prior filing")
+   ('https://stockbloc.ai.studio/api/v1/data/sec', 'eip155:8453', '100000', 'Institutional 13F whale filings, hedge fund shifts, and audited EDGAR risk intel')
+
+## x402.tickerlayer.com 3
+   ('https://x402.tickerlayer.com/v1/commodities/symbols', 'eip155:8453', '20000', 'Discover the current TickerLayer Commodities symbol catalog. Stock symbols are m')
+   ('https://x402.tickerlayer.com/v1/forex/symbols', 'eip155:8453', '20000', 'Discover the current TickerLayer Forex symbol catalog. Stock symbols are market-')
+   ('https://x402.tickerlayer.com/v1/indices/symbols', 'eip155:8453', '20000', 'Discover the current TickerLayer Indices symbol catalog. Stock symbols are marke')
+
+## x402.openwebninja.com 3
+   ('https://x402.openwebninja.com/realtime-finance-data/stock-quote', 'eip155:8453', '3000', '')
+   ('https://x402.openwebninja.com/realtime-finance-data/stock-time-series-yahoo-finance', 'eip155:8453', '3000', '')
+   ('https://x402.openwebninja.com/realtime-finance-data/stock-time-series', 'eip155:8453', '3000', '')
+
+## api.strale.io 3
+   ('https://api.strale.io/x402/forex-history', 'base', '54000', 'Exchange Rate History: Get daily exchange rates between two currencies over a pe')
+   ('https://api.strale.io/x402/stock-quote', 'base', '54000', "Stock Quote: Look up a stock ticker's latest reported price, change, volume and ")
+   ('https://api.strale.io/x402/v2/stock-quote', 'eip155:8453', '54000', "Stock Quote: Look up a stock ticker's latest reported price, change, volume and ")
+
+## econdash.org 3
+   ('https://econdash.org/api/v1/m2m/timeseries/world_bank__gdp_nominal', 'eip155:8453', '20000', 'EconDash economic data API (M2M)')
+   ('https://econdash.org/api/v1/m2m/timeseries/world_bank__gdp_nominal/top-countries', 'eip155:8453', '20000', 'EconDash economic data API (M2M)')
+   ('https://econdash.org/api/v1/m2m/timeseries/nasdaq-index', 'eip155:8453', '20000', 'EconDash economic data API (M2M)')
+
+## api.glianalabs.com 3
+   ('https://api.glianalabs.com/x402/tools/stock-filings', 'eip155:8453', '5000', 'GlianaAI - Pay-per-call AI models, live market data, SEC filings and identity AP')
+   ('https://api.glianalabs.com/x402/tools/stock-brief', 'eip155:8453', '12000', 'GlianaAI - Pay-per-call AI models, live market data, SEC filings and identity AP')
+   ('https://api.glianalabs.com/x402/tools/stock-fundamentals', 'eip155:8453', '10000', 'GlianaAI - Pay-per-call AI models, live market data, SEC filings and identity AP')
+
+## alpha402x.com 3
+   ('https://alpha402x.com/profiles/100x-floor', 'eip155:8453', '50000', 'Empirical floor profiles of 10x and 100x stocks at day one — valuation, size, qu')
+   ('https://alpha402x.com/wacc-build/AAPL/fye-2025-09-27', 'eip155:8453', '250000', 'Deterministic, 10-K-cited cost-of-capital builds — CAPM cost of equity, tranche-')
+   ('https://alpha402x.com/5x-stock-empirical-profile', 'eip155:8453', '50000', 'Population-level empirical profile of what separated eventual 5x stocks at the m')
+
+## x402.tbs-digital.com 3
+   ('https://x402.tbs-digital.com/sec/facts', 'eip155:8453', '2000', 'XBRL company financial facts from SEC EDGAR for AI agents and fundamental-analys')
+   ('https://x402.tbs-digital.com/sec/filings', 'eip155:8453', '2000', 'Recent SEC EDGAR filings for any US public company, for AI agents and research b')
+   ('https://x402.tbs-digital.com/sec/resolve', 'eip155:8453', '1000', "Resolve a US public company's SEC EDGAR CIK for AI agents and financial bots. Lo")
+
+## airdroppulse.theaslangroupllc.com 3
+   ('https://airdroppulse.theaslangroupllc.com/api/long/launch-check', 'eip155:8453', '50000', 'Launch provenance check for LONG.xyz / Doppler tokens on Robinhood Chain — one c')
+   ('https://airdroppulse.theaslangroupllc.com/api/long/launch-feed', 'eip155:8453', '100000', 'Live launch feed for LONG.xyz / Doppler launchpads on Robinhood Chain — the most')
+   ('https://airdroppulse.theaslangroupllc.com/api/long/stock-backing', 'eip155:8453', '150000', 'Stock-backing analytics for LONG.xyz / Doppler launches on Robinhood Chain: live')
+
+## api.brazilayer.com 3
+   ('https://api.brazilayer.com/v1/fundos/fluxos', 'eip155:8453', '5000', 'Where Brazilian institutional money moved today: daily net flows (subscriptions ')
+   ('https://api.brazilayer.com/v1/fundos/movimentacoes', 'eip155:8453', '20000', 'What Brazilian funds are buying and selling, stock by stock, from the official C')
+   ('https://api.brazilayer.com/v1/fundos/carteira/:cnpj', 'eip155:8453', '10000', "A Brazilian fund's equity holdings from the official CVM portfolio disclosure (C")
+
+## x402-accelerometer-feed.fly.dev 3
+   ('https://x402-accelerometer-feed.fly.dev/tokenized-equities/st0x/pulse', 'eip155:8453', '10000', 'Use this when you want to know what is actually trading in tokenized stocks on B')
+   ('https://x402-accelerometer-feed.fly.dev/ai-progress/latest', 'eip155:8453', '5000', 'Use this when you need the current state of AI progress in one call: the latest ')
+   ('https://x402-accelerometer-feed.fly.dev/tokenized-equities/st0x/registry', 'eip155:8453', '1000', 'Use this when you need to resolve a stock ticker to its ST0x on-chain token, or ')
+
+## x402-niche-briefs.fly.dev 3
+   ('https://x402-niche-briefs.fly.dev/v1/incoterms-2020-cost-split', 'eip155:8453', '10000', 'Who pays/bears risk for each leg under an Incoterm.')
+   ('https://x402-niche-briefs.fly.dev/v1/reorder-point-safety-stock', 'eip155:8453', '10000', 'Deterministic inventory safety stock and Reorder Point (ROP) calculator for long')
+   ('https://x402-niche-briefs.fly.dev/v1/ebay-vero-risk-check', 'eip155:8453', '10000', 'eBay VeRO (Verified Rights Owner) intellectual-property takedown & nominative fa')
+
+## api.carbon-cashmere.de 3
+   ('https://api.carbon-cashmere.de/v1/bittensor-derivatives/alpha-price-history/:netuid', 'eip155:8453', '20000', 'Time-series of alpha-token price for a single Bittensor subnet (window: 1h/24h/7')
+   ('https://api.carbon-cashmere.de/v1/bittensor-derivatives/subnet/:netuid/metagraph', 'eip155:8453', '50000', 'Full metagraph snapshot for 13 tracked Bittensor subnets [1,3,4,13,15,18,26,56,6')
+   ('https://api.carbon-cashmere.de/v1/kaspa-derivatives/timeseries', 'eip155:8453', '50000', 'Historical Kaspa network metrics as server-side aggregated timeseries (max 1000 ')
+
+## minia2a.uk 3
+   ('https://minia2a.uk/x402/hyperliquid-candles', 'eip155:8453', '150000', 'Hyperliquid perpetual OHLCV candles for any listed coin, with trend statistics c')
+   ('https://minia2a.uk/x402/x402-eu-brief', 'eip155:8453', '10000', "EU market brief — 4 European equity indices (price + % change), the ECB's daily ")
+   ('https://minia2a.uk/x402/eu-brief', 'eip155:8453', '10000', "EU market brief — 4 European equity indices (price + % change), the ECB's daily ")
+
+## api.locus.report 3
+   ('https://api.locus.report/api/locus-housing-supply-balance', 'eip155:8453', '10000', 'BLS QCEW employment change over Census BPS permitted units, the permits share of')
+   ('https://api.locus.report/api/locus-housing-stock', 'eip155:8453', '10000', 'Census ACS tract-level housing-stock characteristics near a point: units, age, t')
+   ('https://api.locus.report/api/locus-flood-premium-context', 'eip155:8453', '10000', 'Median and quartiles of annual NFIP policy cost and FEMA full-risk premium for p')
+
+## api.zkrobotics.fr 3
+   ('https://api.zkrobotics.fr/x402/finance/fx-rates', 'eip155:8453', '4000', 'Currency exchange rates and forex API: official ECB (European Central Bank) refe')
+   ('https://api.zkrobotics.fr/x402/finance/company-financials', 'eip155:8453', '5000', 'Company financials and stock fundamentals from SEC EDGAR filings by ticker: reve')
+   ('https://api.zkrobotics.fr/x402/finance/sec-filings', 'eip155:8453', '3000', 'SEC EDGAR filings by stock ticker: latest 10-K annual reports, 10-Q quarterly re')
+
+## api.thaikit.dev 3
+   ('https://api.thaikit.dev/name-parse', 'eip155:8453', '5000', 'Split Thai personal names into title, first name and surname: courtesy (นาย, นาง')
+   ('https://api.thaikit.dev/address-parse', 'eip155:8453', '5000', 'Parse and validate a Thai postal address: split it into house number, moo, villa')
+   ('https://api.thaikit.dev/segment', 'eip155:8453', '5000', 'Thai word segmentation (tokenization): split Thai text, which has no spaces betw')
+
+## api.annalist.dev 3
+   ('https://api.annalist.dev/v1/checks/top', 'eip155:8453', '20000', 'Leaderboards from our independent checks of x402 services: most real (wash-adjus')
+   ('https://api.annalist.dev/v1/hip3/market', 'eip155:8453', '20000', 'Overview of every builder-deployed (HIP-3) perpetual on Hyperliquid, mostly 24/7')
+   ('https://api.annalist.dev/v1/hip3/perp', 'eip155:8453', '10000', 'Use before trading a stock, index, commodity or FX perpetual on Hyperliquid (bui')
+
+## business-frameworks.matryoshka-paradigms.workers.dev 3
+   ('https://business-frameworks.matryoshka-paradigms.workers.dev/node/market/pattern/split-test', 'eip155:8453', '30000', 'Business Frameworks · business-frameworks/market/pattern/split-test@1.2 — the ch')
+   ('https://business-frameworks.matryoshka-paradigms.workers.dev/node/market/balance', 'eip155:8453', '30000', 'Business Frameworks · business-frameworks/market/balance@1.2 — balance supply ag')
+   ('https://business-frameworks.matryoshka-paradigms.workers.dev/node/market/map', 'eip155:8453', '30000', 'Business Frameworks · business-frameworks/market/map@1.2 — map the chain as mark')
+
+## www.mahastrategies.com 3
+   ('https://www.mahastrategies.com/api/v1/micro/material-cut-list-consolidation', 'eip155:8453', '22500', 'Consolidate up to 128 cut rows by material and exact converted length in metres,')
+   ('https://www.mahastrategies.com/api/v1/compute/manufacturing/cut-list', 'eip155:8453', '22501', 'Consolidate up to 128 cut rows by material and exact converted length in metres,')
+   ('https://www.mahastrategies.com/api/v1/micro/chemistry-dilution-calculator', 'eip155:8453', '5005', 'Calculate stock and working concentrations from supplied quantities with unit an')
+
+## http--forest-gas-station-mainnet--lcjl27p8lmjs.code.run 3
+   ('https://http--forest-gas-station-mainnet--lcjl27p8lmjs.code.run/commerce/product-state', 'eip155:8453', '3000', 'Normalize a public product URL into current title, selected variant, price, curr')
+   ('https://http--forest-gas-station-mainnet--lcjl27p8lmjs.code.run/commerce/buyability', 'eip155:8453', '3000', 'Report whether a public item appears buyable with explicit blockers such as out-')
+   ('https://http--forest-gas-station-mainnet--lcjl27p8lmjs.code.run/commerce/quantity-preflight', 'eip155:8453', '3000', 'Check whether a requested product quantity is allowed for a public variant befor')
+
+## api.mekongtradeintel.com 3
+   ('https://api.mekongtradeintel.com/brief', 'eip155:8453', '10000', 'Morning briefing: crypto/stock news headlines + Google Trends intel + news senti')
+   ('https://api.mekongtradeintel.com/stocks', 'eip155:8453', '1000', 'Stocks/ETF/crypto OHLCV via Yahoo Finance. $0.003 per call. Send {"symbol":"AAPL')
+   ('https://api.mekongtradeintel.com/marketdata', 'eip155:8453', '10000', 'Live market data API: BTC/ETH/SOL crypto prices + SPY/QQQ/DIA stocks + VNINDEX. ')
+
+## alphapulse.theaslangroupllc.com 3
+   ('https://alphapulse.theaslangroupllc.com/api/alpha/prop-firms', 'eip155:8453', '150000', 'Prop-firm shortlist matched to your market, region, and trading style: payout-pr')
+   ('https://alphapulse.theaslangroupllc.com/api/alpha/fund-check-lite', 'eip155:8453', '250000', 'Lite preview of the hedge fund 13F holdings check — same official SEC EDGAR fili')
+   ('https://alphapulse.theaslangroupllc.com/api/alpha/fund-check', 'eip155:8453', '500000', 'Hedge fund holdings check grounded in official SEC EDGAR 13F filings, fetched li')
+
+## japan-business-day-api.matchan962.workers.dev 2
+   ('https://japan-business-day-api.matchan962.workers.dev/v1/jpx/trading-day', 'eip155:8453', '5000', 'Is the Tokyo Stock Exchange (JPX/TSE) open on a date? Returns closed reasons, ne')
+   ('https://japan-business-day-api.matchan962.workers.dev/v1/jpx/record-date', 'eip155:8453', '10000', 'Japanese equities dividend/shareholder-benefit schedule: from a record date (ken')
+
+## aizamon.com 2
+   ('https://aizamon.com/x402/v1/bot-fuel', 'eip155:8453', '250000', 'Get one Polymarket versus Kalshi gap card with the topic, both yes prices, gap c')
+   ('https://aizamon.com/x402/v1/bot-fuel-pack', 'eip155:8453', '890000', 'Get up to 5 Polymarket versus Kalshi gap cards, each with the topic, both yes pr')
+
+## x402.smartmoney.market 2
+   ('https://x402.smartmoney.market/ticker-insider', 'eip155:8453', '10000', 'Aggregated company insider Form 4 activity for one selected tracked ticker, grou')
+   ('https://x402.smartmoney.market/congress', 'eip155:8453', '10000', 'Global US House Periodic Transaction Report activity for stock-backed trades. Su')
+
+## api.hyperextend.xyz 2
+   ('https://api.hyperextend.xyz/v1/candles/BTC/1m', 'eip155:8453', '50960', 'OHLCV candles over a window: main, spot, HIP-3 (e.g. xyz:AAPL, xyz:SP500) and HI')
+   ('https://api.hyperextend.xyz/v1/candles/BTC/1m/latest', 'eip155:8453', '2000', "The most-recent N OHLCV candles (≤5000), in Hyperliquid's candleSnapshot shape. ")
+
+## thevaultreport.com 2
+   ('https://thevaultreport.com/api/x402/lme/warehouse', 'eip155:8453', '10000', 'LME warehouse stocks by metal and date: total tonnes per metal, 18-year daily hi')
+   ('https://thevaultreport.com/api/x402/comex/deliveries', 'eip155:8453', '10000', 'COMEX daily delivery notices: issues and stops with the house-vs-customer split,')
+
+## mru-oracle.com 2
+   ('https://mru-oracle.com/semdex', 'eip155:8453', '1000', 'Stock Exchange of Mauritius indices: SEMDEX, SEM-ASI and DEMEX (plus SEM-10, dis')
+   ('https://mru-oracle.com/forex', 'eip155:8453', '1000', 'MUR exchange rates (Bank of Mauritius): Bank of Mauritius consolidated indicativ')
+
+## cryptodataapi.com 2
+   ('https://cryptodataapi.com/api/v1/market-intelligence/etf/btc/flows', 'eip155:8453', '10000', 'Issuer-aggregated daily spot ETF net flows for btc, eth or sol.')
+   ('https://cryptodataapi.com/api/v1/market-intelligence/etf/eth/flows', 'eip155:8453', '10000', 'Issuer-aggregated daily spot ETF net flows for btc, eth or sol.')
+
+## attention-trends.shopttyass-85f.workers.dev 2
+   ('https://attention-trends.shopttyass-85f.workers.dev/mcp#compare_topic_popularity', 'eip155:8453', '10000', 'Compare the popularity of 2-5 topics (brands, competitors, products, people, key')
+   ('https://attention-trends.shopttyass-85f.workers.dev/compare', 'eip155:8453', '10000', 'Compare the popularity of 2-5 topics (brands, competitors, products, people, key')
+
+## api.netnestdesign.com 2
+   ('https://api.netnestdesign.com/mcp#get_fundamentals', 'eip155:8453', '20000', 'Latest company revenue, net income, EPS, operating income, assets, liabilities, ')
+   ('https://api.netnestdesign.com/v1/fundamentals/:ticker', 'eip155:8453', '20000', 'Latest company revenue, net income, EPS, operating income, assets, liabilities, ')
+
+## finops.halowerk.com 2
+   ('https://finops.halowerk.com/v1/counterparty-choice-award-settlement-bridge', 'eip155:8453', '3000', 'ReconstructONEEMPLOYEECOUNTERPARTY-CHOICEcompoundawardgrantedwithcashORown-equit')
+   ('https://finops.halowerk.com/v1/equity-award-modification-cost-floor', 'eip155:8453', '3000', 'Reconstruct ONE equity-settled employeeaward modification with ORIGINALgrantdate')
+
+## med.halowerk.com 2
+   ('https://med.halowerk.com/v1/device-incident-trend', 'eip155:8453', '6000', 'Aggregates medical device reports for a product code, device name or manufacture')
+   ('https://med.halowerk.com/v1/adverse-events', 'eip155:8453', '6000', 'Summarises adverse event reports for a drug: the most frequently reported reacti')
+
+## stat.halowerk.com 2
+   ('https://stat.halowerk.com/v1/property-cycle', 'eip155:8453', '6000', 'Returns the residential property price index for a country in both nominal and i')
+   ('https://stat.halowerk.com/v1/energy-import', 'eip155:8453', '5000', 'Returns the energy import dependency rate for one or more countries, overall and')
+
+## x402engine.app 2
+   ('https://x402engine.app/api/crypto/history', 'eip155:8453', '3000', 'x402engine — Historical price, market cap, and volume data for any coin')
+   ('https://x402engine.app/api/token/prices', 'eip155:8453', '5000', 'x402engine — Real-time DEX-derived token prices with OHLC data — up to 200 token')
+
+## x402.orthogonal.com 2
+   ('https://x402.orthogonal.com/financial-datasets/prices/snapshot', 'eip155:8453', '25000', 'Get the real-time price snapshot for a stock, including the current price, day c')
+   ('https://x402.orthogonal.com/financial-datasets/financial-metrics/snapshot', 'eip155:8453', '25000', 'Get the real-time financial metrics snapshot for a stock, including valuation ra')
+
+## fiatdock.com 2
+   ('https://fiatdock.com/v1/sec/financials', 'eip155:8453', '4500', "A US company's reported financials from its SEC XBRL filings, by ticker or CIK: ")
+   ('https://fiatdock.com/v1/market/backtest', 'eip155:8453', '9000', "Backtest a stated trading rule on a crypto asset's daily USD closes (Coinbase Ex")
+
+## agri-calc.x402tookit.com 2
+   ('https://agri-calc.x402tookit.com/stocking-rate', 'eip155:8453', '20000', 'Grazing carrying capacity in animal unit months from acres, forage yield, use pe')
+   ('https://agri-calc.x402tookit.com/feed-ration', 'eip155:8453', '20000', 'Livestock feed needed per day and for a period from head count, body weight, dry')
+
+## api.findmydirectdoctor.com 2
+   ('https://api.findmydirectdoctor.com/v1/colonoscopy/estimate', 'eip155:8453', '30000', 'Colonoscopy price estimate near a location: posted hospital cash prices for four')
+   ('https://api.findmydirectdoctor.com/v1/prices/cash-service-stats', 'eip155:8453', '30000', "Spread of published self-pay (cash) prices for a named service across doctor's o")
+
+## api.stablecoingateways.com 2
+   ('https://api.stablecoingateways.com/v1/business-days', 'eip155:8453', '1000', 'Business days and public holidays: check if a date is a business day, add or sub')
+   ('https://api.stablecoingateways.com/v1/sec/company-facts', 'eip155:8453', '3000', 'SEC EDGAR company lookup by stock ticker or CIK: revenue, net income, assets, li')
+
+## ai-data-marketplace-1042299154756.us-central1.run.app 2
+   ('https://ai-data-marketplace-1042299154756.us-central1.run.app/api/v1/stock_quotes', 'eip155:8453', '3000', 'Get current stock market data for one ticker, including the latest available quo')
+   ('https://ai-data-marketplace-1042299154756.us-central1.run.app/api/v1/stock_research_brief', 'eip155:8453', '10000', 'Combine a current market quote with official recent SEC filing and insider-owner')
+
+## market.nythosx.com 2
+   ('https://market.nythosx.com/api/v1/levels', 'eip155:8453', '5000', 'Support and resistance map. Up to five support and five resistance levels from c')
+   ('https://market.nythosx.com/mcp#get_market_regime#get_market_regime', 'eip155:84532', '5000', 'Trend and volatility regime. Market regime from hourly candles: trend (up / down')
+
+## api.bskts.xyz 2
+   ('https://api.bskts.xyz/v1/x402/report', 'eip155:8453', '10000', 'Report on one bskts index basket of tokenized stocks and crypto on Robinhood Cha')
+   ('https://api.bskts.xyz/v1/x402/off-hours', 'eip155:8453', '5000', 'US stock and ETF prices while the market is closed (nights, weekends, holidays):')
+
+## stormap.ai 2
+   ('https://stormap.ai/x402/v1/trading_halts', 'eip155:8453', '10000', 'Use when the question is whether a US stock is halted now or was halted today (N')
+   ('https://stormap.ai/x402/v1/why_is_it_moving', 'eip155:8453', '20000', 'Use when a US stock is moving and the likely cause is needed from primary source')
+
+## micro-saas-agent.onrender.com 2
+   ('https://micro-saas-agent.onrender.com/api/regime', 'eip155:8453', '10000', '[Market data: crypto] Stage 1 crypto market regime score 0-4 with raw values and')
+   ('https://micro-saas-agent.onrender.com/api/rs', 'eip155:8453', '20000', '[Market data: crypto] Relative strength across 66 Kraken USD pairs: 1w and 1m % ')
+
+## resolve402.dev 2
+   ('https://resolve402.dev/api/uk-company-accounts', 'eip155:8453', '10000', 'Get the figures of the latest annual accounts a UK company filed at Companies Ho')
+   ('https://resolve402.dev/api/esef-financials', 'eip155:8453', '5000', 'Get the latest audited annual financials of a European listed company from its E')
+
+## pump.x4o2.com 2
+   ('https://pump.x4o2.com/v1/leaderboard', 'eip155:8453', '1000', "pump.fun's trader leaderboard: rank, wallet, username, P&L in SOL and USD, perce")
+   ('https://pump.x4o2.com/v1/coin/:mint/candles', 'eip155:8453', '1000', "Historical candles for one coin from pump.fun's own chart data: open, high, low,")
+
+## api.onesource.io 2
+   ('https://api.onesource.io/deepstate/v1/candles/:book', 'eip155:8453', '5000', 'Deepstate, the on-chain order-book exchange on Robinhood Chain. OHLCV candles fo')
+   ('https://api.onesource.io/standard/v1/candles', 'eip155:8453', '20000', 'The Standard Reserve (TSR), an on-chain reserve protocol on Robinhood Chain. OHL')
+
+## omniterminal.app 2
+   ('https://omniterminal.app/api/x402/v1/news', 'eip155:84532', '10000', 'Omni Terminal delivers fresh, deduplicated market-moving news and catalyst conte')
+   ('https://omniterminal.app/api/x402/v1/trader-profile/:address', 'eip155:84532', '5000', "Omni Terminal analyzes a public Hyperliquid wallet's reconciled equity, PnL, pos")
+
+## the-stall.intuitek.ai 2
+   ('https://the-stall.intuitek.ai/cap/market-gex', 'eip155:8453', '40000', 'Dealer gamma exposure (GEX) analysis for any US stock or ETF — returns aggregate')
+   ('https://the-stall.intuitek.ai/cap/earnings-calendar', 'eip155:8453', '59000', 'Earnings calendar for upcoming US stock reports — earnings date, EPS estimate, p')
+
+## api.signalfuse.co 2
+   ('https://api.signalfuse.co/v1/sentiment/NVDA', 'eip155:8453', '2000', 'ModernFinBERT social sentiment for equity tickers')
+   ('https://api.signalfuse.co/v1/sentiment/HOOD', 'eip155:8453', '2000', 'ModernFinBERT social sentiment for equity tickers')
+
+## agents.tickerlayer.com 2
+   ('https://agents.tickerlayer.com/stocks/quote/:symbol', 'eip155:8453', '10000', 'Returns the best bid and ask with sizes and the observation timestamp for one st')
+   ('https://agents.tickerlayer.com/forex/agg/:symbol/:multiplier/:timespan/:from/:to', 'eip155:8453', '50000', 'Returns historical OHLCV bars for one currency pair between two UTC dates, inclu')
+
+## pulse-api-production-7aae.up.railway.app 2
+   ('https://pulse-api-production-7aae.up.railway.app/arbitrum/v1/analysis/spot/standard', 'eip155:42161', '200000', 'Global Quick: 520 completed OHLCV candles on the selected timeframe, conditional')
+   ('https://pulse-api-production-7aae.up.railway.app/base/v1/analysis/spot/standard', 'eip155:8453', '200000', 'Global Quick: 520 completed OHLCV candles on the selected timeframe, conditional')
+
+## proxy.suverse.io 2
+   ('https://proxy.suverse.io/v1/data/fiat-exchange-rates', 'eip155:8453', '50000', 'Real-time forex exchange rates for 170+ currencies with USD base. Daily updates ')
+   ('https://proxy.suverse.io/v1/data/suverse-forex-rates', 'eip155:8453', '50000', 'Current FX rates for up to 30 currency pairs in one call with last-update date. ')
+
+## claim-grounding.prospectintel.workers.dev 2
+   ('https://claim-grounding.prospectintel.workers.dev/v1/check_answer', 'eip155:8453', '1000000', 'Check answer. Splits an AI answer into claims and checks each against Wikipedia,')
+   ('https://claim-grounding.prospectintel.workers.dev/v1/extract_claims', 'eip155:8453', '50000', 'Extract claims. Splits text into atomic, checkable claims with character spans, ')
+
+## ichimoku-signal.fizzl.eu 2
+   ('https://ichimoku-signal.fizzl.eu/signal/:pair', 'eip155:8453', '10000', 'Bitcoin and crypto trend signal: is a pair bullish, bearish or neutral right now')
+   ('https://ichimoku-signal.fizzl.eu/signals/:pair', 'eip155:8453', '150000', 'Crypto technical analysis in one call: confluence trading signal for a pair (top')
+
+## intel.chainquery.com 2
+   ('https://intel.chainquery.com/v1/coin-velocity', 'eip155:8453', '10000', 'ChainQuery Bitcoin Intelligence: independent Bitcoin-native on-chain data over x')
+   ('https://intel.chainquery.com/v1/hodl-waves', 'eip155:8453', '20000', 'ChainQuery Bitcoin Intelligence: independent Bitcoin-native on-chain data over x')
+
+## sec-filings-x402-production.up.railway.app 2
+   ('https://sec-filings-x402-production.up.railway.app/tickers/:ticker/latest', 'eip155:8453', '20000', 'Latest SEC 8-K material-event alert for one stock ticker (e.g. TSLA): event, sev')
+   ('https://sec-filings-x402-production.up.railway.app/filings/:id', 'eip155:8453', '20000', 'Real-time SEC 8-K material-event alert with stock ticker: ticker, exchange, comp')
+
+## df-data-agent.vercel.app 2
+   ('https://df-data-agent.vercel.app/api/v1/insider/clusters', 'eip155:8453', '50000', 'Stocks where several different insiders bought shares on the open market in the ')
+   ('https://df-data-agent.vercel.app/api/v1/insider/latest', 'eip155:8453', '10000', 'Most recent SEC Form 4 insider transactions (US stocks), parsed to clean JSON wi')
+
+## api.agentfeeds.jp 2
+   ('https://api.agentfeeds.jp/v1/jp/labor/unemployment_rate', 'eip155:8453', '2000', "Japan's unemployment rate from the Statistics Bureau's Labour Force Survey, not ")
+   ('https://api.agentfeeds.jp/v1/boj/rates', 'eip155:8453', '2000', "Historical and current Japanese interest-rate series from the Bank of Japan's of")
+
+## pay.edge-agents.ai 2
+   ('https://pay.edge-agents.ai/v1/services/btc-whale-etf-flow-reconciliation', 'eip155:8453', '100000', 'Premium fusion of the existing btc-etf-flow-pulse SEC shares-outstanding evidenc')
+   ('https://pay.edge-agents.ai/v1/services/btc-corporate-treasury-change', 'eip155:8453', '100000', 'Multi-filer synthesis of SEC XBRL companyfacts CryptoAssetFairValue and CryptoAs')
+
+## polynews.news 2
+   ('https://polynews.news/api/v1/price-history', 'eip155:8453', '5000', 'Historical price data with configurable timeframes (1H/6H/1D/1W/1M/ALL)')
+   ('https://polynews.news/api/v1/arbitrage', 'eip155:8453', '10000', 'Cross-platform arbitrage detection between Polymarket and Kalshi: matched market')
+
+## toolcall.click 2
+   ('https://toolcall.click/t/part/lookup', 'eip155:8453', '40000', 'Everything about an electronic component from its manufacturer part number: live')
+   ('https://toolcall.click/t/sec/financials', 'eip155:8453', '30000', 'Key financials for any US-listed company by ticker, straight from SEC EDGAR XBRL')
+
+## api.duoleads.com 2
+   ('https://api.duoleads.com/v1/id/gs1', 'eip155:8453', '50000', 'GTIN barcode validator: validate and convert GS1 identifiers: GTIN-8, GTIN-12 (U')
+   ('https://api.duoleads.com/v1/num/allocate', 'eip155:8453', '50000', 'Money split: split a money amount into shares without losing or inventing a cent')
+
+## kronossignals.com 2
+   ('https://kronossignals.com/api/v1/volatility/btc', 'eip155:8453', '20000', 'Realized volatility for 16 crypto assets (BTC/ETH/SOL/BNB/XRP/DOGE/ADA/AVAX/LINK')
+   ('https://kronossignals.com/api/v1/ohlc/:asset', 'eip155:8453', '20000', 'Consolidated OHLC candlestick data for 16 crypto assets (BTC/ETH/SOL/BNB/XRP/DOG')
+
+## talentpulse.theaslangroupllc.com 2
+   ('https://talentpulse.theaslangroupllc.com/api/talent/compensation', 'eip155:8453', '250000', 'Executive and C-suite total compensation benchmark by role, sector, level and co')
+   ('https://talentpulse.theaslangroupllc.com/api/talent/salary', 'eip155:8453', '150000', 'Salary benchmark by job title, city and country worldwide — pay range and base s')
+
+## scentpulse.theaslangroupllc.com 2
+   ('https://scentpulse.theaslangroupllc.com/api/scent/discontinued-watch', 'eip155:8453', '100000', 'Fragrance discontinuation watch — signal-based status (retailer stock-outs, foru')
+   ('https://scentpulse.theaslangroupllc.com/api/scent/allergen-check', 'eip155:8453', '100000', 'EU fragrance allergen check — context on the 80-substance mandatory labeling lis')
+
+## ads.forgemesh.io 2
+   ('https://ads.forgemesh.io/api/intent/report', 'eip155:8453', '50000', 'Returns a per-service bounce funnel: total probes, bounces, paid count, conversi')
+   ('https://ads.forgemesh.io/api/intent/demand', 'eip155:8453', '20000', 'Returns demand depth for one category: probe volume, distinct sources, buyer-cla')
+
+## agenticfinancegraph.com 2
+   ('https://agenticfinancegraph.com/check/paygraph', 'eip155:8453', '50000', 'Where I pay: Counterparties, 30-day USD, rail split, idle flag, top-counterparty')
+   ('https://agenticfinancegraph.com/check/statement', 'eip155:8453', '10000', "Statement history: The agent's last 24 three-hour statements (outflow split into")
+
+## hubvibe-io.com 2
+   ('https://hubvibe-io.com/work/market/stock', 'eip155:8453', '50000', 'Stock price / live stock quote for any US ticker: last price, change, day range,')
+   ('https://hubvibe-io.com/work/company/enrich', 'eip155:8453', '50000', 'Company enrichment / firmographics by domain or name: legal and common name, fou')
+
+## api.fadeandco.workers.dev 2
+   ('https://api.fadeandco.workers.dev/api/agent-intel/perp-funding-rate-heatmap', 'eip155:8453', '2000', 'Current perpetual-futures funding rate for one coin (USDT-margined) on Binance, ')
+   ('https://api.fadeandco.workers.dev/api/agent-intel/wallet-pnl-performance-audit', 'eip155:8453', '3000', 'Estimated current value of the token amounts a wallet received minus sent in its')
+
+## agentbit.app 2
+   ('https://agentbit.app/v1/defi/yields', 'eip155:8453', '2000', 'Search every tracked DeFi yield pool with TVL over $50k: filter by chain, projec')
+   ('https://agentbit.app/v1/finance/stock-price', 'eip155:8453', '5000', 'Latest equity quote from a free, key-less source (Yahoo Finance): price, day ope')
+
+## shop.lordevo.com 2
+   ('https://shop.lordevo.com/api/quick/regex-test', 'eip155:8453', '2000', 'Regex tester: matches, groups, replace and split (JavaScript flavor): Runs a Jav')
+   ('https://shop.lordevo.com/api/quick/text-chunk', 'eip155:8453', '2000', 'Text chunker for RAG (heading-aware, token-sized chunks): Splits text you send, ')
+
+## api.solenrich.com 2
+   ('https://api.solenrich.com/entrypoints/xstock-basis/invoke', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '15000', 'Long the xStock (NVDAx, SPYx, QQQx, …) on Jupiter, short its Phoenix perp, colle')
+   ('https://api.solenrich.com/entrypoints/gacha-ev-scan/invoke', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '20000', 'Jupiter Gacha (Collector Crypt) tokenized-card pack EV scan. For each pack machi')
+
+## coreforge-memory.onrender.com 2
+   ('https://coreforge-memory.onrender.com/x402/trading/signals/board', 'eip155:8453', '50000', 'Full-universe strategy-state snapshot: 16 equities/ETFs plus BTC, ETH, SOL, each')
+   ('https://coreforge-memory.onrender.com/x402/trading/catalysts/classify', 'eip155:8453', '10000', 'Headline classification into catalyst categories (earnings, merger/acquisition, ')
+
+## beliefstate.ai 2
+   ('https://beliefstate.ai/v1/research/get_brief', 'eip155:8453', '20000', 'Free catalog for risks, thesis comparisons and research changes: https://beliefs')
+   ('https://beliefstate.ai/v1/brief/NBIS', 'eip155:8453', '20000', 'Investor research and stock analysis for AI trading agents. This route buys up t')
+
+## opendata402.com 2
+   ('https://opendata402.com/v1/sec/financials', 'eip155:8453', '2000', 'Key annual financials of a US-listed company from its SEC XBRL filings (10-K), b')
+   ('https://opendata402.com/v1/ecb/series', 'eip155:8453', '1000', 'Any time series from the ECB Data Portal by flow and series key (e.g. EXR/D.USD.')
+
+## chainhilt.ai 2
+   ('https://chainhilt.ai/api/v1/predict/polymarket/activity/:address', 'eip155:8453', '1000', 'Trade and settlement history of a venue account, newest first and cursor-paged: ')
+   ('https://chainhilt.ai/api/v1/perp/hyperliquid/portfolio/report', 'eip155:8453', '10000', 'Produce an agent-ready Hyperliquid portfolio report covering equity, PnL, levera')
+
+## api.particle.pro 2
+   ('https://api.particle.pro/v1/entities/search', 'eip155:8453', '10000', 'Search entities. Find a person, company, or knowledge graph entity by free-text ')
+   ('https://api.particle.pro/v1/podcasts/episodes/timeseries', 'eip155:8453', '10000', 'Get episode timeseries. Returns time-bucketed counts of episodes matching the sa')
+
+## sec-filings.mick8511.workers.dev 2
+   ('https://sec-filings.mick8511.workers.dev/lookup', 'eip155:8453', '2000', 'SEC company lookup: resolve a stock ticker, CIK number or company name to the SE')
+   ('https://sec-filings.mick8511.workers.dev/financial-ratios', 'eip155:8453', '10000', 'Financial ratios for a US public company computed from its latest annual SEC XBR')
+
+## vincap.co 2
+   ('https://vincap.co/api/paid/calendar', 'eip155:8453', '10000', 'Wine stocks earnings calendar: every results date, AGM and dividend of listed wi')
+   ('https://vincap.co/api/paid/register-snapshots', 'eip155:8453', '50000', 'Listed wine companies list: every dated edition of the register of publicly trad')
+
+## api.webintel-api.workers.dev 2
+   ('https://api.webintel-api.workers.dev/api/search/benzinga', 'eip155:8453', '2000', 'Latest Benzinga financial news (the public JSON feed behind benzinga.com): headl')
+   ('https://api.webintel-api.workers.dev/api/search/usda-market-news', 'eip155:8453', '2000', 'USDA AMS Market News (official MyMarketNews API): search the catalogue of livest')
+
+## gogeta2-u35175.vm.elestio.app 2
+   ('https://gogeta2-u35175.vm.elestio.app/agents/v1/fx/timeseries', 'eip155:8453', '5000', 'Daily official ECB exchange rates for a currency pair over up to 366 days, with ')
+   ('https://gogeta2-u35175.vm.elestio.app/agents/v1/checkout/pre-purchase', 'eip155:8453', '80000', 'Bundle before paying: verified price/stock (schema.org), seller trust score (RDA')
+
+## longevitypulse.theaslangroupllc.com 2
+   ('https://longevitypulse.theaslangroupllc.com/api/longevity/clinical-trials', 'eip155:8453', '100000', 'Longevity clinical trial search / anti-aging trial finder for research and healt')
+   ('https://longevitypulse.theaslangroupllc.com/api/longevity/longevity-drug', 'eip155:8453', '200000', 'Longevity drug / anti-aging pharmaceutical intelligence (rapamycin, metformin, a')
+
+## footballpulse.theaslangroupllc.com 2
+   ('https://footballpulse.theaslangroupllc.com/api/league-pulse', 'eip155:8453', '100000', 'League intelligence — standings, scorers, over/under and BTTS rates, home/away s')
+   ('https://footballpulse.theaslangroupllc.com/api/clean-sheet', 'eip155:8453', '100000', 'Clean-sheet probability — goalkeeper stats, defensive metrics, home/away split, ')
+
+## arbipulse.theaslangroupllc.com 2
+   ('https://arbipulse.theaslangroupllc.com/api/pairs', 'eip155:8453', '150000', 'Statistical arbitrage — cointegrated pairs with z-score signals across crypto, e')
+   ('https://arbipulse.theaslangroupllc.com/api/scanner', 'eip155:8453', '100000', 'Top live arbitrage opportunities across perps funding, DEX/CEX spot, ETF, commod')
+
+## gibai.app 2
+   ('https://gibai.app/bank/:name', 'eip155:8453', '10000', 'Bitcoin and digital-asset adoption profile for one named bank, from the Global I')
+   ('https://gibai.app/activity/:name', 'eip155:8453', '10000', "Every one of the world's 100 largest banks scored on a single Bitcoin or digital")
+
+## rest.coincap.io 2
+   ('https://rest.coincap.io/v3/agentFriendly/history/bitcoin', 'eip155:8453', '10000', 'Historical price series for an asset slug (capped data points).')
+   ('https://rest.coincap.io/v3/agentFriendly/history/ethereum', 'eip155:8453', '10000', 'Historical price series for an asset slug (capped data points).')
+
+## keyronne.com 1
+   ('https://keyronne.com/api/price', 'eip155:8453', '3000', 'Current USD prices for any crypto asset: majors by ticker (BTC, ETH, SOL), anyth')
+
+## concordancehq.duckdns.org 1
+   ('https://concordancehq.duckdns.org/tools/series', 'eip155:8453', '10000', 'Tabular time-series lookup across economic indicators (FRED, World Bank, UN Comt')
+
+## x402.jmthomasofficial.com 1
+   ('https://x402.jmthomasofficial.com/v2/api/edgar-company-lookup', 'eip155:8453', '2000', 'Company intelligence lookup: resolve a US-listed company ticker through the SEC ')
+
+## extract.tollkit.dev 1
+   ('https://extract.tollkit.dev/extract', 'eip155:8453', '10000', 'Product price lookup for AI agents: give any public product page URL, get the pr')
+
+## api.debyko.com 1
+   ('https://api.debyko.com/v2/candles', 'eip155:8453', '5000', 'OHLCV candles for crypto perpetual futures, 1m to 1d, on trade price (mark and i')
+
+## coord.taifoon.dev 1
+   ('https://coord.taifoon.dev/v1/market/candles', 'eip155:8453', '5000', 'OHLCV bars of BTC, ETH, SOL or the CME micro futures NQ, ES, YM (15s, 1m, 5m, 1h')
+
+## api.geoprimitives.dev 1
+   ('https://api.geoprimitives.dev/v1/timezone', 'eip155:8453', '5000', 'Give it a longitude and latitude and it answers with the IANA timezone identifie')
+
+## soldefi.thomenz.me 1
+   ('https://soldefi.thomenz.me/v1/solana/pools/top', 'eip155:8453', '20000', 'The real best Solana DEX pools. Same top-pools feed a free API returns, but wash')
+
+## hyperliquid.use.x402atlas.com 1
+   ('https://hyperliquid.use.x402atlas.com/candles', 'eip155:8453', '10000', 'OHLCV candles for one Hyperliquid asset over any interval (1m to 1M), normalized')
+
+## api.powahub.ai 1
+   ('https://api.powahub.ai/c8a77739168e44a4af26cc954c437460-cd/daily-stock-screen/v1/picks/today', 'eip155:8453', '10000', 'Five US large-cap stocks ranked by a daily AI research screen. Each name carries')
+
+## derivatives-pricer-production.up.railway.app 1
+   ('https://derivatives-pricer-production.up.railway.app/v1/option/price', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '10000', 'Have S (or forward mark), K, T, r, and σ; get fair value plus delta/gamma/vega/t')
+
+## api.reloadpi.com 1
+   ('https://api.reloadpi.com/api/catalog/vouchers/brands', 'eip155:8453', '1000', 'Reloadpi — List all available voucher brands including Amazon, Google Play, Netf')
+
+## api.isocast.dev 1
+   ('https://api.isocast.dev/v1/spot', 'eip155:8453', '10000', 'Latest observed weather signal for one city — a single-signal SPOT snapshot (lik')
+
+## defi.lonestaroracle.xyz 1
+   ('https://defi.lonestaroracle.xyz/top-yields', 'eip155:8453', '100000', 'Cross-protocol risk-adjusted DeFi yield screener: ranked pools with honest base-')
+
+## funds.lonestaroracle.xyz 1
+   ('https://funds.lonestaroracle.xyz/funds', 'eip155:8453', '50000', 'Institutional (13F) ownership & flow for a stock (?ticker=<stock ticker>)')
+
+## squeeze.lonestaroracle.xyz 1
+   ('https://squeeze.lonestaroracle.xyz/squeeze', 'eip155:8453', '50000', 'Short-squeeze setup signal for a stock (?ticker=<stock ticker>)')
+
+## mtbandy--sec-ratio-engine-serve-app.modal.run 1
+   ('https://mtbandy--sec-ratio-engine-serve-app.modal.run/ratios', 'eip155:8453', '3000', 'Calculates 9 TTM financial ratios (P/E, P/OCF, P/FCF, P/B, EV/EBITDA, ROIC %, De')
+
+## stablefinance.dev 1
+   ('https://stablefinance.dev/api/prices', 'eip155:8453', '20000', 'Historical OHLCV bars for a US stock. Required: ticker, interval (day|week|month')
+
+## shopscout.forgemesh.io 1
+   ('https://shopscout.forgemesh.io/v1/shipping/compare', 'eip155:8453', '10000', 'Compare single-seller and split baskets using supplied shipping rules, including')
+
+## api.ned.watch 1
+   ('https://api.ned.watch/v1/diagnose', 'eip155:8453', '50000', 'Why is this host failing right now? One call, no account: Ned probes it (DNS at ')
+
+## chess-eval.x402supply.com 1
+   ('https://chess-eval.x402supply.com/tools/evaluate_position', 'eip155:8453', '10000', 'Evaluate a chess position with Stockfish: best move, centipawn/mate score, princ')
+
+## x402-twstock.semiwasabi-dao.workers.dev 1
+   ('https://x402-twstock.semiwasabi-dao.workers.dev/quote', 'eip155:8453', '20000', 'Real-time Taiwan stock (TWSE/TPEX) quote by 4-digit stock code (e.g. 2330 TSMC, ')
+
+## agent-briefs.walletstarter.workers.dev 1
+   ('https://agent-briefs.walletstarter.workers.dev/bundle/etf-flows-brief', 'eip155:8453', '10000', 'Daily JSON bundles for agents from Bouncer-graded x402 sellers: crypto news beat')
+
+## forensik.halowerk.com 1
+   ('https://forensik.halowerk.com/v1/exchange-netflow-monitor', 'eip155:8453', '1000', 'Exchange Netflow Monitor analyses only the evidence supplied by the caller. It d')
+
+## kronos.forgemesh.io 1
+   ('https://kronos.forgemesh.io/api/kronos/futures/decision', 'eip155:8453', '150000', 'Returns a perpetual-futures decision package for BTC, ETH, SOL, XRP, or ADA: dir')
+
+## api.sitesy.ca 1
+   ('https://api.sitesy.ca/v1/page-links', 'eip155:8453', '2000', 'Page links: extract the links on one web page, split into internal and external,')
+
+## api.thetrustlayer.xyz 1
+   ('https://api.thetrustlayer.xyz/history/base%3A1378', 'eip155:8453', '1000', 'Full score time-series for an agent. Returns all historical trust score snapshot')
+
+## jpyc.x402jp.com 1
+   ('https://jpyc.x402jp.com/osd/catalyst/6339', 'eip155:137', '1000000000000000000', "Onchain Stock Data: one Japanese listed company's catalyst (dated due date, succ")
+
+## api.craigmbrown.com 1
+   ('https://api.craigmbrown.com/v1/services/oracle.historical-analysis', 'eip155:8453', '80000', 'Historical trend and pattern analysis for an asset or time series, identifying t')
+
+## grokbot-dashboard.a3migos.workers.dev 1
+   ('https://grokbot-dashboard.a3migos.workers.dev/api/signals', 'eip155:8453', '10000', "Current signals of GrokBot's play-money practice bots, crypto (BTC/ETH momentum,")
+
+## ot-intel-api.onrender.com 1
+   ('https://ot-intel-api.onrender.com/ot/cve', 'eip155:8453', '20000', 'OT-contextualised CVE triage for ICS/SCADA. Pass ?id=CVE-XXXX-XXXX. Returns OT-a')
+
+## quotient-api-gateway.onrender.com 1
+   ('https://quotient-api-gateway.onrender.com/api/v1/price-outlooks', 'eip155:8453', '10000', 'Use this endpoint to read calibrated asset price outlooks across equities, crypt')
+
+## sec-company-snapshot.mick8511.workers.dev 1
+   ('https://sec-company-snapshot.mick8511.workers.dev/company', 'eip155:8453', '20000', 'US public company fundamentals from SEC EDGAR filings. Send a stock ticker (e.g.')
+
+## paylyte.ai 1
+   ('https://paylyte.ai/v1/data/eia/oil', 'eip155:8453', '4990000', 'The latest weekly U.S. crude oil stocks from the Energy Information Administrati')
+
+## datenvertrag.halowerk.com 1
+   ('https://datenvertrag.halowerk.com/v1/exact-bezier-subdivision-audit', 'eip155:8453', '3000', 'Subdivide one planar Bezier curve with2..6integercontrolpoints[-20,20] at explic')
+
+## relay.imagiolabs.com 1
+   ('https://relay.imagiolabs.com/vault-fill', 'eip155:8453', '8000', 'Vault fill: deterministic treasury split (reinvest vs reserve) for agent earning')
+
+## karte.halowerk.com 1
+   ('https://karte.halowerk.com/v1/port-congestion', 'eip155:8453', '5000', 'Reports what actually moves through a European port and how that developed, from')
+
+## research.halowerk.com 1
+   ('https://research.halowerk.com/v1/grounding-score', 'eip155:8453', '2000', 'Splits the answer into sentences and measures, for each one, how much of it is c')
+
+## market.memoryapi.org 1
+   ('https://market.memoryapi.org/x402/market/arbitrage', 'eip155:8453', '1000', 'Real-time arbitrage spreads between tokenized securities and actual stock prices')
+
+## party-event-calc.x402tookit.com 1
+   ('https://party-event-calc.x402tookit.com/drinks-estimate', 'eip155:8453', '20000', 'Drinks for an event from a first-hour and later-hours rule per guest, split into')
+
+## json-data-tools.x402tookit.com 1
+   ('https://json-data-tools.x402tookit.com/url-parse', 'eip155:8453', '20000', 'Split a URL into scheme, host, port, path, query parameters and fragment, and fl')
+
+## invest-math.x402tookit.com 1
+   ('https://invest-math.x402tookit.com/dividend-math', 'eip155:8453', '20000', 'Dividend yield, yearly income, and yield on cost and total dividends after years')
+
+## us-tax-calc.x402tookit.com 1
+   ('https://us-tax-calc.x402tookit.com/retirement-limits', 'eip155:8453', '20000', 'IRS retirement and HSA contribution limits by year: 401(k), IRA, catch-up, SIMPL')
+
+## web3-tools.x402tookit.com 1
+   ('https://web3-tools.x402tookit.com/calldata-split', 'eip155:8453', '20000', 'Split EVM calldata into its 4-byte selector and 32-byte words, naming common ERC')
+
+## bank-validators.x402tookit.com 1
+   ('https://bank-validators.x402tookit.com/iban-parse', 'eip155:8453', '20000', 'Split an IBAN into country, check digits, bank code, branch and account using it')
+
+## work-time-calc.x402tookit.com 1
+   ('https://work-time-calc.x402tookit.com/overtime', 'eip155:8453', '20000', 'Split a week of daily hours into regular, overtime and double time using your da')
+
+## automotive-calc.x402tookit.com 1
+   ('https://automotive-calc.x402tookit.com/lease-vs-buy', 'eip155:8453', '20000', 'Lease versus buy over the lease term: lease payment from money factor and residu')
+
+## crypto-asistent.com 1
+   ('https://crypto-asistent.com/api/x402/data/tradfi-quotes', 'eip155:8453', '40000', 'S&P 500, gold and Nasdaq 100 quotes as the traditional-market leg of a crypto re')
+
+## einvoice.alexhub.uk 1
+   ('https://einvoice.alexhub.uk/v1/saft/validate', 'eip155:8453', '500000', 'Check a Romanian SAF-T D406 file (monthly, annual assets, stock) before filing w')
+
+## base.kagurazaka.dev 1
+   ('https://base.kagurazaka.dev/v1/tx', 'eip155:8453', '2000', 'Everything about a Base transaction in one call: status, time, from and to, ETH ')
+
+## agentshield.live 1
+   ('https://agentshield.live/bic', 'eip155:8453', '5000', 'Call when an agent has a BIC and needs the format split into bank code, country,')
+
+## quickbuild.quynguyenbac.workers.dev 1
+   ('https://quickbuild.quynguyenbac.workers.dev/api/base/tx', 'eip155:8453', '2000', 'Look up one transaction on Base mainnet by hash: status (success, failed or pend')
+
+## api.avedaris.com 1
+   ('https://api.avedaris.com/v1/paid/url-parse', 'eip155:8453', '1000', 'Split a URL into parts: send an http(s) URL and get protocol, hostname, port, pa')
+
+## sift.srv1996466.hstgr.cloud 1
+   ('https://sift.srv1996466.hstgr.cloud/v1/links', 'eip155:8453', '2000', 'Extract all links from a page, split internal and external. Every link on a page')
+
+## npm-downloads-range.hergertsynthora.com 1
+   ('https://npm-downloads-range.hergertsynthora.com/service', 'eip155:8453', '1000', 'Returns a per-day download time series for an npm package over a period from key')
+
+## mart402.com 1
+   ('https://mart402.com/v1/jp-retirement-tax', 'eip155:8453', '20000', 'Japan retirement income tax: deduction by years of service, half-taxation with s')
+
+## agent.chiemgaufilms.com 1
+   ('https://agent.chiemgaufilms.com/api/v1/shoot-day-plan', 'eip155:8453', '30000', 'Turn up to 12 planned videos into realistic shoot days: bundled by place, split ')
+
+## astro-agent.dev 1
+   ('https://astro-agent.dev/v1/finance/planetary-lines', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '200000', 'Gann planetary lines: Planet degrees (geocentric and heliocentric) at a moment o')
+
+## pyd.fi 1
+   ('https://pyd.fi/api/agents/yields', 'eip155:8453', '10000', 'Live Pro Yield yield intelligence: curated stablecoin lending venue rates with s')
+
+## kr-x402-mvp.kgy5612.workers.dev 1
+   ('https://kr-x402-mvp.kgy5612.workers.dev/crypto/candles', 'eip155:8453', '2000', 'OHLCV candlesticks (klines) for any major USDT pair with indicators precomputed,')
+
+## onvexia.com 1
+   ('https://onvexia.com/v1/chain/exchange-netflow', 'eip155:8453', '1000', 'Exchange netflow. Daily exchange in/out flow with per-chain coverage stated besi')
+
+## fomo.x4o2.com 1
+   ('https://fomo.x4o2.com/v1/token/:chain/:address/candles', 'eip155:8453', '1000', 'Historical USD candles for one token as FOMO charts it: t (bucket start, unix ms')
+
+## tipster.services 1
+   ('https://tipster.services/v1/tips', 'eip155:8453', '10000', 'Poll every live restock tip for a category and up to 5 zip codes')
+
+## api.relaystation.ai 1
+   ('https://api.relaystation.ai/v1/pdf/split', 'eip155:8453', '10000', '$0.001/page. Split a PDF by page ranges or burst it into single pages. 1¢ x402 m')
+
+## x402-data-api.sigrunner.workers.dev 1
+   ('https://x402-data-api.sigrunner.workers.dev/defi/yields', 'eip155:8453', '1000', 'Top DeFi lending/LP yields — project, chain, symbol, pool id, APY breakdown + 1d')
+
+## x402.asterpay.io 1
+   ('https://x402.asterpay.io/v1/market/ohlcv/bitcoin', 'eip155:8453', '15000', 'Get OHLCV candlestick data for charting and analysis')
+
+## tick.hugen.tokyo 1
+   ('https://tick.hugen.tokyo/tick/latest', 'eip155:8453', '5000', 'Get real-time Best Bid/Ask for any FX pair, aggregated from multiple institution')
+
+## api.aidress.ai 1
+   ('https://api.aidress.ai/pay/agent_edgar_apitoll_cloud', 'eip155:8453', '3000', 'Latest SEC EDGAR filings for any US-listed company by stock ticker or CIK: 10-K ')
+
+## cloud.trycorpus.ai 1
+   ('https://cloud.trycorpus.ai/v1/spot/hourly', 'eip155:8453', '10000', 'corpusAI Cloud Pricing: Hourly time-weighted OHLC bars for one instance type.')
+
+## agents.nibiashara.biz 1
+   ('https://agents.nibiashara.biz/shelf/fx-official', 'eip155:8453', '10000', 'Official FX rate — one African pair. Official forex reference rate vs USD for on')
+
+## api.messyvirgo.com 1
+   ('https://api.messyvirgo.com/api/v1/paid/context/macros/latest', 'eip155:8453', '10000', 'Crypto macro regime in one call: a 0-100 Messy Virgo macro score and risk regime')
+
+## jmt-x402-proxy.jmthomasofficial.workers.dev 1
+   ('https://jmt-x402-proxy.jmthomasofficial.workers.dev/v2/api/edgar-company-lookup', 'eip155:8453', '2000', 'Company intelligence lookup: resolve a US-listed company ticker through the SEC ')
+
+## mcp.blocksize.info 1
+   ('https://mcp.blocksize.info/v1/bidask/BTC-USD', 'solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp', '2000', 'Real-time shared bid/ask snapshot data, including crypto pairs and supported equ')
+
+## equity.lonestaroracle.xyz 1
+   ('https://equity.lonestaroracle.xyz/equity', 'eip155:8453', '50000', 'Stock analysis — price fundamentals technical indicators for any ticker')
+
+## creator.halowerk.com 1
+   ('https://creator.halowerk.com/v1/royalty-split', 'eip155:8453', '2000', 'Requires shares totaling exactly 10,000 basis points, floors each proportional m')
+
+## capitol.lonestaroracle.xyz 1
+   ('https://capitol.lonestaroracle.xyz/trades', 'eip155:8453', '50000', 'US congressional (Senate+House) stock trades; ?symbol= for a ticker')
+
+## gdelt.use.x402atlas.com 1
+   ('https://gdelt.use.x402atlas.com/timeline', 'eip155:8453', '20000', 'News attention & tone timeline by GDELT — coverage-volume and average-tone time ')
+
+## gaming.halowerk.com 1
+   ('https://gaming.halowerk.com/v1/economy-sink-sim', 'eip155:8453', '4000', 'Iterates a deterministic daily stock-flow model with a fixed source, fixed sinks')
+
+## bizintel-api.hahavoid0.workers.dev 1
+   ('https://bizintel-api.hahavoid0.workers.dev/finance/forex-rate', 'eip155:8453', '10000', 'Queries foreign exchange currency pairings from the free Frankfurter database.')
+
+## api.eckari.com 1
+   ('https://api.eckari.com/v1/companies/us/resolve', 'eip155:8453', '2000', 'Turn a company-name fragment or stock ticker into the SEC EDGAR identifiers. Sea')
+
+## x402-seller.onrender.com 1
+   ('https://x402-seller.onrender.com/currency/rate', 'eip155:8453', '8000', 'Currency exchange rate for converting between any two currencies (forex/FX rate)')
+
+## archtools.dev 1
+   ('https://archtools.dev/v1/tools/crypto-ohlcv', 'eip155:8453', '10000', 'Get OHLCV (candlestick) data for a cryptocurrency. Pay per call with USDC (x402)')
+
+## api.axiomworks.co.uk 1
+   ('https://api.axiomworks.co.uk/us-sec-full', 'eip155:8453', '250000', 'Use this for fuller US SEC DD: lite snapshot + key us-gaap companyfacts highligh')
+
+## money-reactor.makar52nn2016.workers.dev 1
+   ('https://money-reactor.makar52nn2016.workers.dev/api/stock-quote', 'eip155:8453', '5000', 'Live stock quote (price, change, currency) for any ticker — finance context in o')
+
+## win.oneshotagent.com 1
+   ('https://win.oneshotagent.com/v1/tools/lookup/market-freight-index', 'eip155:8453', '5000', 'Look up monthly US freight volume and its seasonally adjusted mode components.')
+
+## api.magentlab.com 1
+   ('https://api.magentlab.com/api/calc/ibw', 'eip155:8453', '5000', 'Devine ideal body weight and 0.4 adjusted body weight from height, sex, and actu')
+
+## sml-greenlight.onrender.com 1
+   ('https://sml-greenlight.onrender.com/api/x402/board', 'eip155:8453', '50000', 'Live SML GreenLight setup board: the dynamic US-equity universe (Alpaca most-act')
+
+## prospect-intelligence.prospectintel.workers.dev 1
+   ('https://prospect-intelligence.prospectintel.workers.dev/v1/basic', 'eip155:8453', '100000', 'Basic company lookup. Give a company name and/or domain. Returns summary plus fi')
+
+## hcrb.in 1
+   ('https://hcrb.in/v1/modules/commerce/accelerate-payout', 'eip155:8453', '5000', 'Computes stateless 2/10 Net 30 early-payment discount split (165 bps to buyer, 3')
+
+## ticks.bnm.farm 1
+   ('https://ticks.bnm.farm/ticks', 'eip155:8453', '50000', 'Call GET /ticks when you need the current official USDA farm market prices (hay,')
+
+## api.printmoneylab.com 1
+   ('https://api.printmoneylab.com/api/v1/krw-macro-stress', 'eip155:8453', '50000', 'KRW Macro Stress Score (0-100) — combined signal from US 3Y treasury, VIX, forei')
+
+## vaunt-dispatch-production.up.railway.app 1
+   ('https://vaunt-dispatch-production.up.railway.app/agent/x402/venues', 'eip155:8453', '1000', 'Hyperliquid execution quality measured on our own orders: slippage vs mid (p50/p')
+
+## chess402.vercel.app 1
+   ('https://chess402.vercel.app/api/cloud-eval', 'eip155:8453', '5000', 'Stockfish cloud evaluation for a FEN position. Returns depth, evaluation, and pr')
+
+## agent-utils-x402-production.revenue-agent-jw.workers.dev 1
+   ('https://agent-utils-x402-production.revenue-agent-jw.workers.dev/v1/sec/filings', 'eip155:8453', '2000', 'SEC EDGAR company filings and financials for a stock ticker or CIK in one call: ')
+
+## api.hyperd.ai 1
+   ('https://api.hyperd.ai/api/yield/allocation', 'eip155:8453', '1000000', 'Composed yield allocation recommender. Fans out 3 parallel /api/yield calls at l')
+
+## x402helper.xyz 1
+   ('https://x402helper.xyz/discovery', 'eip155:8453', '1700', 'Discovery endpoint for x402 APIs. Send a task in natural language (or a pre-spli')
+
+## agentpaystore.com 1
+   ('https://agentpaystore.com/feeds/api/query', 'eip155:8453', '50000', 'Live data feeds in one call: crypto prices, DeFi TVL, gas, equities, forex, earn')
+
+## coingecko.use.x402atlas.com 1
+   ('https://coingecko.use.x402atlas.com/ohlc', 'eip155:8453', '5000', 'OHLC candlestick data for crypto — daily open/high/low/close candles over 1-365 ')
+
+## api.x402intel.uk 1
+   ('https://api.x402intel.uk/x402-market', 'eip155:8453', '50000', 'x402 market intelligence with current catalog-attributed USDC flow, address-leve')
+
+## proppulse.theaslangroupllc.com 1
+   ('https://proppulse.theaslangroupllc.com/api/prop/rentbuy', 'eip155:8453', '100000', 'Rent-vs-buy calculator: break-even timeline, 5-year cost comparison, equity buil')
+
+## email-verifier.underscoredone.com 1
+   ('https://email-verifier.underscoredone.com/verify', 'eip155:8453', '10000', 'Takes one email address and tells you whether it can actually receive mail. Retu')
+
+## venturepulse.theaslangroupllc.com 1
+   ('https://venturepulse.theaslangroupllc.com/api/startup/accelerator', 'eip155:8453', '100000', 'Find the best accelerator or incubator for your startup worldwide — YC, Techstar')
+
+## x402-agent-api.onrender.com 1
+   ('https://x402-agent-api.onrender.com/api/v1/sec-financials', 'eip155:8453', '5000', "Answers 'What were Apple's revenue and net income over the last five years?' or ")
+
+## api.usenami.io 1
+   ('https://api.usenami.io/v1/rwa/perp-coverage', 'eip155:8453', '1000', 'Real-world-asset (RWA) perpetual coverage across HIP-3 DEXes — which stocks, met')
+
+## api.hivemindos.app 1
+   ('https://api.hivemindos.app/v1/x402/photo-keyworder/photos.analyze', 'eip155:8453', '30000', 'Photo keywords: writes a stock-ready title, description and 12-25 keywords for o')
+
+## geospatial.openverbs.com 1
+   ('https://geospatial.openverbs.com/v1/resolution', 'eip155:8453', '2000', 'Report the ground resolution (metres per pixel, for 256-px tiles) and the OGC ma')
+
+## smartmoney.lonestaroracle.xyz 1
+   ('https://smartmoney.lonestaroracle.xyz/smartmoney', 'eip155:8453', '100000', 'Composite smart-money signal (insiders + Congress + institutions + analysts) for')
+
+## livecheck.fly.dev 1
+   ('https://livecheck.fly.dev/v1/verify/listing', 'eip155:8453', '10000', 'Is this product still available or sold out? POST one Shopify, eBay, or store pr')
+
+## www.liquidstate.tech 1
+   ('https://www.liquidstate.tech/api/x402/farside-btc-etf', 'eip155:8453', '10000', 'Latest COMPLETE US spot BTC ETF daily print (Farside). Per-call USDC.')
+
+## orcpin.dev 1
+   ('https://orcpin.dev/v1/defi-snapshot', 'eip155:8453', '50000', 'DeFi position and wallet risk snapshot on Base: token balances, account flags, a')
+
+## agents.crowdspark.me 1
+   ('https://agents.crowdspark.me/v1/finance/sec-facts', 'eip155:8453', '10000', 'Financial figures over time from SEC XBRL filings for a US-listed company by tic')
+
+## stall-row-production.up.railway.app 1
+   ('https://stall-row-production.up.railway.app/v1/index/history', 'eip155:8453', '10000', 'Verdict Index History — the CDP Bazaar catalog as a time series across ALL retai')
+
+## orchard-data.netlify.app 1
+   ('https://orchard-data.netlify.app/api/trending', 'eip155:8453', '5000', 'Trending tickers right now: StockTwits trending symbols + r/wallstreetbets hot p')
+
+## economy.openverbs.com 1
+   ('https://economy.openverbs.com/v1/trade', 'eip155:8453', '4000', 'Country trade history from World Bank WDI: imports and exports of goods and serv')
+
+## agent.apiguru.app 1
+   ('https://agent.apiguru.app/agent/v1/stock', 'eip155:8453', '4500', 'Live Amazon offer and inventory data for up to 10 ASINs: every active offer with')
+
+## agent-gas-station.agent-gas-station.workers.dev 1
+   ('https://agent-gas-station.agent-gas-station.workers.dev/v1/BudgetSplit', 'eip155:8453', '10000', 'Splits a budget by weight without passing caps.')
+
+## signalsfeed.com 1
+   ('https://signalsfeed.com/api/v1/feed', 'eip155:8453', '10000', 'Real-time signals feed for AI agents. Covers economic indicators, central bank p')
+
+## api.tradesonar.io 1
+   ('https://api.tradesonar.io/v1/markets/:ticker/candles', 'eip155:8453', '1000', 'Candlesticks (1-minute minimum; no sub-minute)')
+
+## ioswarm.io 1
+   ('https://ioswarm.io/api/v1/x402/quote', 'eip155:8453', '10000', 'Live quotes for up to 8 symbols — stocks, ETFs, crypto pairs (BTC-USD), FX — pri')
+
+## tradepulse.theaslangroupllc.com 1
+   ('https://tradepulse.theaslangroupllc.com/api/trade/incoterms', 'eip155:8453', '100000', 'Incoterms 2020 decoder for trade and import-export agents. Returns a plain-Engli')
+
+## racingpulse.theaslangroupllc.com 1
+   ('https://racingpulse.theaslangroupllc.com/api/ratings', 'eip155:8453', '70000', 'Speed ratings — RPR, Timeform and going-adjusted performance figures. For horse-')
+
+## x402-domain-check.vercel.app 1
+   ('https://x402-domain-check.vercel.app/sec/company', 'eip155:8453', '20000', 'SEC EDGAR company lookup by ticker, name or CIK: CIK, legal name, tickers/exchan')
+
+## x402-v2-mint-ietf-dt-search.vercel.app 1
+   ('https://x402-v2-mint-ietf-dt-search.vercel.app/v1/ietf-datatracker-search', 'eip155:8453', '20100', 'IETF datatracker document search (keyless). POST {q|name__contains}/{limit?}. Em')
+
+## x402-v2-mint-bls-series-lookup.vercel.app 1
+   ('https://x402-v2-mint-bls-series-lookup.vercel.app/v1/bls-series-lookup', 'eip155:8453', '20028', 'BLS publicAPI timeseries lookup (keyless). POST {series_id} and/or {startyear?,e')
+
+## stonk.x4o2.com 1
+   ('https://stonk.x4o2.com/v1/tokens/:mint/candles', 'eip155:8453', '1000', 'Exact-market OHLCV in quote units; 1m through 1d')
+
+## edgar.openverbs.com 1
+   ('https://edgar.openverbs.com/v1/financials', 'eip155:8453', '8000', 'Company financials API: one-call snapshot for a US public company (by ticker or ')
+
+## serp402.com 1
+   ('https://serp402.com/api/v1/google-finance', 'eip155:8453', '50000', 'Google Finance: Extract stock performance, values, price movements, related news')
+
+## prices.genexxis.com 1
+   ('https://prices.genexxis.com/ohlcv', 'eip155:8453', '5000', 'Spot OHLCV candles (1m to 1w, up to 1000) for a coin against USDT from Binance (')
+
+## edgar.genexxis.com 1
+   ('https://edgar.genexxis.com/financials', 'eip155:8453', '8000', 'Standardized financials from SEC XBRL for the last 5 fiscal years and 4 quarters')
+
+## vaaya.ai 1
+   ('https://vaaya.ai/api/run/openwebninja/stock-quote', 'eip155:8453', '10000', 'Live quote for `symbol` ("AAPL", "AAPL:NASDAQ", "RELIANCE:NSE", "BTC-USD"): pric')
+
+## cryptyx.ai 1
+   ('https://cryptyx.ai/api/taker-flow', 'eip155:8453', '10000', 'Daily taker buy/sell USD and buy/sell ratio per asset, split into spot and futur')
+
+## darrylbots.com 1
+   ('https://darrylbots.com/api/research-report-standard', 'eip155:8453', '1000', 'Darrylbots paid research: Standard Stock Screen: Quality, Momentum, and Durable ')
+
+## agents.aiscale.pro 1
+   ('https://agents.aiscale.pro/api/v1/sentiment/:ticker', 'eip155:8453', '2000', 'AiScale Sentiment: Real-time sentiment analysis for a stock ticker. Returns scor')
+
+## joyful-charm-production-bf6d.up.railway.app 1
+   ('https://joyful-charm-production-bf6d.up.railway.app/trades/ticker/AAPL', 'eip155:8453', '1000', 'Full SEC Form 4 insider-trading history for one stock ticker (path param, e.g. /')
+
+## grok-backtest-api.fly.dev 1
+   ('https://grok-backtest-api.fly.dev/backtest', 'eip155:8453', '50000', 'Backtest any crypto strategy on 399 Coinbase coins, bias-free. Breakout, momentu')
+
+## kitchen-pass.netlify.app 1
+   ('https://kitchen-pass.netlify.app/v1/substitute', 'eip155:8453', '10000', 'What can I use instead of buttermilk, self-raising flour, creme fraiche or sour ')
+
+## dt0ur.online 1
+   ('https://dt0ur.online/api/market/candles', 'eip155:8453', '10000', 'Historical OHLCV candlestick data (open, high, low, close, volume) for any Coinb')
+
+## api.wickedapi.com 1
+   ('https://api.wickedapi.com/v1/verdict', 'eip155:8453', '20000', 'One-call trading verdict for an asset: LONG, SHORT or NEUTRAL bias with a 0-10 c')
+
+## agentstall.padawanconsulting.com 1
+   ('https://agentstall.padawanconsulting.com/v1/vat-rates', 'eip155:8453', '1000', 'Standard VAT and sales tax rates for 49 African countries, including South Afric')
+
+## budget-finds-feed.budgetfindfeeds.workers.dev 1
+   ('https://budget-finds-feed.budgetfindfeeds.workers.dev/finds', 'eip155:8453', '20000', 'Budget Finds Feed — cheapest-first budget shopping picks, price bands only')
+
+## api.agent-data.workers.dev 1
+   ('https://api.agent-data.workers.dev/api/v1/candles', 'eip155:8453', '10000', 'Binance OHLCV candles with ready indicators: RSI14, SMA20, SMA50, ATR14, volatil')
+
+## verify-oracle.run402.com 1
+   ('https://verify-oracle.run402.com/api/fx-rate', 'eip155:8453', '1000', 'Live forex fx rate and fiat reference exchange rate for currency conversion from')
+
+## legible-check.ezealfa.workers.dev 1
+   ('https://legible-check.ezealfa.workers.dev/evm/gas', 'eip155:8453', '1000', 'Gas price on Base in gwei, split into base fee and priority fee, with the block ')
+
+## webtools.genexxis.com 1
+   ('https://webtools.genexxis.com/table-extract', 'eip155:8453', '5000', 'HTML table extraction to JSON/CSV. Extract the HTML tables of a public web page ')
+
+## api.glowewebsites.com 1
+   ('https://api.glowewebsites.com/agent/shopify-products', 'eip155:8453', '50000', 'Catalog and pricing snapshot of any Shopify store (1-3 s): products and collecti')
+
+## workspace-x402-paywall.onrender.com 1
+   ('https://workspace-x402-paywall.onrender.com/stocks/list', 'eip155:8453', '5000', 'Returns a JSON array of tokenized stocks with live prices')
+
+## api.financialreports.eu 1
+   ('https://api.financialreports.eu/api/filings/', 'eip155:8453', '10000', 'FinancialFilings: Regulatory filings (annual and interim reports, earnings relea')
+
+## api.lookproof.dev 1
+   ('https://api.lookproof.dev/v1/ip/subnets', 'eip155:8453', '2000', 'Split an IPv4 or IPv6 CIDR block into subnets of a longer prefix, in order, at m')
+
+## api.tradershub.dev 1
+   ('https://api.tradershub.dev/x402/v1/signal', 'eip155:8453', '10000', 'TradersHub trading signal: BUY / SELL / HOLD with confidence score, last price, ')
+
+## x402-report.quanyida.workers.dev 1
+   ('https://x402-report.quanyida.workers.dev/report/:symbol', 'eip155:8453', '1000', 'Real-time US stock & crypto price snapshots with 24h change, 52-week highs/lows ')
+
+## coinbucha.com 1
+   ('https://coinbucha.com/api/paid/calendar', 'eip155:8453', '10000', 'Bitcoin stocks earnings calendar: results dates and SEC 10-Q/10-K windows for MS')
+
+## agents.souldriver.com.au 1
+   ('https://agents.souldriver.com.au/v1/check', 'eip155:8453', '250000', 'Hallucination check from SoulDriver: a live fact-check of one claim by four inde')
+
+## solene-fa2010da.base44.app 1
+   ('https://solene-fa2010da.base44.app/functions/forensicsEquitySettlesafe', 'eip155:8453', '20000', 'Tokenized-equity pre-trade screen ($0.02): issuer verification, pause state and ')
+
+## emberagent.uk 1
+   ('https://emberagent.uk/p/crypto-news-sentiment', 'eip155:8453', '40000', 'Use when a trading agent needs headlines scored fast. Send up to 15 crypto headl')
+
+## api.polls.karbach.digital 1
+   ('https://api.polls.karbach.digital/v1/results/federal/:kind', 'eip155:8453', '20000', 'Federal election statistics: postal-vote, ticket-splitting, age-groups or turnou')
+
+## x402.agentharbor.agency 1
+   ('https://x402.agentharbor.agency/sec-company', 'eip155:8453', '10000', "Given a U.S.-listed company's stock ticker or SEC CIK, returns its EDGAR profile")
+
+## filingdelta.xyz 1
+   ('https://filingdelta.xyz/bundle/SEMIS', 'eip155:8453', '120000', 'SEC filing changes for 9 semiconductor stocks in one call (AMD, MRVL, NVDA, AVGO')
+
+## api.lokalapi.com 1
+   ('https://api.lokalapi.com/v1/kbli/convert', 'eip155:8453', '20000', 'Convert a KBLI 2020 business code to its KBLI 2025 equivalent(s) using the offic')
+
+## x402.agentutility.ai 1
+   ('https://x402.agentutility.ai/event-poster-image-generate', 'eip155:8453', '11000', 'Generates SFW event artwork, launch posters, and campaign backgrounds without re')
+
+## miorail.xyz 1
+   ('https://miorail.xyz/api/x402/intelligence/v1/stocks/representations', 'eip155:8453', '2000', 'Miorail x402 paid resource')
+
+## api.oblique.markets 1
+   ('https://api.oblique.markets/api/v1/paid/us-equity-snapshot', 'eip155:8453', '10000', 'Use when an agent needs us equity snapshot. Returns Fresh US equity OHLCV snapsh')
+
+## bursar-provider.bursar.workers.dev 1
+   ('https://bursar-provider.bursar.workers.dev/quote', 'eip155:8453', '1000', 'Live Chainlink price of a tokenized US stock or ETF on Robinhood Chain (SGOV, SP')
+
+## api.agentnewsstand.com 1
+   ('https://api.agentnewsstand.com/v1/filings', 'eip155:8453', '10000', 'Latest SEC filings for an equity symbol')
+
+## agent-web-tools.agent-web-tools.workers.dev 1
+   ('https://agent-web-tools.agent-web-tools.workers.dev/v1/links', 'eip155:8453', '2000', 'All links on a page, absolute and deduplicated, split into internal and external')
+
+## intel.fintechhodl.com 1
+   ('https://intel.fintechhodl.com/api/v1/yield-farming', 'eip155:8453', '10000', 'Yield farming opportunities on Base: liquidity pools, concentrated liquidity (Ae')
+
+## quantagentshop.com 1
+   ('https://quantagentshop.com/v1/shopping-search', 'eip155:8453', '10000', 'Product search. Send a product query; returns up to 40 Google Shopping offers wi')
+
+## verdict.kechlab.com 1
+   ('https://verdict.kechlab.com/v1/canary-check', 'eip155:8453', '9100', 'Did a model reply leak what it should keep secret? Canary tokens and secret phra')
+
+## agent-data.centorprat.workers.dev 1
+   ('https://agent-data.centorprat.workers.dev/tools/wellfound-jobs-scraper', 'eip155:8453', '30000', 'Scrape Wellfound (AngelList Talent) startup jobs by role and city or remote: ful')
+
+## fundamental-scores-x402.onrender.com 1
+   ('https://fundamental-scores-x402.onrender.com/v1/verdict/:ticker', 'eip155:8453', '3000', 'Answer in one line: healthy / watch / distress, plus an earnings-manipulation (f')
+
+## api.lumitrades.io 1
+   ('https://api.lumitrades.io/v1/signal/:coin', 'eip155:8453', '10000', 'Lumi Market Ideas (educational, not financial advice). Rule-based technical read')
+
+## api.maximusmediahouse.com 1
+   ('https://api.maximusmediahouse.com/v1/chunk', 'eip155:8453', '5000', "Split long text into pieces for RAG retrieval. Strategies: 'sentence' packs whol")
+
+## stockvaluelens.com 1
+   ('https://stockvaluelens.com/api/v1/companies/:ticker/financials', 'eip155:8453', '1000', 'Historical annual company financials, excluding stock prices. Free field list: G')
+
+## derivs.duoleads.com 1
+   ('https://derivs.duoleads.com/v1/funding-arbitrage', 'eip155:8453', '5000', 'Funding arbitrage scanner across 8 exchanges (Bybit, Hyperliquid, dYdX, Gate, Kr')
+
+## nordata.hihat.workers.dev 1
+   ('https://nordata.hihat.workers.dev/regnskap', 'eip155:8453', '5000', 'Latest annual accounts of a Norwegian company from the official Register of Comp')
+
+## api.agoranome.com 1
+   ('https://api.agoranome.com/v1/machine/insights', 'eip155:8453', '250000', 'What are agents buying on x402? A weekly x402 market data and demand report from')
+
+## cryptofeed402.site 1
+   ('https://cryptofeed402.site/candles/:symbol', 'eip155:8453', '3000', 'OHLCV candles for any Hyperliquid perp (main dex + HIP-3 like xyz:TSLA) or, with')
+
+## ca-tax-api-mainnet.lxtap.workers.dev 1
+   ('https://ca-tax-api-mainnet.lxtap.workers.dev/solana/token', 'eip155:8453', '10000', 'Rug check and due-diligence snapshot of a Solana SPL or Token-2022 token: a 0-10')
+
+## x402.pulsescanner.io 1
+   ('https://x402.pulsescanner.io/v2/tokens/:addr/ohlc', 'eip155:8453', '3000', 'Open, high, low and close candles for one token. PulseChain (chain id 369). $0.0')
+
+## rengi.dev 1
+   ('https://rengi.dev/v1/audio-tools/voice', 'eip155:8453', '100000', 'Audio tools: Make a voice recording or TTS take game-ready: rumble high-passed, ')
+
+## cryptopulse.theaslangroupllc.com 1
+   ('https://cryptopulse.theaslangroupllc.com/api/trader-record', 'eip155:8453', '50000', 'Verifiable track record for any Hyperliquid wallet from the public ledger, for c')
+
+## backtest.thaikit.dev 1
+   ('https://backtest.thaikit.dev/backtest', 'eip155:8453', '100000', 'Honest crypto prediction test: pick a Binance coin, timeframe (1h/4h/1d), range ')
+
+## x402.swaphunt.dev 1
+   ('https://x402.swaphunt.dev/v1/market/fear-greed/history', 'eip155:8453', '5000', 'Historical Fear & Greed time series (up to 365 days), each day with value + clas')
+
+## aurelius-node-01.onrender.com 1
+   ('https://aurelius-node-01.onrender.com/api/v1/supply', 'eip155:8453', '50000', 'Aurelius Node 01: Real-time Texas Regional Corridor ground-truth oracle (DFW, Pe')
+
+## x402-test.genesisblock.ai 1
+   ('https://x402-test.genesisblock.ai/api/market-news', 'eip155:84532', '2000', 'GenesisBlock: Real-time equity market headlines and index tracking.')
+
+## heb-utils-x402.hebutils-api.workers.dev 1
+   ('https://heb-utils-x402.hebutils-api.workers.dev/fx-real-return', 'eip155:8453', '10000', 'ECB reference FX rate plus inflation-adjusted growth. Information only, not advi')
+
+## herbapulse.theaslangroupllc.com 1
+   ('https://herbapulse.theaslangroupllc.com/api/herba/apothecary', 'eip155:8453', '250000', 'Home apothecary kit builder — ONE call designs the stocked natural-remedies cabi')
+
+## harvestpulse.theaslangroupllc.com 1
+   ('https://harvestpulse.theaslangroupllc.com/api/harvest/livestock-basics', 'eip155:8453', '100000', 'Backyard livestock & homesteading guide — how to raise chickens, goats, rabbits,')
+
+## autopulse.theaslangroupllc.com 1
+   ('https://autopulse.theaslangroupllc.com/api/auto/value', 'eip155:8453', '80000', 'Used car value / vehicle market value / trade-in value estimate. Returns the cur')
+
+## ebay.use.x402atlas.com 1
+   ('https://ebay.use.x402atlas.com/product', 'eip155:8453', '20000', 'eBay listing detail — one listing by product id: buy options & current bid, vari')
+
+## data.greeneris.io 1
+   ('https://data.greeneris.io/v1/us/sec-fundamentals', 'eip155:8453', '10000', 'As-filed XBRL fundamentals for any SEC-registered company, straight from the EDG')
+
+## dev.gavedu.com 1
+   ('https://dev.gavedu.com/x402/candles', 'eip155:8453', '20000', 'Crypto market data bundle: BTC/ETH OHLCV candles (Coinbase) with pre-computed EM')
+
+## x402toll.com 1
+   ('https://x402toll.com/v1/commerce/tip-split', 'eip155:8453', '10000', 'Tip amount, total, and per-person split for a restaurant bill.')
+
+## kette.halowerk.com 1
+   ('https://kette.halowerk.com/contract/verification', 'eip155:8453', '4000', 'Checks one address on Ethereum, Base, Arbitrum, Optimism, Polygon or BNB Smart C')
+
+## calendars.stockql.ai 1
+   ('https://calendars.stockql.ai/calendars/americas', 'eip155:8453', '1000000', 'Audited AMERICAS exchange holiday calendars (9 venues): trading weeks, full-day ')
+
+## vending-machine-seven.vercel.app 1
+   ('https://vending-machine-seven.vercel.app/api/v/kronos-forecast', 'eip155:8453', '50000', 'Research OHLCV candle forecast via Kronos-mini (financial K-line foundation mode')

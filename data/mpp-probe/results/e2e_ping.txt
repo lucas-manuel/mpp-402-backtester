@@ -1,0 +1,56 @@
+> GET /api/ping/paid HTTP/1.1
+> Host: mpp.dev
+> User-Agent: mppx/0.17.4 AIAgent/claude_code
+>
+< HTTP/1.1 402 Payment Required
+< age: 0
+< cache-control: no-store
+< content-length: 392
+< content-type: application/problem+json
+< date: Sun, 08 Nov 2026 00:31:14 GMT
+< server: Vercel
+< strict-transport-security: max-age=63072000
+< vary: Accept, User-Agent
+< www-authenticate: Payment id="WNgs00Af7JwVI3yP7W88SDNPwO4etg11P1gnVly6Ok0", realm="mpp.sh", method="tempo", intent="charge", request="eyJhbW91bnQiOiIxMDAwMDAiLCJjdXJyZW5jeSI6IjB4MjBjMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsIm1ldGhvZERldGFpbHMiOnsiY2hhaW5JZCI6NDI0MzEsImZlZVBheWVyIjp0cnVlfSwicmVjaXBpZW50IjoiMHhmMzlGZDZlNTFhYWQ4OEY2RjRjZTZhQjg4MjcyNzljZmZGYjkyMjY2In0", description="Ping endpoint access", expires="2026-11-08T00:36:14.119Z", opaque="eyJfbXBweF9ub25jZSI6IjB4MWQ0YjQxZjJmYjJjMWYyN2U4NTkwOTQzOWRiNGVjYTM2ZjMxNGFlMjVlM2Q4ZDkzZTQ1M2ZiYmRiNGQ4ZGQxMiJ9"
+< x-vercel-cache: MISS
+< x-vercel-id: yul1::iad1::ggv76-1794097874040-4e298386274c
+<
+Payment Required
+Challenge
+  description  Ping endpoint access
+  expires      2026-11-08T00:36:14.119Z
+  intent       charge
+  method       tempo
+  opaque       eyJfbXBweF9ub25jZSI6IjB4MWQ0YjQxZjJmYjJjMWYyN2U4NTkwOTQzOWRiNGVjYTM2ZjMxNGFlMjVlM2Q4ZDkzZTQ1M2ZiYmRiNGQ4ZGQxMiJ9
+  realm        mpp.sh
+Request
+  amount       100000 (0.1 PathUSD)
+  recipient    0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Details
+  chainId      42431 (testnet)
+  feePayer     true
+> GET /api/ping/paid HTTP/1.1
+> Host: mpp.dev
+> User-Agent: mppx/0.17.4 AIAgent/claude_code
+> Authorization: Payment <redacted>
+>
+< HTTP/1.1 200 OK
+< cache-control: private
+< content-length: 21
+< content-type: text/plain; charset=UTF-8
+< date: Sun, 08 Nov 2026 00:31:15 GMT
+< payment-receipt: eyJmdW5kaW5nQ3VycmVuY3kiOiIweDIwYzAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJtZXRob2QiOiJ0ZW1wbyIsInN0YXR1cyI6InN1Y2Nlc3MiLCJ0aW1lc3RhbXAiOiIyMDI2LTExLTA4VDAwOjMxOjE1LjU2MFoiLCJyZWZlcmVuY2UiOiIweDlkMTlhZDY4ZmYxYzU3NjdhNzg1YTYxYjQ1MjVmMWQzZDg4YmQ0ODc5YTAyZjgyZjgxOTcxYmJhZGJhZmE2MTkifQ
+< server: Vercel
+< strict-transport-security: max-age=63072000
+< vary: Accept, User-Agent
+< x-vercel-cache: BYPASS
+< x-vercel-id: yul1::iad1::md545-1794097874606-e012ef86ca45
+<
+
+Payment Receipt
+  fundingCurrency  0x20c0000000000000000000000000000000000000
+  reference        0x9d19ad68ff1c5767a785a61b4525f1d3d88bd4879a02f82f81971bbadbafa619
+  status           success
+  timestamp        2026-11-08T00:31:15.560Z
+
+tm! thanks for paying
