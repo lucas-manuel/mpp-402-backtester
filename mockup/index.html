@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>402 Backtester</title>
+<meta name="description" content="UX mockup: a portfolio backtester that buys its own market data per request over HTTP 402 (MPP on Tempo, x402 on Base).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --panel-2:#f1f3f6; --border:#e3e6eb; --text:#0f1720; --muted:#5b6675; --faint:#8a94a3;
+  --accent:#4f46e5; --accent-weak:#eef0ff; --ok:#0f9d6b; --ok-weak:#e6f6ef; --warn:#b26b00; --warn-weak:#fff4e0; --bad:#c2410c;
+  --tempo:#0ea5a4; --base:#2563eb; --line-a:#4f46e5; --line-b:#9aa3b2; --dd:#e11d48;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 1px 3px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b0e13; --panel:#12161d; --panel-2:#181d26; --border:#252b36; --text:#e7ebf0; --muted:#9aa4b2; --faint:#6b7585;
+    --accent:#8b85ff; --accent-weak:#1d1c3a; --ok:#34d399; --ok-weak:#0f2a21; --warn:#fbbf24; --warn-weak:#2a210c; --bad:#fb923c;
+    --tempo:#2dd4bf; --base:#60a5fa; --line-a:#8b85ff; --line-b:#5d6676; --dd:#fb7185; --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b0e13; --panel:#12161d; --panel-2:#181d26; --border:#252b36; --text:#e7ebf0; --muted:#9aa4b2; --faint:#6b7585;
+  --accent:#8b85ff; --accent-weak:#1d1c3a; --ok:#34d399; --ok-weak:#0f2a21; --warn:#fbbf24; --warn-weak:#2a210c; --bad:#fb923c;
+  --tempo:#2dd4bf; --base:#60a5fa; --line-a:#8b85ff; --line-b:#5d6676; --dd:#fb7185; --shadow:none;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font:14px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:12.5px}
+a{color:var(--accent);text-decoration:none}
+.banner{background:var(--warn-weak);color:var(--warn);text-align:center;font-size:12.5px;padding:6px 16px;border-bottom:1px solid var(--border)}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.hwrap{max-width:1180px;margin:0 auto;padding:12px 16px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em}
+.logo .mark{width:28px;height:28px;border-radius:8px;background:var(--accent);color:#fff;display:grid;place-items:center;font:600 11px "JetBrains Mono",monospace}
+.spacer{flex:1}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--panel);border-radius:999px;padding:5px 10px;font-size:12.5px;white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%}
+.tabs{display:flex;gap:4px;background:var(--panel-2);border:1px solid var(--border);border-radius:10px;padding:3px}
+.tabs button{border:0;background:transparent;color:var(--muted);font:500 13px Inter,sans-serif;padding:6px 12px;border-radius:7px;cursor:pointer}
+.tabs button.on{background:var(--panel);color:var(--text);box-shadow:var(--shadow)}
+main{max-width:1180px;margin:0 auto;padding:20px 16px 80px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:20px}
+@media (max-width:920px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
+.card + .card{margin-top:16px}
+.ch{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--border)}
+.ch h2{font-size:14px;margin:0;font-weight:600}
+.ch .step{width:22px;height:22px;border-radius:50%;background:var(--accent-weak);color:var(--accent);display:grid;place-items:center;font-size:12px;font-weight:600}
+.ch .sub{color:var(--muted);font-size:12.5px}
+.cb{padding:16px}
+textarea{width:100%;min-height:76px;resize:vertical;border:1px solid var(--border);background:var(--panel-2);color:var(--text);border-radius:10px;padding:12px;font:14px/1.5 Inter,sans-serif}
+textarea:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.examples{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.ex{border:1px dashed var(--border);background:transparent;color:var(--muted);border-radius:999px;padding:4px 10px;font-size:12.5px;cursor:pointer}
+.ex:hover{color:var(--text);border-color:var(--faint)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{border:1px solid var(--border);background:var(--panel);color:var(--text);border-radius:10px;padding:9px 14px;font:600 13.5px Inter,sans-serif;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.seg{display:inline-flex;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:var(--panel);color:var(--muted);padding:7px 11px;font:500 12.5px Inter,sans-serif;cursor:pointer}
+.seg button.on{background:var(--accent-weak);color:var(--accent)}
+.spec{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}
+@media (max-width:640px){.spec{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.kv{background:var(--panel-2);border-radius:10px;padding:10px 12px}
+.kv .k{color:var(--faint);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+.kv .v{font-weight:600;margin-top:2px;word-break:break-word}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:10px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--border);white-space:nowrap}
+th{color:var(--faint);font-weight:500;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;background:var(--panel-2)}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.pill{display:inline-flex;align-items:center;gap:5px;border-radius:6px;padding:1px 7px;font-size:11.5px;font-weight:600}
+.pill.mpp{background:color-mix(in srgb,var(--tempo) 14%,transparent);color:var(--tempo)}
+.pill.x402{background:color-mix(in srgb,var(--base) 14%,transparent);color:var(--base)}
+.pill.cache{background:var(--ok-weak);color:var(--ok)}
+.pill.warn{background:var(--warn-weak);color:var(--warn)}
+.totals{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-top:14px;padding:12px 14px;background:var(--panel-2);border-radius:10px}
+.totals .big{font-size:22px;font-weight:700;letter-spacing:-.02em}
+.checks{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.check{font-size:12.5px;color:var(--ok);background:var(--ok-weak);border-radius:8px;padding:4px 9px}
+.check.fail{color:var(--bad);background:var(--warn-weak)}
+.log{display:flex;flex-direction:column;gap:6px}
+.lrow{display:grid;grid-template-columns:150px minmax(0,1fr) auto;gap:12px;align-items:center;padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--panel-2)}
+@media (max-width:640px){.lrow{grid-template-columns:1fr}}
+.stages{display:flex;gap:6px;flex-wrap:wrap}
+.stage{font-size:11.5px;border-radius:6px;padding:1px 7px;background:var(--panel);color:var(--faint);border:1px solid var(--border)}
+.stage.done{color:var(--ok);border-color:transparent;background:var(--ok-weak)}
+.stage.live{color:var(--accent);border-color:var(--accent)}
+.metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+@media (max-width:760px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.metric{background:var(--panel-2);border-radius:10px;padding:12px}
+.metric .k{color:var(--faint);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+.metric .v{font-size:20px;font-weight:700;letter-spacing:-.02em;margin-top:2px}
+.metric .b{color:var(--muted);font-size:12px}
+svg text{fill:var(--faint);font:11px Inter,sans-serif}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--muted);margin:10px 0 2px}
+.legend i{display:inline-block;width:14px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.side .card .cb{display:flex;flex-direction:column;gap:12px}
+.bar{height:8px;background:var(--panel-2);border-radius:99px;overflow:hidden}
+.bar > div{height:100%;background:var(--accent);border-radius:99px;transition:width .4s}
+.srow{display:flex;justify-content:space-between;gap:10px;font-size:13px}
+.srow span:first-child{color:var(--muted)}
+.note{font-size:12.5px;color:var(--muted);background:var(--panel-2);border-radius:10px;padding:10px 12px}
+.toggle{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px}
+.switch{width:38px;height:22px;border-radius:99px;background:var(--border);position:relative;cursor:pointer;border:0;flex:none}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .2s}
+.switch.on{background:var(--ok)}
+.switch.on::after{left:19px}
+.hidden{display:none !important}
+.caveats li{margin:4px 0;color:var(--muted)}
+.code{background:var(--panel-2);border:1px solid var(--border);border-radius:10px;padding:12px;overflow-x:auto;white-space:pre}
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px}
+.flow .node{border:1px solid var(--border);background:var(--panel-2);border-radius:10px;padding:8px 12px;text-align:center}
+.flow .node b{display:block}
+.flow .arrow{color:var(--faint)}
+.empty{color:var(--faint);text-align:center;padding:26px 10px;font-size:13px}
+.themebtn{border:1px solid var(--border);background:var(--panel);color:var(--muted);border-radius:8px;width:32px;height:32px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="banner">UX mockup. Data, prices, and transactions on this page are simulated; nothing is paid. Prices reflect live 402 challenges captured 2026-11-07.</div>
+<header>
+  <div class="hwrap">
+    <div class="logo"><div class="mark">402</div>402 Backtester</div>
+    <div class="tabs" role="tablist">
+      <button class="on" data-tab="run">Backtest</button>
+      <button data-tab="sell">Sell side</button>
+      <button data-tab="ledger">Ledger</button>
+    </div>
+    <div class="spacer"></div>
+    <span class="chip"><span class="dot" style="background:var(--tempo)"></span>Tempo · <b id="balTempo">$3.000</b> USDC.e</span>
+    <span class="chip"><span class="dot" style="background:var(--base)"></span>Base · <b id="balBase">$2.000</b> USDC</span>
+    <span class="chip mono">0x7a3c…91fe</span>
+    <button class="themebtn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main>
+<!-- ============ RUN TAB ============ -->
+<section id="tab-run">
+<div class="grid">
+<div>
+  <div class="card">
+    <div class="ch"><div class="step">1</div><h2>Describe a strategy</h2><span class="sub">Claude turns it into a typed spec</span></div>
+    <div class="cb">
+      <textarea id="strategy">60/40 SPY/TLT, rebalance monthly, since 2016</textarea>
+      <div class="examples">
+        <button class="ex">60/40 SPY/TLT, rebalance monthly, since 2016</button>
+        <button class="ex">Equal-weight QQQ, GLD, TLT, VNQ quarterly since 2015</button>
+        <button class="ex">90% SPY / 10% BTC, rebalance monthly since 2018</button>
+        <button class="ex">All-weather: 30% VTI, 40% TLT, 15% IEF, 7.5% GLD, 7.5% DBC</button>
+      </div>
+      <div class="row" style="margin-top:14px">
+        <div class="seg" id="modeSeg">
+          <button class="on" data-mode="best" title="Massive over x402 for prices, MPP for macro">Best data</button>
+          <button data-mode="mpp" title="Only Tempo / MPP providers">MPP-only</button>
+        </div>
+        <div class="spacer"></div>
+        <button class="btn primary" id="planBtn">Plan data &amp; get quote →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card hidden" id="quoteCard">
+    <div class="ch"><div class="step">2</div><h2>Data plan &amp; quote</h2><span class="sub">No money moves until you approve</span></div>
+    <div class="cb">
+      <div class="spec" id="spec"></div>
+      <div class="tablewrap"><table id="quoteTable"></table></div>
+      <div class="totals">
+        <div><div class="sub" style="color:var(--muted);font-size:12px">Quote</div><div class="big" id="qTotal">$0.00</div></div>
+        <div class="sub" style="color:var(--muted)"><span id="qCalls">0</span> paid calls · <span id="qCached">0</span> cached (saved <span id="qSaved">$0.00</span>)</div>
+        <div class="spacer"></div>
+        <button class="btn" id="cancelBtn">Edit</button>
+        <button class="btn primary" id="approveBtn">Approve &amp; pay</button>
+      </div>
+      <div class="checks" id="checks"></div>
+    </div>
+  </div>
+
+  <div class="card hidden" id="execCard">
+    <div class="ch"><div class="step">3</div><h2>Paying &amp; fetching</h2><span class="sub" id="execSub">402 → validate → pay → 200</span></div>
+    <div class="cb"><div class="log" id="log"></div></div>
+  </div>
+
+  <div class="card hidden" id="reportCard">
+    <div class="ch"><div class="step">4</div><h2>Results</h2><span class="sub" id="reportSub"></span></div>
+    <div class="cb">
+      <div class="metrics" id="metrics"></div>
+      <div class="legend"><span><i style="background:var(--line-a)"></i>Strategy</span><span><i style="background:var(--line-b)"></i>Benchmark (SPY)</span></div>
+      <svg id="equity" viewBox="0 0 800 260" width="100%" preserveAspectRatio="none" style="display:block;height:260px"></svg>
+      <div class="legend"><span><i style="background:var(--dd)"></i>Drawdown</span></div>
+      <svg id="dd" viewBox="0 0 800 90" width="100%" preserveAspectRatio="none" style="display:block;height:90px"></svg>
+      <ul class="caveats" id="caveats"></ul>
+    </div>
+  </div>
+
+  <div class="card hidden" id="receiptCard">
+    <div class="ch"><h2>Data receipt</h2><span class="sub">Every paid call, reconciled to a transaction</span></div>
+    <div class="cb">
+      <div class="tablewrap"><table id="receiptTable"></table></div>
+      <div class="totals" id="receiptTotals"></div>
+    </div>
+  </div>
+</div>
+
+<aside class="side">
+  <div class="card">
+    <div class="ch"><h2>Spend guardrails</h2></div>
+    <div class="cb">
+      <div>
+        <div class="srow"><span>This run</span><span><b id="runSpent">$0.000</b> / $0.50</span></div>
+        <div class="bar" style="margin-top:6px"><div id="runBar" style="width:0%"></div></div>
+      </div>
+      <div>
+        <div class="srow"><span>Lifetime</span><span><b id="totSpent">$0.000</b> / $3.00</span></div>
+        <div class="bar" style="margin-top:6px"><div id="totBar" style="width:0%"></div></div>
+      </div>
+      <div class="srow"><span>Max per call</span><span>$0.05</span></div>
+      <div class="srow"><span>Allowed chains</span><span>Tempo 4217 · Base 8453</span></div>
+      <div class="srow"><span>Allowed tokens</span><span>USDC.e · USDC · OUSD</span></div>
+      <div class="toggle"><span>Payments enabled</span><button class="switch on" id="payToggle" aria-label="Payments enabled"></button></div>
+      <div class="note">Caps are enforced in the payment layer, outside the LLM. The model can plan spend; it can never authorize it.</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ch"><h2>Cache</h2></div>
+    <div class="cb">
+      <div class="srow"><span>Series cached</span><span id="cacheCount">0</span></div>
+      <div class="srow"><span>Saved so far</span><span id="cacheSaved">$0.000</span></div>
+      <div class="note">Paid responses are stored by hash(provider, url, params). Re-running a similar strategy re-uses them for free.</div>
+      <button class="btn" id="clearCache">Clear cache</button>
+    </div>
+  </div>
+</aside>
+</div>
+</section>
+
+<!-- ============ SELL TAB ============ -->
+<section id="tab-sell" class="hidden">
+<div class="card">
+  <div class="ch"><h2>Sell backtests to other agents</h2><span class="sub">Your app as an MPP-paid endpoint, priced in OUSD</span></div>
+  <div class="cb">
+    <div class="flow">
+      <div class="node"><b>Client agent</b><span class="sub">pays OUSD on Tempo</span></div><span class="arrow">→</span>
+      <div class="node"><b>POST /api/backtest</b><span class="sub">mppx/server · 402</span></div><span class="arrow">→</span>
+      <div class="node"><b>Data providers</b><span class="sub">USDC.e (MPP) · USDC (x402)</span></div><span class="arrow">→</span>
+      <div class="node"><b>Result + receipt</b><span class="sub">memo = hash(spec)</span></div>
+    </div>
+    <div class="metrics" style="margin-top:16px">
+      <div class="metric"><div class="k">Price / run</div><div class="v">0.05 OUSD</div><div class="b">charge intent</div></div>
+      <div class="metric"><div class="k">Avg data cost</div><div class="v" id="sellCost">$0.012</div><div class="b">after cache</div></div>
+      <div class="metric"><div class="k">Margin / run</div><div class="v" id="sellMargin" style="color:var(--ok)">$0.038</div><div class="b">76%</div></div>
+      <div class="metric"><div class="k">Runs sold</div><div class="v">14</div><div class="b">simulated</div></div>
+      <div class="metric"><div class="k">Network</div><div class="v" style="font-size:16px">Tempo testnet</div><div class="b">mainnet behind a flag</div></div>
+    </div>
+    <h3 style="font-size:13px;margin:18px 0 8px">What a client sees</h3>
+<div class="code mono">$ curl -i -X POST https://402-backtester.app/api/backtest -d '{"strategy":"60/40 SPY/TLT monthly"}'
+HTTP/1.1 402 Payment Required
+WWW-Authenticate: Payment id="…", realm="402-backtester", method="tempo", intent="charge",
+  request="{amount:'50000', currency:'0x20c0…6a37da5c996874be' /* OUSD */, methodDetails:{chainId:42431, feePayer:true}}"
+
+$ npx mppx https://402-backtester.app/api/backtest -X POST -d '…'
+HTTP/1.1 200 OK
+Payment-Receipt: {status:"success", method:"tempo", reference:"0x…"}
+{"cagr":0.071,"sharpe":0.68,"maxDrawdown":-0.214,"dataReceipt":[…]}</div>
+    <h3 style="font-size:13px;margin:18px 0 8px">Recent sales</h3>
+    <div class="tablewrap"><table id="salesTable"></table></div>
+  </div>
+</div>
+</section>
+
+<!-- ============ LEDGER TAB ============ -->
+<section id="tab-ledger" class="hidden">
+<div class="card">
+  <div class="ch"><h2>Spend ledger</h2><span class="sub">Persisted outside the model; every payment from every run</span></div>
+  <div class="cb">
+    <div class="tablewrap"><table id="ledgerTable"></table></div>
+    <div id="ledgerEmpty" class="empty">No payments yet. Run a backtest first.</div>
+  </div>
+</div>
+</section>
+</main>
+
+<script>
+(() => {
+// ---------- theme ----------
+const root = document.documentElement;
+document.getElementById('themeBtn').onclick = () => {
+  const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark';
+};
+
+// ---------- tabs ----------
+document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
+  document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x === b));
+  ['run','sell','ledger'].forEach(t => document.getElementById('tab-'+t).classList.toggle('hidden', t !== b.dataset.tab));
+  if (b.dataset.tab === 'ledger') renderLedger();
+});
+
+// ---------- providers (prices from captured 402s) ----------
+const P = {
+  massive:  { name:'Massive', rail:'x402', chain:'Base 8453', token:'USDC', price:0.010, path:t=>`agent.massive.com/v2/aggs/ticker/${t}/range/1/day/…` },
+  av:       { name:'Alpha Vantage · Locus', rail:'MPP', chain:'Tempo 4217', token:'USDC.e', price:0.008, path:t=>`alphavantage.mpp.paywithlocus.com/…daily?symbol=${t}` },
+  avmacro:  { name:'Alpha Vantage · Locus', rail:'MPP', chain:'Tempo 4217', token:'USDC.e', price:0.008, path:()=>`alphavantage.mpp.paywithlocus.com/…treasury-yield` },
+  crypto:   { name:'StableCrypto', rail:'MPP', chain:'Tempo 4217', token:'USDC.e', price:0.010, path:t=>`stablecrypto.dev/api/coingecko/chart?id=${t.toLowerCase()}` },
+  cryptoX:  { name:'StableCrypto', rail:'x402', chain:'Base 8453', token:'USDC', price:0.010, path:t=>`stablecrypto.dev/api/coingecko/chart?id=${t.toLowerCase()}` },
+};
+const CRYPTO = new Set(['BTC','ETH','SOL']);
+const ASSET = { // annual drift, vol (synthetic)
+  SPY:[.105,.17], TLT:[.02,.15], QQQ:[.15,.22], GLD:[.07,.15], VNQ:[.05,.21], VTI:[.10,.175], IEF:[.02,.07], DBC:[.03,.19],
+  BTC:[.45,.70], ETH:[.40,.85], SOL:[.5,1.0], IWM:[.07,.22], EFA:[.05,.16], AGG:[.015,.06], BND:[.015,.06],
+};
+
+// ---------- state ----------
+let mode = 'best';
+let payments = true;
+let spentTotal = 0;
+const cache = new Map();   // key -> price saved
+const ledger = [];
+let plan = null;
+
+document.querySelectorAll('.ex').forEach(b => b.onclick = () => { document.getElementById('strategy').value = b.textContent; });
+document.querySelectorAll('#modeSeg button').forEach(b => b.onclick = () => {
+  mode = b.dataset.mode;
+  document.querySelectorAll('#modeSeg button').forEach(x => x.classList.toggle('on', x === b));
+  if (plan) buildPlan();
+});
+document.getElementById('payToggle').onclick = e => { payments = !payments; e.currentTarget.classList.toggle('on', payments); if (plan) renderQuote(); };
+document.getElementById('clearCache').onclick = () => { cache.clear(); renderCache(); if (plan) buildPlan(); };
+
+// ---------- mock "Claude" parser ----------
+function parse(text) {
+  const t = text.toUpperCase();
+  const known = Object.keys(ASSET);
+  const found = [];
+  const re = /(\d+(?:\.\d+)?)\s*%?\s*([A-Z]{2,5})|([A-Z]{2,5})/g;
+  let m; const weights = {};
+  while ((m = re.exec(t))) {
+    const sym = m[2] || m[3];
+    if (!known.includes(sym) || found.includes(sym)) continue;
+    found.push(sym); if (m[1]) weights[sym] = parseFloat(m[1]);
+  }
+  // "60/40 SPY/TLT"
+  const slash = t.match(/(\d+)\s*\/\s*(\d+)\s+([A-Z]{2,5})\s*\/\s*([A-Z]{2,5})/);
+  if (slash) { found.length = 0; found.push(slash[3], slash[4]); weights[slash[3]] = +slash[1]; weights[slash[4]] = +slash[2]; }
+  const tickers = found.length ? found : ['SPY','TLT'];
+  let w = tickers.map(x => weights[x]);
+  if (w.some(v => v == null)) w = tickers.map(() => 100 / tickers.length);
+  const s = w.reduce((a,b) => a+b, 0); w = w.map(v => v / s);
+  const reb = /QUARTER/.test(t) ? 'Quarterly' : /ANNUAL|YEAR/.test(t) ? 'Annually' : 'Monthly';
+  const y = (t.match(/(?:SINCE|FROM)\s+(20\d\d|19\d\d)/) || [])[1] || '2016';
+  return { tickers, weights: w, rebalance: reb, start: +y, end: 2026, benchmark: 'SPY' };
+}
+
+// ---------- planning ----------
+function buildPlan() {
+  const spec = parse(document.getElementById('strategy').value);
+  const calls = [];
+  const series = [...new Set([...spec.tickers, spec.benchmark])];
+  for (const t of series) {
+    let p;
+    if (CRYPTO.has(t)) p = mode === 'mpp' ? P.crypto : P.cryptoX;
+    else p = mode === 'mpp' ? P.av : P.massive;
+    calls.push({ key: p.name + ':' + t, ticker: t, what: `${t} daily bars ${spec.start}–${spec.end}`, ...p, url: p.path(t) });
+  }
+  calls.push({ key: 'macro:DGS3MO', ticker: '3M T-bill', what: 'Risk-free rate (3M T-bill)', ...P.avmacro, url: P.avmacro.path() });
+  calls.forEach(c => c.cached = cache.has(c.key));
+  plan = { spec, calls };
+  renderQuote();
+}
+
+const $ = id => document.getElementById(id);
+const usd = (v, d=3) => '$' + v.toFixed(d);
+const pct = v => (v*100).toFixed(1) + '%';
+const railPill = r => `<span class="pill ${r === 'MPP' ? 'mpp' : 'x402'}">${r}</span>`;
+
+function renderQuote() {
+  const { spec, calls } = plan;
+  $('quoteCard').classList.remove('hidden');
+  $('spec').innerHTML = [
+    ['Holdings', spec.tickers.map((t,i) => `${t} ${Math.round(spec.weights[i]*1000)/10}%`).join(' · ')],
+    ['Rebalance', spec.rebalance], ['Range', `${spec.start} → today`], ['Benchmark', spec.benchmark]
+  ].map(([k,v]) => `<div class="kv"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('');
+  $('quoteTable').innerHTML = `<tr><th>Data</th><th>Provider</th><th>Rail</th><th>Chain · token</th><th class="num">Price</th></tr>` +
+    calls.map(c => `<tr><td>${c.what}<div class="mono" style="color:var(--faint)">${c.url}</div></td><td>${c.name}</td><td>${railPill(c.rail)}</td><td>${c.chain} · ${c.token}</td>
+      <td class="num">${c.cached ? '<span class="pill cache">cached</span> <s style="color:var(--faint)">'+usd(c.price)+'</s>' : usd(c.price)}</td></tr>`).join('');
+  const paid = calls.filter(c => !c.cached), cached = calls.filter(c => c.cached);
+  const total = paid.reduce((a,c) => a+c.price, 0);
+  $('qTotal').textContent = usd(total);
+  $('qCalls').textContent = paid.length; $('qCached').textContent = cached.length;
+  $('qSaved').textContent = usd(cached.reduce((a,c) => a+c.price, 0));
+  const maxCall = Math.max(0, ...paid.map(c => c.price));
+  const checks = [
+    [total <= 0.5, `Run total ${usd(total)} ≤ $0.50 cap`],
+    [spentTotal + total <= 3, `Lifetime ${usd(spentTotal + total)} ≤ $3.00 cap`],
+    [maxCall <= 0.05, `Max per call ${usd(maxCall)} ≤ $0.05`],
+    [true, 'Chains & tokens on allowlist'],
+    [payments, payments ? 'Payments enabled' : 'Payments disabled: dry run from cache/fixtures'],
+  ];
+  $('checks').innerHTML = checks.map(([ok, t]) => `<span class="check ${ok ? '' : 'fail'}">${ok ? '✓' : '!'} ${t}</span>`).join('');
+  const rail = [...new Set(paid.map(c => c.rail))];
+  $('approveBtn').textContent = !payments ? 'Run dry (no payment)' : paid.length ? `Approve & pay ${usd(total)}` : 'Run (all cached)';
+  $('approveBtn').disabled = !checks.slice(0,3).every(c => c[0]);
+  ['execCard','reportCard','receiptCard'].forEach(id => $(id).classList.add('hidden'));
+  $('quoteCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+$('planBtn').onclick = buildPlan;
+$('cancelBtn').onclick = () => { $('quoteCard').classList.add('hidden'); $('strategy').focus(); };
+
+// ---------- execution simulation ----------
+const STAGES = ['402 challenge', 'validated ≤ quote', 'signed', 'settled', '200 OK'];
+const rhex = n => [...crypto.getRandomValues(new Uint8Array(n))].map(b => b.toString(16).padStart(2,'0')).join('');
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let runSpent = 0;
+
+$('approveBtn').onclick = async () => {
+  $('approveBtn').disabled = true; $('planBtn').disabled = true;
+  $('execCard').classList.remove('hidden');
+  $('execCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const log = $('log'); log.innerHTML = '';
+  runSpent = 0; renderSpend();
+  const receipts = [];
+  for (const c of plan.calls) {
+    const row = document.createElement('div'); row.className = 'lrow';
+    const skip = c.cached || !payments;
+    row.innerHTML = `<div><b>${c.ticker}</b><div class="sub" style="color:var(--muted);font-size:12px">${c.name}</div></div>
+      <div class="stages">${(skip ? ['cache hit'] : STAGES).map(s => `<span class="stage">${s}</span>`).join('')}</div>
+      <div class="mono" style="color:var(--faint)">${railPill(c.rail)}</div>`;
+    log.appendChild(row);
+    const st = row.querySelectorAll('.stage');
+    for (let i = 0; i < st.length; i++) {
+      st[i].classList.add('live'); await sleep(skip ? 150 : 170 + Math.random()*160);
+      st[i].classList.remove('live'); st[i].classList.add('done');
+    }
+    const tx = skip ? null : '0x' + rhex(32);
+    if (!skip) {
+      runSpent += c.price; spentTotal += c.price;
+      cache.set(c.key, c.price);
+      if (c.rail === 'MPP') bal.tempo -= c.price; else bal.base -= c.price;
+      ledger.unshift({ time: new Date(), ...c, tx });
+    } else if (c.cached) cacheSavedTotal += c.price;
+    row.lastElementChild.innerHTML = skip ? `<span class="pill cache">${c.cached ? 'free' : 'dry run'}</span>` :
+      `<span title="Simulated transaction">${usd(c.price)} · ${tx.slice(0,8)}…</span>`;
+    receipts.push({ ...c, tx, skip });
+    renderSpend(); renderCache();
+  }
+  $('execSub').textContent = `Done · ${usd(runSpent)} spent`;
+  runBacktest(receipts);
+  $('approveBtn').disabled = false; $('planBtn').disabled = false;
+  plan.calls.forEach(c => c.cached = cache.has(c.key));
+};
+
+const bal = { tempo: 3, base: 2 };
+let cacheSavedTotal = 0;
+function renderSpend() {
+  $('runSpent').textContent = usd(runSpent); $('runBar').style.width = Math.min(100, runSpent / .5 * 100) + '%';
+  $('totSpent').textContent = usd(spentTotal); $('totBar').style.width = Math.min(100, spentTotal / 3 * 100) + '%';
+  $('balTempo').textContent = usd(bal.tempo); $('balBase').textContent = usd(bal.base);
+}
+function renderCache() { $('cacheCount').textContent = cache.size; $('cacheSaved').textContent = usd(cacheSavedTotal); }
+
+// ---------- synthetic backtest ----------
+function rng(seed) { let s = seed >>> 0; return () => { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
+function gauss(r) { let u = 0, v = 0; while (!u) u = r(); while (!v) v = r(); return Math.sqrt(-2*Math.log(u)) * Math.cos(2*Math.PI*v); }
+const hash = s => [...s].reduce((h,c) => (h*31 + c.charCodeAt(0)) >>> 0, 7);
+
+function series(t, days) {
+  const [mu, sig] = ASSET[t] || [.07,.18];
+  const r = rng(hash(t)); const out = [];
+  const mkt = rng(42); // common shock
+  for (let i = 0; i < days; i++) {
+    const common = gauss(mkt), idio = gauss(r);
+    const beta = t === 'TLT' || t === 'IEF' || t === 'AGG' || t === 'BND' ? -0.25 : CRYPTO.has(t) ? 0.4 : t === 'GLD' ? 0.05 : 0.85;
+    const z = beta * common + Math.sqrt(1 - beta*beta) * idio;
+    out.push(mu/252 - sig*sig/504 + sig/Math.sqrt(252) * z);
+  }
+  return out;
+}
+
+function runBacktest(receipts) {
+  const { spec } = plan;
+  const days = (spec.end - spec.start) * 252 + 210;
+  const rets = spec.tickers.map(t => series(t, days));
+  const bench = series('SPY', days);
+  const step = spec.rebalance === 'Monthly' ? 21 : spec.rebalance === 'Quarterly' ? 63 : 252;
+  let w = [...spec.weights], eq = [1], be = [1];
+  for (let d = 0; d < days; d++) {
+    let gross = 0; const nw = w.map((wi, i) => { const g = wi * Math.exp(rets[i][d]); gross += g; return g; });
+    w = nw.map(x => x / gross);
+    eq.push(eq[eq.length-1] * gross * (d % step === step-1 ? 1 - 0.0005 : 1));
+    if (d % step === step-1) w = [...spec.weights];
+    be.push(be[be.length-1] * Math.exp(bench[d]));
+  }
+  const stats = arr => {
+    const yrs = days / 252, r = [];
+    for (let i = 1; i < arr.length; i++) r.push(arr[i]/arr[i-1] - 1);
+    const m = r.reduce((a,b) => a+b, 0) / r.length;
+    const sd = Math.sqrt(r.reduce((a,b) => a + (b-m)**2, 0) / r.length);
+    let peak = 1, mdd = 0; const dd = arr.map(v => { peak = Math.max(peak, v); const x = v/peak - 1; mdd = Math.min(mdd, x); return x; });
+    const cagr = Math.pow(arr[arr.length-1], 1/yrs) - 1;
+    return { cagr, vol: sd*Math.sqrt(252), sharpe: (m*252 - 0.02) / (sd*Math.sqrt(252)), mdd, dd };
+  };
+  const s = stats(eq), b = stats(be);
+  $('reportCard').classList.remove('hidden'); $('receiptCard').classList.remove('hidden');
+  $('reportSub').textContent = `${spec.tickers.join(' / ')} · ${spec.rebalance.toLowerCase()} · ${spec.start}–today`;
+  $('metrics').innerHTML = [
+    ['CAGR', pct(s.cagr), 'SPY ' + pct(b.cagr)], ['Volatility', pct(s.vol), 'SPY ' + pct(b.vol)],
+    ['Sharpe', s.sharpe.toFixed(2), 'SPY ' + b.sharpe.toFixed(2)], ['Max drawdown', pct(s.mdd), 'SPY ' + pct(b.mdd)],
+    ['Data cost', usd(runSpent), receipts.filter(r => r.skip).length + ' cached'],
+  ].map(([k,v,x]) => `<div class="metric"><div class="k">${k}</div><div class="v">${v}</div><div class="b">${x}</div></div>`).join('');
+  drawLines($('equity'), [eq, be], ['var(--line-a)', 'var(--line-b)'], spec.start, true);
+  drawArea($('dd'), s.dd);
+  const cav = [];
+  if (receipts.some(r => r.name.startsWith('Alpha') && !r.key.startsWith('macro'))) cav.push('Alpha Vantage daily bars via Locus are unadjusted for splits.');
+  if (receipts.some(r => r.name === 'Massive')) cav.push('Massive bars are split-adjusted; dividends are not included.');
+  cav.push('No 402 source serves dividends, so results are price return, not total return.');
+  cav.push('Mockup: equity curve is generated from synthetic returns.');
+  $('caveats').innerHTML = cav.map(c => `<li>${c}</li>`).join('');
+  // receipt
+  $('receiptTable').innerHTML = `<tr><th>Data</th><th>Provider</th><th>Rail</th><th>Chain · token</th><th class="num">Amount</th><th>Tx</th></tr>` +
+    receipts.map(r => `<tr><td>${r.what}</td><td>${r.name}</td><td>${railPill(r.rail)}</td><td>${r.chain} · ${r.token}</td>
+      <td class="num">${r.skip ? '<span class="pill cache">'+(r.cached ? 'cached' : 'dry run')+'</span>' : usd(r.price)}</td>
+      <td class="mono">${r.tx ? `<span title="Simulated. In the real app this links to ${r.rail === 'MPP' ? 'explore.tempo.xyz' : 'basescan.org'}">${r.tx.slice(0,10)}…${r.tx.slice(-4)} ↗</span>` : '-'}</td></tr>`).join('');
+  const by = {}; receipts.filter(r => !r.skip).forEach(r => { by[r.rail] = (by[r.rail] || 0) + r.price; });
+  $('receiptTotals').innerHTML = `<div><div style="color:var(--muted);font-size:12px">Total paid</div><div class="big">${usd(runSpent)}</div></div>` +
+    Object.entries(by).map(([k,v]) => `<div>${railPill(k)} <b>${usd(v)}</b></div>`).join('') +
+    `<div class="spacer"></div><span style="color:var(--muted);font-size:12.5px">Receipts include memo = hash(spec + plan) for reconciliation</span>`;
+  $('reportCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function drawLines(svg, lines, colors, startYear, grid) {
+  const W = 800, H = 260, pad = { l: 44, r: 8, t: 10, b: 22 };
+  const all = lines.flat(); const lo = Math.min(...all), hi = Math.max(...all);
+  const n = lines[0].length;
+  const x = i => pad.l + (W - pad.l - pad.r) * i / (n-1);
+  const y = v => pad.t + (H - pad.t - pad.b) * (1 - (Math.log(v) - Math.log(lo)) / (Math.log(hi) - Math.log(lo) || 1));
+  let g = '';
+  for (let k = 0; k <= 4; k++) {
+    const v = Math.exp(Math.log(lo) + (Math.log(hi) - Math.log(lo)) * k/4), yy = y(v);
+    g += `<line x1="${pad.l}" x2="${W-pad.r}" y1="${yy}" y2="${yy}" stroke="var(--border)" stroke-width="1"/><text x="4" y="${yy+4}">${v.toFixed(2)}x</text>`;
+  }
+  const years = Math.round((n-1)/252);
+  for (let k = 0; k <= years; k += Math.max(1, Math.ceil(years/6))) g += `<text x="${x(k*252)-12}" y="${H-4}">${startYear+k}</text>`;
+  const paths = lines.map((L, j) => {
+    let d = ''; for (let i = 0; i < n; i += 3) d += (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(L[i]).toFixed(1);
+    return `<path d="${d}" fill="none" stroke="${colors[j]}" stroke-width="${j ? 1.5 : 2.2}" vector-effect="non-scaling-stroke"/>`;
+  }).reverse().join('');
+  svg.innerHTML = g + paths;
+}
+function drawArea(svg, dd) {
+  const W = 800, H = 90, pl = 44, pr = 8, n = dd.length, lo = Math.min(...dd);
+  const x = i => pl + (W - pl - pr) * i / (n-1), y = v => 6 + (H - 12) * (v / (lo || -1));
+  let d = `M${pl} 6`; for (let i = 0; i < n; i += 3) d += `L${x(i).toFixed(1)} ${y(dd[i]).toFixed(1)}`; d += `L${W-pr} 6Z`;
+  svg.innerHTML = `<text x="4" y="14">0%</text><text x="4" y="${H-4}">${(lo*100).toFixed(0)}%</text>
+    <path d="${d}" fill="color-mix(in srgb, var(--dd) 22%, transparent)" stroke="var(--dd)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>`;
+}
+
+// ---------- ledger & sales ----------
+function renderLedger() {
+  $('ledgerEmpty').classList.toggle('hidden', ledger.length > 0);
+  $('ledgerTable').innerHTML = ledger.length ? `<tr><th>Time</th><th>Provider</th><th>Data</th><th>Rail</th><th>Chain · token</th><th class="num">Amount</th><th>Tx</th></tr>` +
+    ledger.map(l => `<tr><td>${l.time.toLocaleTimeString()}</td><td>${l.name}</td><td>${l.what}</td><td>${railPill(l.rail)}</td><td>${l.chain} · ${l.token}</td><td class="num">${usd(l.price)}</td><td class="mono">${l.tx.slice(0,10)}…</td></tr>`).join('') : '';
+}
+(function sales() {
+  const r = rng(7), strategies = ['60/40 SPY/TLT', 'Sector momentum top-3', 'All-weather', '90/10 SPY/BTC', 'Equal-weight QQQ/GLD/TLT'];
+  let rows = `<tr><th>Buyer agent</th><th>Strategy</th><th class="num">Paid</th><th class="num">Data cost</th><th class="num">Margin</th><th>Tx</th></tr>`;
+  for (let i = 0; i < 6; i++) {
+    const cost = r() < .5 ? 0 : 0.008 + Math.floor(r()*4) * 0.01;
+    rows += `<tr><td class="mono">0x${rhex(2)}…${rhex(2)}</td><td>${strategies[i % 5]}</td><td class="num">0.050 OUSD</td><td class="num">${usd(cost)}</td><td class="num" style="color:var(--ok)">${usd(.05 - cost)}</td><td class="mono">0x${rhex(4)}…</td></tr>`;
+  }
+  $('salesTable').innerHTML = rows;
+})();
+})();
+</script>
+</body>
+</html>

@@ -9,6 +9,7 @@ This repo currently holds research only. Nothing is built yet.
 | [`RESEARCH.md`](RESEARCH.md) | Findings as of 2026-11-07: MPP, Tempo/OUSD, AgentCash and the `stable*.dev` APIs, paid financial-data sources and prices, the agentic-payments landscape |
 | [`PROMPT.md`](PROMPT.md) | A self-contained brief for a coding agent to build the app on mainnet with about $5 |
 | [`WALLET_SETUP.md`](WALLET_SETUP.md) | How to create a dedicated key and fund USDC.e on Tempo and USDC on Base |
+| [`mockup/`](mockup/) | Clickable UX mockup: a single static `index.html` with simulated data and payments. Open it locally or deploy it with `vercel deploy` |
 | [`data/mpp-probe/`](data/mpp-probe/) | Probe scripts and results for the whole mpp.dev service directory: 1,520 endpoints, decoded 402 challenges, one end-to-end testnet payment log |
 | [`data/finance-402-challenges/`](data/finance-402-challenges/) | Raw 402 responses from the finance-data providers, plus finance-related x402 Bazaar listings |
 | [`data/agentcash/`](data/agentcash/) | AgentCash's `/.well-known/x402` manifest |
